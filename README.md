@@ -114,3 +114,4 @@ Feedback, corrections to *Ibaraths* or translations, and contributions are welco
 ## 📜 License
 
 This educational project is made available for non-commercial student study and community learning.
+
