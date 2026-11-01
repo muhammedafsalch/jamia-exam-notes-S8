@@ -1,0 +1,1245 @@
+/* ==========================================================================
+   Kitab al-Mahalli - Shafi'i Fiqh Digital Reader
+   Design System: Traditional Islamic Manuscript meets Modern Academic UI
+   ========================================================================== */
+
+:root {
+  --bg-primary: #fcf9f2;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f7f2e7;
+  --bg-card-matn: #fffdf7;
+  --bg-card-sharh: #f9fbf9;
+  --bg-card-trans: #fcfdff;
+  
+  --primary-emerald: #0f4c3a;
+  --primary-emerald-hover: #0a382a;
+  --primary-emerald-light: #e6f4ef;
+  
+  --accent-gold: #c59b27;
+  --accent-gold-dark: #9e7916;
+  --accent-gold-light: #fcf6e5;
+  --accent-gold-border: #e8d7a5;
+  
+  --text-main: #1f2923;
+  --text-muted: #596b61;
+  --text-arabic: #0e2017;
+  --text-matn-highlight: #915d03;
+  
+  --border-subtle: #e5ded0;
+  --border-focus: #c59b27;
+  
+  --font-arabic: 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+  --font-malayalam: 'Noto Sans Malayalam', 'Manjari', 'Gayathri', sans-serif;
+  --font-ui: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  
+  --arabic-size: 1.55rem;
+  --malayalam-size: 1.05rem;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  
+  --shadow-sm: 0 2px 8px rgba(15, 76, 58, 0.04);
+  --shadow-md: 0 6px 20px rgba(15, 76, 58, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 76, 58, 0.12);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0e1613;
+  --bg-surface: #15221d;
+  --bg-surface-elevated: #1c2c26;
+  --bg-card-matn: #1a2520;
+  --bg-card-sharh: #17241e;
+  --bg-card-trans: #16221c;
+  
+  --primary-emerald: #2fa37f;
+  --primary-emerald-hover: #3fc298;
+  --primary-emerald-light: #16362a;
+  
+  --accent-gold: #e2ba49;
+  --accent-gold-dark: #c9a032;
+  --accent-gold-light: #2c2514;
+  --accent-gold-border: #4d3e18;
+  
+  --text-main: #e2ebe6;
+  --text-muted: #95aaa0;
+  --text-arabic: #f3faf6;
+  --text-matn-highlight: #ffcf54;
+  
+  --border-subtle: #24352d;
+  --border-focus: #e2ba49;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================================================
+   Header & Decorative Islamic Banner
+   ========================================================================== */
+.site-header {
+  background: linear-gradient(135deg, #092e23 0%, #0f4c3a 60%, #175e49 100%);
+  color: #ffffff;
+  padding: 2.2rem 1.5rem 1.8rem;
+  border-bottom: 3px solid var(--accent-gold);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.12) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  gap: 0.6rem;
+}
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(226, 186, 73, 0.15);
+  border: 1px solid rgba(226, 186, 73, 0.4);
+  border-radius: 999px;
+  color: #f7deb0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.arabic-header-title {
+  font-family: var(--font-arabic);
+  font-size: 2.4rem;
+  color: #fff8e7;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  line-height: 1.3;
+  margin-top: 0.2rem;
+}
+
+.main-title-ml {
+  font-family: var(--font-malayalam);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f3dfb1;
+  letter-spacing: 0.3px;
+}
+
+.sub-header-desc {
+  max-width: 760px;
+  font-size: 0.95rem;
+  color: #d1e5dc;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Sticky Navbar & Action Controls
+   ========================================================================== */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-surface);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.view-modes {
+  display: flex;
+  background: var(--bg-surface-elevated);
+  padding: 0.3rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  gap: 0.25rem;
+  overflow-x: auto;
+}
+
+.view-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+}
+
+.view-btn:hover {
+  color: var(--text-main);
+  background: rgba(15, 76, 58, 0.06);
+}
+
+.view-btn.active {
+  background: var(--primary-emerald);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(15, 76, 58, 0.25);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  position: relative;
+  min-width: 220px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.5rem 0.8rem 0.5rem 2.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface-elevated);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-family: var(--font-ui);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-box input:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(197, 155, 39, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.tool-btn {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  padding: 0.45rem 0.7rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.tool-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold-dark);
+}
+
+/* ==========================================================================
+   Main Layout: Sidebar & Content Area
+   ========================================================================== */
+.main-wrapper {
+  max-width: 1400px;
+  margin: 1.5rem auto 3rem;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+/* Chapter Sidebar Navigation */
+.chapters-sidebar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 5rem;
+  max-height: calc(100vh - 6.5rem);
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary-emerald);
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--accent-gold-border);
+}
+
+.chapter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.chapter-nav-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.chapter-nav-item:hover {
+  background: var(--bg-surface-elevated);
+  border-color: var(--border-subtle);
+}
+
+.chapter-nav-item.active {
+  background: var(--accent-gold-light);
+  border-color: var(--accent-gold);
+  box-shadow: 0 2px 6px rgba(197, 155, 39, 0.15);
+}
+
+.chap-nav-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-gold-dark);
+}
+
+.chap-nav-ar {
+  font-family: var(--font-arabic);
+  font-size: 1.15rem;
+  color: var(--text-arabic);
+  line-height: 1.3;
+}
+
+.chap-nav-ml {
+  font-family: var(--font-malayalam);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* ==========================================================================
+   Content Area & Chapter Header
+   ========================================================================== */
+.content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 0;
+}
+
+.chapter-banner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 2rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--primary-emerald);
+}
+
+.chapter-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(197, 155, 39, 0.08), transparent);
+  pointer-events: none;
+}
+
+.chap-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chap-pill {
+  background: var(--primary-emerald-light);
+  color: var(--primary-emerald);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.chap-title-arabic {
+  font-family: var(--font-arabic);
+  font-size: 2.3rem;
+  color: var(--primary-emerald);
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+  direction: rtl;
+  text-align: right;
+}
+
+.chap-title-malayalam {
+  font-family: var(--font-malayalam);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.chap-desc-malayalam {
+  font-family: var(--font-malayalam);
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.chap-key-points {
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent-gold);
+}
+
+.chap-key-points-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent-gold-dark);
+  margin-bottom: 0.45rem;
+}
+
+.chap-key-points ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+.chap-key-points li {
+  font-family: var(--font-malayalam);
+  font-size: 0.88rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.chap-key-points li::before {
+  content: "✦";
+  color: var(--accent-gold);
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   Section Cards: Matn, Sharh & Malayalam Translation
+   ========================================================================== */
+.section-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.section-card-header {
+  padding: 1rem 1.5rem;
+  background: var(--bg-surface-elevated);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.sec-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sec-title-ar {
+  font-family: var(--font-arabic);
+  font-size: 1.35rem;
+  color: var(--primary-emerald);
+  direction: rtl;
+}
+
+.sec-title-ml {
+  font-family: var(--font-malayalam);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-icon-action {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-icon-action:hover {
+  background: var(--bg-primary);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold-dark);
+}
+
+/* Layout Grid for Study Mode */
+.section-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* When in study mode (All views) */
+.view-all .study-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+
+/* Matn Box */
+.box-matn {
+  background: var(--bg-card-matn);
+  border: 1px solid var(--accent-gold-border);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  position: relative;
+  box-shadow: inset 0 2px 6px rgba(197, 155, 39, 0.04);
+}
+
+.box-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.label-matn {
+  background: var(--accent-gold-light);
+  color: var(--accent-gold-dark);
+  border: 1px solid var(--accent-gold-border);
+}
+
+.label-sharh {
+  background: var(--primary-emerald-light);
+  color: var(--primary-emerald);
+  border: 1px solid rgba(15, 76, 58, 0.2);
+}
+
+.label-trans {
+  background: #edf3fa;
+  color: #1e528a;
+  border: 1px solid #c9d8ea;
+}
+
+.label-notes {
+  background: #fdf2f2;
+  color: #b92525;
+  border: 1px solid #f5c4c4;
+}
+
+[data-theme="dark"] .label-trans {
+  background: #18283b;
+  color: #7ab3f2;
+  border-color: #27405e;
+}
+
+[data-theme="dark"] .label-notes {
+  background: #361717;
+  color: #f77f7f;
+  border-color: #5e2626;
+}
+
+.arabic-text {
+  font-family: var(--font-arabic);
+  font-size: var(--arabic-size);
+  color: var(--text-arabic);
+  direction: rtl;
+  text-align: right;
+  line-height: 2.1;
+  letter-spacing: 0.2px;
+}
+
+.matn-text {
+  font-weight: 600;
+  color: #1a3e2a;
+}
+
+[data-theme="dark"] .matn-text {
+  color: #9fe2bf;
+}
+
+/* Sharh Box & Embedded Matn Highlighting */
+.box-sharh {
+  background: var(--bg-card-sharh);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+}
+
+.sharh-text {
+  font-family: var(--font-arabic);
+  font-size: var(--arabic-size);
+  direction: rtl;
+  text-align: right;
+  line-height: 2.2;
+}
+
+/* Classical Sharh Highlight: Bracketed text representing Minhaj al-Talibin */
+.sharh-matn-highlight {
+  color: var(--accent-gold-dark);
+  font-weight: 700;
+  background: rgba(197, 155, 39, 0.12);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+[data-theme="dark"] .sharh-matn-highlight {
+  color: var(--accent-gold);
+  background: rgba(226, 186, 73, 0.18);
+}
+
+/* Malayalam Translation Box */
+.box-malayalam {
+  background: var(--bg-card-trans);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+}
+
+.malayalam-text {
+  font-family: var(--font-malayalam);
+  font-size: var(--malayalam-size);
+  color: var(--text-main);
+  line-height: 1.85;
+  white-space: pre-line;
+}
+
+/* Fiqh Commentary Callout */
+.box-fiqh-notes {
+  background: var(--bg-surface-elevated);
+  border-left: 4px solid var(--primary-emerald);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1rem 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.fiqh-notes-text {
+  font-family: var(--font-malayalam);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   View Mode Filters (Only Matn / Only Sharh / Only Malayalam)
+   ========================================================================== */
+.view-matn .box-sharh,
+.view-matn .box-malayalam,
+.view-matn .box-fiqh-notes {
+  display: none !important;
+}
+
+.view-sharh .box-matn,
+.view-sharh .box-malayalam,
+.view-sharh .box-fiqh-notes {
+  display: none !important;
+}
+
+.view-malayalam .box-matn,
+.view-malayalam .box-sharh {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Modals: Fiqh Glossary & Settings
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  max-width: 680px;
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+}
+
+.modal-overlay.active .modal-card {
+  transform: translateY(0);
+}
+
+.modal-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-surface-elevated);
+}
+
+.modal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-emerald);
+}
+
+.modal-close-btn {
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.modal-close-btn:hover {
+  color: var(--text-main);
+  background: var(--bg-primary);
+}
+
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.glossary-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.glossary-item {
+  padding: 0.85rem 1rem;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent-gold);
+}
+
+.glossary-term {
+  font-weight: 700;
+  color: var(--primary-emerald);
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.glossary-meaning {
+  font-family: var(--font-malayalam);
+  font-size: 0.92rem;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Toast Notification
+   ========================================================================== */
+.toast-msg {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--primary-emerald);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1000;
+}
+
+.toast-msg.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .main-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .chapters-sidebar {
+    position: static;
+    max-height: none;
+  }
+  
+  .chapter-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 1.5rem 1rem 1.2rem;
+  }
+  
+  .arabic-header-title {
+    font-size: 1.8rem;
+  }
+  
+  .main-title-ml {
+    font-size: 1.15rem;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .view-modes {
+    justify-content: center;
+  }
+  
+  .nav-actions {
+    justify-content: space-between;
+  }
+  
+  .search-box {
+    flex: 1;
+    min-width: unset;
+  }
+  
+  .chap-title-arabic {
+    font-size: 1.8rem;
+  }
+  
+  .section-body {
+    padding: 1rem;
+  }
+  
+  .arabic-text {
+    font-size: calc(var(--arabic-size) * 0.9);
+    line-height: 1.95;
+  }
+}
+
+/* ==========================================================================
+   Easy Mode (Matn + Simple Mas'ala) & Fasl Sub-Navigation
+   ========================================================================== */
+.view-easy .box-sharh {
+  display: none;
+}
+
+.view-easy .box-sharh.show-sharh {
+  display: block !important;
+  animation: fadeIn 0.25s ease;
+}
+
+.btn-toggle-sharh {
+  background: var(--bg-surface-elevated);
+  border: 1px dashed var(--accent-gold-border);
+  color: var(--accent-gold-dark);
+  font-family: var(--font-malayalam);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.btn-toggle-sharh:hover {
+  background: var(--accent-gold-light);
+  border-style: solid;
+}
+
+/* Fasl Quick Jump Badges under Chapter Banner */
+.fasl-nav-wrapper {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.fasl-nav-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-gold-dark);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.fasl-nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.fasl-pill {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.82rem;
+  font-family: var(--font-malayalam);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.fasl-pill:hover {
+  background: var(--primary-emerald);
+  color: #ffffff;
+  border-color: var(--primary-emerald);
+  transform: translateY(-1px);
+}
+
+.fasl-pill .num {
+  font-weight: 700;
+  color: var(--accent-gold-dark);
+}
+
+.fasl-pill:hover .num {
+  color: var(--accent-gold-light);
+}
+
+/* Sidebar Fasl Sub-list */
+.sidebar-fasl-list {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--accent-gold-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.sidebar-fasl-item {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-malayalam);
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-fasl-item:hover {
+  color: var(--primary-emerald);
+  background: rgba(15, 76, 58, 0.08);
+  font-weight: 600;
+}
+
+/* Exam Paper Nav Quick Bar */
+.exam-papers-quick-bar {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(226, 186, 73, 0.3);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.exam-paper-link-btn {
+  color: #f7deb0;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(226, 186, 73, 0.15);
+  border: 1px solid rgba(226, 186, 73, 0.3);
+  transition: all 0.2s ease;
+}
+
+.exam-paper-link-btn:hover {
+  background: var(--accent-gold);
+  color: #092e23;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   Chapter Hero & Academic Study Layout
+   ========================================================================== */
+.chapter-hero {
+  background: linear-gradient(135deg, #0d2530 0%, #163e50 50%, #1d526b 100%);
+  color: #ffffff !important;
+  padding: 2.2rem 2rem 2rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--accent-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.chapter-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.chapter-hero-badge {
+  background: var(--accent-gold) !important;
+  color: #0d2530 !important;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chapter-hero-portion {
+  color: #e2ecf2 !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.chapter-hero-title-ar {
+  font-family: var(--font-arabic);
+  font-size: 2.3rem;
+  color: #ffffff !important;
+  font-weight: 700;
+  direction: rtl;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.chapter-hero-title-ml {
+  font-size: 1.5rem;
+  color: var(--accent-gold) !important;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.chapter-hero-desc {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #e2ecf2 !important;
+  max-width: 950px;
+}
+
+/* Chapter Sub-Tabs (Notes & Exam Pattern vs Hadiths) */
+.chapter-tabs-bar {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 2px solid var(--border-subtle);
+  padding-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.chapter-tab-btn {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 0.65rem 1.3rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chapter-tab-btn:hover {
+  background: #eef6f9;
+  color: #163e50;
+  border-color: #163e50;
+}
+
+.chapter-tab-btn.active {
+  background: #163e50;
+  color: #ffffff;
+  border-color: #163e50;
+  box-shadow: 0 3px 10px rgba(22, 62, 80, 0.25);
+}
+
+/* Exam Predictions Box */
+.exam-prediction-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.6rem;
+  margin-bottom: 1.8rem;
+  box-shadow: var(--shadow-sm);
+  border-left: 5px solid var(--accent-gold);
+}
+
+.exam-prediction-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #163e50;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prediction-item {
+  background: #fdfcf9;
+  border: 1px solid #ede4d1;
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.prediction-item-q {
+  font-weight: 700;
+  color: #0f2733;
+  font-size: 0.96rem;
+  margin-bottom: 0.4rem;
+}
+
+.prediction-item-a {
+  font-size: 0.92rem;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+

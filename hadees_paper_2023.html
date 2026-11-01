@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ml" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 ഹദീഥ് (തഖസ്സുസ്) ചോദ്യോത്തരങ്ങൾ (S8 & HS6) - സ്വഹീഹുൽ ബുഖാരി & മനാഹിജുൽ മുഹദ്ദിസീൻ | JJC Hadees</title>
+  <meta name="description" content="2023 ഒക്ടോബർ 11 ലെ ഹദീഥ് തഖസ്സുസ് പരീക്ഷാ ചോദ്യപേപ്പറും ആധികാരിക ഉത്തരങ്ങളും സമഗ്ര മലയാള വിശദീകരണവും.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .paper-banner {
+      background: linear-gradient(135deg, #132f3c 0%, #1a4356 50%, #235973 100%);
+      color: #ffffff;
+      padding: 2.2rem 1.5rem 1.8rem;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+    .paper-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .exam-meta-box {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(226, 186, 73, 0.35);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .exam-meta-item .label {
+      font-size: 0.75rem;
+      color: #e5ded0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .exam-meta-item .val {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-top: 0.2rem;
+    }
+    .paper-nav-tabs {
+      display: flex;
+      gap: 0.6rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.5rem;
+      overflow-x: auto;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: var(--shadow-sm);
+    }
+    .paper-nav-tab {
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .paper-nav-tab:hover {
+      background: #eaf3f8;
+      color: #1a4356;
+      border-color: #1a4356;
+    }
+    .paper-nav-tab.active {
+      background: #1a4356;
+      color: #ffffff;
+      border-color: #1a4356;
+      box-shadow: 0 2px 6px rgba(26, 67, 86, 0.25);
+    }
+    .paper-nav-tab.kitab-link {
+      margin-left: auto;
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      border-color: var(--accent-gold-border);
+    }
+    .section-group {
+      margin-bottom: 2.5rem;
+    }
+    .section-group-header {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-left: 5px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.5rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .section-group-title-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1a4356;
+      direction: rtl;
+    }
+    .section-group-title-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 0.2rem;
+    }
+    .section-group-badge {
+      background: #1a4356;
+      color: #ffffff;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .question-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .question-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .question-card-header {
+      background: var(--bg-surface-elevated);
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .q-number {
+      background: #1a4356;
+      color: #ffffff;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .q-text-wrap {
+      flex: 1;
+    }
+    .q-text-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1a4356;
+      direction: rtl;
+      line-height: 1.5;
+      text-align: right;
+    }
+    .q-text-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      font-weight: 500;
+    }
+    .question-card-body {
+      padding: 1.5rem;
+    }
+    .answer-box {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+      border-right: 4px solid #1a4356;
+    }
+    .answer-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #1a4356;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .arabic-ans-text {
+      font-family: var(--font-arabic);
+      font-size: 1.3rem;
+      line-height: 1.9;
+      color: #1c2d37;
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+    .explanation-box {
+      background: #fdfbf7;
+      border: 1px solid #ebd9b6;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .explanation-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .explanation-text {
+      font-size: 0.96rem;
+      line-height: 1.7;
+      color: var(--text-main);
+    }
+    .exam-tip-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      background: #eef7ee;
+      color: #2e7d32;
+      border: 1px solid #c8e6c9;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      margin-top: 0.6rem;
+    }
+    .hadith-ref-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      background: #e8eff3;
+      color: #1a4356;
+      border: 1px solid #c4d7e2;
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Global Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <a href="index.html" class="logo-link">
+          <div class="logo-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-title">JJC Islamic Studies</div>
+            <div class="logo-subtitle">ജാമിഅ നൂരിയ്യ കോർഡിനേഷൻ പരീക്ഷാ സഹായി</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation Tabs: Fiqh 1, Fiqh 2, Hadees -->
+      <nav class="main-nav" style="display:flex; gap:0.5rem; align-items:center;">
+        <a href="index.html" class="nav-tab" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:600; font-size:0.85rem; text-decoration:none; color:var(--text-muted); border:1px solid var(--border-subtle);">
+          📘 ഫിഖ്ഹ് 1 (മഹല്ലി 3)
+        </a>
+        <a href="fiqh2_index.html" class="nav-tab" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:600; font-size:0.85rem; text-decoration:none; color:var(--text-muted); border:1px solid var(--border-subtle);">
+          📗 ഫിഖ്ഹ് 2 (മഹല്ലി 4)
+        </a>
+        <a href="hadees_index.html" class="nav-tab active" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:700; font-size:0.85rem; text-decoration:none; background:#1a4356; color:#ffffff; border:1px solid #1a4356;">
+          📜 ഹദീഥ് (സ്വഹീഹുൽ ബുഖാരി)
+        </a>
+        <a href="papers/hadees/index.html" class="nav-tab" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:600; font-size:0.85rem; text-decoration:none; color:#1a4356; background:#eaf3f8; border:1px solid #b7d5e4;">
+          📝 ചോദ്യപേപ്പറുകൾ
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn btn-icon" title="തീം മാറ്റുക">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button onclick="window.print()" class="btn btn-icon" title="പ്രിന്റ് ചെയ്യുക">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="paper-banner">
+    <div class="paper-container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span style="background:var(--accent-gold); color:#1a4356; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:12px; text-transform:uppercase;">
+            Specialization Mid-Term Exam | തഖസ്സുസ് പരീക്ഷ
+          </span>
+          <h1 style="font-size:2rem; font-weight:800; margin-top:0.6rem; color:#ffffff;">
+            2023 ഹദീഥ് (തഖസ്സുസ്) ചോദ്യോത്തരങ്ങൾ
+          </h1>
+          <p style="color:#d3e4ed; font-size:1rem; margin-top:0.3rem;">
+            جامعة النورية العربية - تنسيق الكليات | أسئلة الامتحان النصف السنوي (S8 &amp; HS6)
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <a href="hadees_index.html" style="background:#ffffff; color:#1a4356; font-weight:700; padding:0.65rem 1.25rem; border-radius:var(--radius-sm); text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+            📖 കിതാബ് പഠന സഹായി
+          </a>
+        </div>
+      </div>
+
+      <!-- Exam Metadata -->
+      <div class="exam-meta-box">
+        <div class="exam-meta-item">
+          <div class="label">തീയ്യതി (التاريخ)</div>
+          <div class="val">11.10.2023</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">സമയം (الوقت)</div>
+          <div class="val">7.00 AM – 8.00 AM</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">വിഷയം (الموضوع)</div>
+          <div class="val">التخصص (الحديث)</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ആകെ മാർക്ക് (العلامة)</div>
+          <div class="val">50 Marks</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ക്ലാസ് (الصف)</div>
+          <div class="val">S 8 &amp; HS 6 (നൂർ / ബാഖി)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Year Switcher Tabs -->
+  <div class="paper-nav-tabs">
+    <div class="paper-container" style="display:flex; gap:0.6rem; align-items:center; width:100%;">
+      <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted); margin-right:0.4rem;">വർഷങ്ങൾ:</span>
+      <a href="hadees_paper_2025.html" class="paper-nav-tab">
+        📄 2025 (100 Marks)
+      </a>
+      <a href="hadees_paper_2024.html" class="paper-nav-tab">
+        📄 2024 (100 Marks)
+      </a>
+      <a href="hadees_paper_2023.html" class="paper-nav-tab active">
+        ★ 2023 തഖസ്സുസ് (50 Marks)
+      </a>
+      <a href="papers/hadees/index.html" class="paper-nav-tab">
+        📁 ആർക്കൈവ് ഹബ്ബ്
+      </a>
+      <a href="hadees_index.html" class="paper-nav-tab kitab-link">
+        📖 സ്വഹീഹുൽ ബുഖാരി പോർട്ടൽ &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Questions Content -->
+  <main class="paper-container" style="padding: 2.5rem 1.5rem 4rem;">
+
+    <!-- Overview info box -->
+    <div style="background:#eaf4f9; border:1px solid #b9d9e9; border-radius:var(--radius-md); padding:1.2rem 1.5rem; margin-bottom:2.2rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <h3 style="color:#1a4356; font-size:1.1rem; font-weight:700; margin-bottom:0.3rem;">ഹദീഥ് തഖസ്സുസ് സ്പെഷ്യലൈസേഷൻ പരീക്ഷ (2023)</h3>
+        <p style="font-size:0.92rem; color:#2c5364; margin:0;">
+          മനാഹിജുൽ മുഹദ്ദിസീൻ (مناهج المحدثين), തദ്‌വീനുസ്സുന്ന (تدوين السنة), സ്വഹീഹുൽ ബുഖാരിയുടെ നിബന്ധനകളും പ്രത്യേകതകളും, അئമ്മതുൽ അർബഅയുടെ ഹദീഥ് സേവനങ്ങൾ എന്നിവയെ അടിസ്ഥാനമാക്കിയുള്ള സമഗ്ര ചോദ്യോത്തരങ്ങൾ.
+        </p>
+      </div>
+      <div style="display:flex; gap:0.5rem;">
+        <span class="hadith-ref-badge">3 സെക്ഷനുകൾ</span>
+        <span class="hadith-ref-badge">8 സമഗ്ര വിഷയങ്ങൾ</span>
+        <span class="hadith-ref-badge">ആകെ 50 മാർക്ക്</span>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SECTION I: أجب (5 X 4 = 20 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-1">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">I. أجِب (أربعة أسئلة لكل منها 5 درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 1: ചുരുക്കി ഉത്തരം എഴുതുക (4 ചോദ്യങ്ങൾ - ഓരോന്നിനും 5 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">4 x 5 = 20 Marks</div>
+      </div>
+
+      <!-- Q 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما المراد بمناهج المحدّثين لغة واصطلاحا؟</div>
+            <div class="q-text-ml">1. ഭാഷാപരമായും സാങ്കേതികമായും 'മനാഹിജുൽ മുഹദ്ദിസീൻ' എന്നാൽ എന്ത് ഉദ്ദേശിക്കപ്പെടുന്നു?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              <strong>أولاً - لغة:</strong> «المناهج» جمع مَنْهَج ومِنْهَاج، وهو الطريق الواضح البيّن والمستقيم، قال تعالى: ﴿لِكُلٍّ جَعَلْنَا مِنكُمْ شِرْعَةً وَمِنْهَاجًا﴾ [المائدة: 48].<br><br>
+              <strong>ثانياً - اصطلاحاً:</strong> هي القواعد والضوابط والأصول والمسالك العلمية الدقيقة التي سار عليها أئمة الحديث في رواية السنة النبوية، وجمعها، وتدوينها، ونقد الأسانيد والمتون، والتمييز بين الرواة جرحاً وتعديلاً، والتمييز بين الصحيح والسقيم، واستنباط الأحكام منها في مصنفاتهم.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              <ul>
+                <li><strong>ഭാഷാർത്ഥം:</strong> 'മൻഹജ്' അല്ലെങ്കിൽ 'മിൻഹാജ്' എന്നതിന്റെ ബഹുവചനമാണ് മനാഹിജ് (مناهج). നേരായ, ഏറ്റവും വ്യക്തമായ മാർഗ്ഗം (الطريق الواضح المستقيم) എന്നാണ് ഭാഷാർത്ഥം.</li>
+                <li><strong>സാങ്കേതികാർത്ഥം:</strong> തിരുനബി ﷺ യുടെ സുന്നത്തുകൾ ശേഖരിക്കാനും ഗ്രന്ഥങ്ങളിൽ രേഖപ്പെടുത്താനും, നിവേദകരെയും മത്‌നുകളെയും ആഴത്തിൽ വിമർശനാത്മകമായി പരിശോധിച്ച് (നഖ്ദ്), സ്വഹീഹും ളഈഫും വേർതിരിക്കാനും, ജർഹ്-തഅ്ദീൽ നിയമങ്ങൾ പ്രയോഗിച്ച് വിധികൾ നിർദ്ധാരണം ചെയ്യാനും ഹദീഥ് പണ്ഡിതന്മാർ (മുഹദ്ദിസുകൾ) അവലംബിച്ച ശാസ്ത്രീയ രീതിശാസ്ത്രങ്ങളെയാണ് 'മനാഹിജുൽ മുഹദ്ദിസീൻ' എന്ന് പറയുന്നത്.</li>
+              </ul>
+            </div>
+            <div class="exam-tip-badge">
+              🎯 പരീക്ഷാ പോയിന്റ്: ഖുർആൻ ആയത്ത് ﴿لِكُلٍّ جَعَلْنَا مِنكُمْ شِرْعَةً وَمِنْهَاجًا﴾ ഉദ്ധരിച്ച് ഭാഷാർത്ഥവും സാങ്കേതികാർത്ഥവും വ്യക്തമായി വേർതിരിച്ച് എഴുതുക.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما هي مظاهر اهتمام الصحابة بالسّنة؟</div>
+            <div class="q-text-ml">2. തിരുസുന്നത്തിനെ സംരക്ഷിക്കുന്നതിലും കൈകാര്യം ചെയ്യുന്നതിലും സ്വഹാബത്തുൽ കിറാമിന്റെ അത്യപൂർവ്വ ശ്രദ്ധയും താല്പര്യവും പ്രകടമാകുന്ന വഴികൾ ഏതെല്ലാം?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              تجلّت مظاهر اهتمام الصحابة رضي الله عنهم بالسنة النبوية في أمور عظيمة، منها:<br>
+              <strong>1. الملازمة التامة والسماع المباشر:</strong> حرص الصحابة على ملازمة رسول الله ﷺ ليلاً ونهاراً لسماع أحاديثه ومشاهدة أفعاله، كأهل الصفة ومنهم أبو هريرة رضي الله عنه.<br>
+              <strong>2. التناوب في مجالس العلم:</strong> كان من تشغله معيشته يتناوب مع صاحبه، كما كان عمر بن الخطاب رضي الله عنه يتناوب النزول إلى النبي ﷺ مع جاره الأنصاري يوماً بيوم ليعلمه ما فاته من الوحي.<br>
+              <strong>3. المذاكرة والمدارسة المستمرة:</strong> كانوا إذا انفض مجلس النبي ﷺ يجلسون يتذاكرون ما سمعوا حتى يحفظوه، كما قال أنس رضي الله عنه.<br>
+              <strong>4. التثبت والتحري الشديد في الرواية:</strong> الاحتياط البالغ وطلب الشاهد أو اليمين على صحة الحديث (كما فعل أبو بكر وعمر رضي الله عنهما) خشية الزلل والخطأ.<br>
+              <strong>5. الامتثال الفوري والتطبيق العملي:</strong> سارعوا إلى تنفيذ الأوامر واجتناب النواهي تطبيقاً عملياً، فكان الحفظ عندهم سلوكاً ومنهج حياة.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              സ്വഹാബികൾ ഹദീഥുകളെ എത്രമാത്രം പ്രാധാന്യത്തോടെ സംരക്ഷിച്ചു എന്നതിന്റെ പ്രധാന ഉദാഹരണങ്ങൾ:
+              <ol>
+                <li><strong>നിതാന്ത സഹവാസം:</strong> തിരുനബി ﷺ യുടെ ചലനനിശ്ചലനങ്ങളും മൊഴികളും നേരിട്ട് ഒപ്പിയെടുക്കാൻ അബൂഹുറൈറ(റ)യെപ്പോലുള്ള അഹ്‌ലുസ്സുഫ്ഫയും പ്രമുഖ സ്വഹാബികളും നിരന്തരം കൂടെ നിന്നു.</li>
+                <li><strong>ഊഴം വെച്ചുള്ള കേൾവി (തനാവുബ്):</strong> ജോലിത്തിരക്കിലുള്ളവർ ദിവസങ്ങൾ വീതിച്ചെടുത്തു. ഉമർ(റ)വും അൻസാരിയായ അയൽവാസിയും ഒന്നിടവിട്ട ദിവസങ്ങളിൽ തിരുസന്നിധിയിൽ ഹാജരായി അന്നന്നത്തെ വിവരങ്ങൾ പരസ്പരം കൈമാറി.</li>
+                <li><strong>മുദാകറ (കൂട്ടായ മനഃപാഠം):</strong> തിരുസദസ്സിൽ നിന്ന് പിരിഞ്ഞാൽ കേട്ട ഹദീഥുകൾ പരസ്പരം ഉരുവിട്ടു പഠിച്ചു.</li>
+                <li><strong>സൂക്ഷ്മതയും സാക്ഷി ആവശ്യപ്പെടലും:</strong> അബൂബക്കർ(റ)വും ഉമർ(റ)വും പുതിയൊരു ഹദീഥ് കേൾക്കുമ്പോൾ അതിന് സാക്ഷിയുണ്ടോ എന്ന് കർശനമായി ഉറപ്പുവരുത്തി.</li>
+                <li><strong>ജീവിതത്തിൽ ഉടനടി പകർത്തൽ:</strong> കേട്ടയുടൻ ജീവിതത്തിൽ പകർത്തി സുന്നത്ത് സംരക്ഷിച്ചു.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 3 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">بيّن الاختلافات بين السلف من الصحابة والتابعين في كتابة السنّة</div>
+            <div class="q-text-ml">3. ഹദീഥ് എഴുതിവെക്കുന്നതിനെ സംബന്ധിച്ച് സ്വഹാബികൾക്കിടയിലും താബിഉകൾക്കിടയിലും ഉണ്ടായ വീക്ഷണ വ്യത്യാസങ്ങളും അതിന്റെ സമന്വയവും വ്യക്തമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              وقع اختلاف في أول الأمر بين السلف في حكم كتابة الحديث على اتجاهين:<br><br>
+              <strong>الاتجاه الأول (الكراهة والنهي):</strong> كره جماعة من كبار الصحابة والتابعين كتابة الحديث (كعمر بن الخطاب، وابن مسعود، وأبي سعيد الخدري)، واستندوا لحديث النبي ﷺ: «لا تكتبوا عني، ومن كتب عني غير القرآن فليمحه» (رواه مسلم). وعلة ذلك: الخوف الشديد من أن يختلط الحديث بالقرآن الكريم في بدء التنزيل، أو أن ينشغل الناس بالكتب عن حفظ القرآن وتدبره.<br><br>
+              <strong>الاتجاه الثاني (الجواز والإذن):</strong> رأى آخرون جواز الكتابة واستحبابها (كعبد الله بن عمرو بن العاص، وعلي بن أبي طالب، وأنس بن مالك)، استناداً لقوله ﷺ: «اكتبوا لأبي شاه»، وإذنه لعبد الله بن عمرو حين قال له: «اكتب فوالذي نفسي بيده لا يخرج منه إلا حق»، وصحيفته المشهورة بـ «الصادقة».<br><br>
+              <strong>الجمع والتوفيق واستقرار الإجماع:</strong><br>
+              بين العلماء أن النهي كان في بداية الإسلام حين كان القرآن ينزل خشية الالتباس، أو لمن خيف اعتماده على الخط ونسيان الحفظ؛ أما الإذن فكان لمن أُمن عليه ذلك وتثبت القرآن في صدور الناس. ثم استقر <strong>إجماع الأمة</strong> سلفاً وخلفاً على استحباب وتعين كتابة الحديث وتدوينه لصيانة الشريعة من الضياع بعد اتساع رقعة الإسلام وموت الحفاظ.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              ഹദീഥ് എഴുതിവെക്കുന്ന വിഷയത്തിൽ രണ്ടു ഘട്ടങ്ങളുണ്ട്:
+              <ul>
+                <li><strong>തുടക്കത്തിലെ വിയോജിപ്പും കാരണവും:</strong> ഉമർ(റ), ഇബ്‌നു മസ്ഊദ്(റ), അബൂസഈദ് അൽഖുദ്‌രി(റ) തുടങ്ങിയവർ ഹദീഥ് എഴുതുന്നതിനെ വിലക്കി. «ഖുർആനല്ലാതെ എന്നിൽ നിന്ന് എഴുതിവെക്കരുത്» എന്ന ഹദീഥാണ് കാരണം. വിശുദ്ധ ഖുർആനും ഹദീഥും പരസ്പരം കൂടിക്കലരുമെന്ന ആശങ്കയും, ജനങ്ങൾ ഖുർആൻ വിട്ട് മറ്റ് ഗ്രന്ഥങ്ങളിൽ വ്യാപൃതരാകുമോ എന്ന ഭയവുമായിരുന്നു ഇതിന്റെ കാരണം.</li>
+                <li><strong>അനുമതി നൽകിയ വിഭാഗം:</strong> അബ്ദുല്ലാഹിബ്നു അംറ്(റ), അലി(റ) തുടങ്ങിയവർ എഴുതിവെച്ചു. അബൂശാഹ് എന്ന സ്വഹാബിക്ക് നബി ﷺ എഴുതി നൽകാൻ കല്പിച്ചതും, അബ്ദുല്ലാഹിബ്നു അംറ്(റ)വിനോട് «എഴുതിക്കോളൂ, എന്നിൽ നിന്ന് സത്യമല്ലാതെ പുറത്തു വരില്ല» എന്ന് അരുളിയതും ഇതിന് തെളിവാണ് (അസ്സ്വഹീഫത്തുസ്സ്വാദിഖഃ).</li>
+                <li><strong>യോജിപ്പും ഇജ്മാഉം:</strong> ഖുർആനുമായി ഇടകലരുമെന്ന ഭയം നിലനിന്ന തുടക്കകാലത്താണ് വിലക്കെന്നും, ഖുർആൻ സുഭദ്രമായി മാറിയതോടെ എഴുതാൻ അനുവാദം നൽകിയെന്നുമാണ് പണ്ഡിതന്മാർ യോജിപ്പിച്ചത്. പിന്നീട് താബിഉകളുടെ കാലത്തോടെ ഹദീഥുകൾ നഷ്ടപ്പെടാതെ എഴുതി സൂക്ഷിക്കൽ നിർബന്ധമാണെന്നതിൽ ഉമ്മത്തിന്റെ സമ്പൂർണ്ണ ഇജ്മാഅ് (ഏകോപനം) ഉണ്ടായി.</li>
+              </ul>
+            </div>
+            <div class="exam-tip-badge">
+              🎯 പരീക്ഷാ പോയിന്റ്: 'നഹ്‌യ്' (വിലക്ക്), 'ഇദ്ൻ' (അനുമതി) എന്നിവക്കുള്ള തെളിവുകളും ഒടുവിൽ ഉണ്ടായ 'ഇജ്മാഉം' കൃത്യമായി രേഖപ്പെടുത്തണം.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 4 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">4</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">من هم الصحابة المكثرون لرواية الحديث؟</div>
+            <div class="q-text-ml">4. ആയിരത്തിലധികം ഹദീഥുകൾ നിവേദനം ചെയ്ത 'അൽമുക്‌ഥിറൂൻ മിനസ്സ്വഹാബഃ' ആരൊക്കെയാണ്? വിശദമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              هم الصحابة الأجلاء الذين تجاوزت رواياتهم ألف حديث عن النبي ﷺ، وعددهم <strong>سبعة</strong>، وقد جمعهم السيوطي في ألفيته فقال:<br>
+              <span style="color:#1a4356; font-weight:700;">«وَالمُكْثِرُونَ فِي رِوَايَةِ الأَثَرْ ... أَبُو هُرَيْرَةَ يَلِيهِ ابْنُ عُمَرْ<br>
+              وَأَنَسٌ وَالبَحْرُ كَالصِّدِّيقَةِ ... وَحَبْرُ الأُمَّةِ أَوْ كَعَائِشَةَ<br>
+              وَجَابِرٌ وَذُو حِمًى أَبُو سَعِيدْ»</span><br><br>
+              وهم بالترتيب مع عدد مروياتهم التقريبية:<br>
+              <strong>1. أبو هريرة رضي الله عنه:</strong> (5374 حديثاً) - أكثر الصحابة رواية على الإطلاق، لازم النبي ﷺ ببركة دعائه له بالحفظ وعدم النسيان.<br>
+              <strong>2. عبد الله بن عمر رضي الله عنهما:</strong> (2630 حديثاً) - اشتهر بشدة تحريه وكمال اتباعه لآثار النبي ﷺ.<br>
+              <strong>3. أنس بن مالك رضي الله عنه:</strong> (2286 حديثاً) - خادم رسول الله ﷺ لعشر سنين.<br>
+              <strong>4. أم المؤمنين عائشة الصديقة رضي الله عنها:</strong> (2210 حديثاً) - أفقه نساء الأمة، ونقلت دقائق السنن النبوية والأحكام البيئية.<br>
+              <strong>5. عبد الله بن عباس رضي الله عنهما:</strong> (1660 حديثاً) - ترجمان القرآن وحبر الأمة بدعوة النبي ﷺ: «اللهم فقهه في الدين».<br>
+              <strong>6. جابر بن عبد الله رضي الله عنهما:</strong> (1540 حديثاً) - صاحب الرحلة الشهيرة في طلب الحديث الواحد مسيرة شهر.<br>
+              <strong>7. أبو سعيد الخدري رضي الله عنه:</strong> (1170 حديثاً) - من كبار فقهاء ومفتيي الأنصار.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              ആയിരത്തിലധികം ഹദീഥുകൾ നിവേദനം ചെയ്ത പ്രമുഖരായ 7 സ്വഹാബികൾ:
+              <ol>
+                <li><strong>അബൂഹുറൈറ (റ)</strong> - 5374 ഹദീഥുകൾ (ഏറ്റവും കൂടുതൽ നിവേദനം ചെയ്ത സ്വഹാബി; തിരുനബിയുടെ ബറകത്തുള്ള ദുആ ലഭിച്ചയാൾ).</li>
+                <li><strong>അബ്ദുല്ലാഹിബ്നു ഉമർ (റ)</strong> - 2630 ഹദീഥുകൾ (തിരുസുന്നത്തുകൾ പിന്തുടരുന്നതിൽ അങ്ങേയറ്റം സൂക്ഷ്മത കാട്ടിയയാൾ).</li>
+                <li><strong>അനസ് ബ്നു മാലിക് (റ)</strong> - 2286 ഹദീഥുകൾ (തിരുനബി ﷺ ക്ക് 10 വർഷം സേവനമനുഷ്ഠിച്ച വ്യക്തി).</li>
+                <li><strong>ആഇശ സിദ്ദീഖ (റ)</strong> - 2210 ഹദീഥുകൾ (ഉമ്മത്തിന്റെ ഏറ്റവും വലിയ വനിതാ ഫഖീഹ; തിരുനബിയുടെ ഗാർഹിക ജീവിത നിയമങ്ങൾ പകർന്നു തന്നവർ).</li>
+                <li><strong>അബ്ദുല്ലാഹിബ്നു അബ്ബാസ് (റ)</strong> - 1660 ഹദീഥുകൾ (തർജുമാനുൽ ഖുർആൻ; ഹിബ്‌റുൽ ഉമ്മ).</li>
+                <li><strong>ജാബിർ ബ്നു അബ്ദില്ല (റ)</strong> - 1540 ഹദീഥുകൾ (ഒരൊറ്റ ഹദീഥ് കേൾക്കാൻ ഒരു മാസക്കാലം യാത്ര ചെയ്തയാൾ).</li>
+                <li><strong>അബൂസഈദ് അൽഖുദ്‌രി (റ)</strong> - 1170 ഹദീഥുകൾ (അൻസാറുകളിലെ പ്രമുഖ പണ്ഡിതൻ).</li>
+              </ol>
+            </div>
+            <div class="exam-tip-badge">
+              🎯 പരീക്ഷാ പോയിന്റ്: ഈ 7 പേരുടെ പേരുകളും അവരുടെ ഹദീഥുകളുടെ ഏകദേശ എണ്ണവും കാണാതെ പഠിക്കുക. സുയൂത്വിയുടെ ബൈത്ത് ഉദ്ധരിക്കുന്നത് ഉയർന്ന മാർക്ക് നേടിത്തരും.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION II: فصّل (6 X 2 = 12 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-2">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">II. فصّل (سؤالان لكل منهما 6 درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 2: വിശദമായി എഴുതുക (2 ചോദ്യങ്ങൾ - ഓരോന്നിനും 6 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">2 x 6 = 12 Marks</div>
+      </div>
+
+      <!-- Q 5 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">تدوين السّنّة (مراحله وتطوره عبر القرون)</div>
+            <div class="q-text-ml">1. സുന്നത്ത് ക്രോഡീകരണം (തദ്‌വീനുസ്സുന്ന): ചരിത്രപരമായ ഘട്ടങ്ങളും നൂറ്റാണ്ടുകളിലൂടെയുള്ള വളർച്ചയും വിശദീകരിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              مرّ تدوين السنة النبوية الشريفة عبر التاريخ الإسلامي بخمس مراحل رئيسية متطورة:<br><br>
+              <strong>1. المرحلة الأولى - العهد النبوي الشريف:</strong> التدوين الفردي الخاص؛ كصحيفة عبد الله بن عمرو بن العاص (الصادقة)، وصحيفة علي بن أبي طالب رضي الله عنه، والكتب والرسائل والعهود التي كتبها النبي ﷺ إلى الملوك والقبائل.<br><br>
+              <strong>2. المرحلة الثانية - عهد الخلفاء الراشدين وكبار الصحابة:</strong> الاعتماد الأكبر على الحفظ في الصدور مع التثبت البالغ والاستشهاد بالرواة تجنباً لانشغال الناس بغير القرآن، مع وجود صحف خاصة لبعض الصحابة كصحيفة جابر بن عبد الله، وصحيفة همام بن منبه عن أبي هريرة.<br><br>
+              <strong>3. المرحلة الثالثة - عهد التابعين والتدوين الرسمي العام (نهاية القرن الأول):</strong> أمر الخليفة الراشد عمر بن عبد العزيز رضي الله عنه عام 99-101 هـ بجمع السنة رسمياً خشية دروس العلم وموت العلماء، فكتب إلى عامله بالمدينة أبي بكر بن محمد بن عمرو بن حزم، وإلى الإمام محمد بن مسلم بن شهاب الزهري، فكان الزهري أول من دوّن الحديث تدويناً عاماً بأمر ولي الأمر.<br><br>
+              <strong>4. المرحلة الرابعة - عصر التصنيف والترتيب على الأبواب الفقهية (القرن الثاني الهجري):</strong> بدأ تصنيف الحديث وتبويبه على المسائل الفقهية ممزوجاً بأقوال الصحابة وفتاوى التابعين، ومن أبرز مؤلفات هذه المرحلة: «الموطأ» للإمام مالك بالمدينة، ومصنف عبد الرزاق، ومصنف ابن أبي شيبة، وجامع سفيان الثوري.<br><br>
+              <strong>5. المرحلة الخامسة - العصر الذهبي وتجريد الحديث النبوي والصحاح (القرن الثالث الهجري):</strong> تم إفراد حديث رسول الله ﷺ خالصاً عن أقوال غيره، فظهرت كتب المسانيد (كمسند الإمام أحمد)، وتلاها قمة النضج بتصنيف الصحاح المعتمدة على رأسها «صحيح البخاري» و«صحيح مسلم»، ثم بقية السنن الأربعة (أبو داود، الترمذي، النسائي، ابن ماجه).
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              ഹദീഥ് ക്രോഡീകരണത്തിന്റെ പ്രധാന 5 ചരിത്ര ഘട്ടങ്ങൾ:
+              <ul>
+                <li><strong>1. പ്രവാചക കാലം (വ്യക്തിഗത രേഖപ്പെടുത്തൽ):</strong> അബ്ദുല്ലാഹിബ്നു അംറ്(റ)വിന്റെ അസ്സ്വാദിഖഃ, അലി(റ)വിന്റെ ഏട്, രാജാക്കന്മാർക്കും ഗോത്രങ്ങൾക്കുമയച്ച തിരുക്കത്തുകൾ.</li>
+                <li><strong>2. ഖുലഫാഉർറാശിദുകളുടെ കാലം:</strong> മനഃപാഠത്തിൽ പ്രധാനമായും ശ്രദ്ധയൂന്നുകയും ഖുർആന് പ്രാമുഖ്യം നൽകുകയും ചെയ്തതോടൊപ്പം ഹമ്മാം ബ്നു മുനബ്ബിഹിന്റെ ഏട് പോലുള്ള അപൂർവ്വം സ്വകാര്യ ശേഖരങ്ങൾ നിലനിന്നു.</li>
+                <li><strong>3. താബിഉകളുടെ കാലവും ഔദ്യോഗിക ക്രോഡീകരണവും (ഒന്നാം നൂറ്റാണ്ടിന്റെ അവസാനം):</strong> ഹിജ്റ 99-ൽ ഖലീഫ ഉമർ ബ്നു അബ്ദിൽ അസീസ് (റ) പണ്ഡിതന്മാർ മരണപ്പെട്ടുപോയി സുന്നത്ത് നഷ്ടപ്പെടാതിരിക്കാൻ ഹദീഥുകൾ ശേഖരിക്കാൻ ഔദ്യോഗികമായി ഉത്തരവിട്ടു. അബൂബക്കർ ബ്നു ഹസ്മിനും, ഇമാം ഇബ്നു ശിഹാബ് അസ്സുഹ്‌രി(റ)ക്കും ഈ കൽപന ലഭിച്ചു. ഔദ്യോഗികമായി ഹദീഥ് ആദ്യമായി ക്രോഡീകരിച്ചത് ഇമാം സുഹ്‌രിയാണ്.</li>
+                <li><strong>4. രണ്ടാം നൂറ്റാണ്ടിലെ ബാബുകൾ അടിസ്ഥാനമാക്കിയുള്ള ക്രമീകരണം:</strong> കർമ്മശാസ്ത്ര വിഷയങ്ങൾ ക്രമീകരിച്ച് ഹദീഥുകളും സ്വഹാബികളുടെയും താബിഉകളുടെയും ഫത്‌വകളും ഒരുമിച്ചു ചേർത്തുള്ള കൃതികൾ വന്നു (ഉദാ: ഇമാം മാലികിന്റെ മുവത്വ, ഇബ്നു അബീ ശൈബയുടെയും അബ്ദുർറസാഖിന്റെയും മുസ്വന്നഫുകൾ).</li>
+                <li><strong>5. മൂന്നാം നൂറ്റാണ്ടിലെ സുവർണ്ണ കാലം (സ്വഹീഹുകളുടെ യുഗം):</strong> തിരുനബിയുടെ ഹദീഥുകൾ മാത്രം വേർതിരിച്ച് മുസ്നദുകളും (ഇമാം അഹ്‌മദിന്റെ മുസ്നദ്), ഏറ്റവും ഉന്നതമായ സ്വഹീഹുകൾ മാത്രം തിരഞ്ഞെടുത്ത് സ്വഹീഹുൽ ബുഖാരിയും സ്വഹീഹ് മുസ്‌ലിമും തുടർന്ന് സുനനുകളും വിരചിതമായ സുവർണ്ണ ഘട്ടം.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 6 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">جهود التابعين ومساهماتهم في توثيق السنّة وحفظها وتدوينها</div>
+            <div class="q-text-ml">2. ഹദീഥ് സംരക്ഷണത്തിലും, കൃത്യത ഉറപ്പുവരുത്തുന്നതിലും, ക്രോഡീകരണത്തിലും താബിഉകൾ നൽകിയ അമൂല്യമായ സംഭാവനകൾ വിശദമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              قام التابعون رحمهم الله بدور تاريخي حاسم في حفظ السنة النبوية وتوثيقها من خلال الركائز الآتية:<br><br>
+              <strong>1. الرحلة في طلب الحديث والسماع من الصحابة:</strong> طاف التابعون الأمصار والبلدان (المدينة، مكة، الشام، العراق، مصر) للقاء من بقي من الصحابة وسماع الأحاديث من مصادرها، كرحلة سعيد بن المسيب والشعبي وعطاء بن أبي رباح.<br><br>
+              <strong>2. تأسيس علم الإسناد ومطالبة الرواة برجالهم:</strong> لما وقعت الفتن وظهرت الفرق السياسية والمذهبية، أعلن التابعون ضرورة الإسناد، قال الإمام محمد بن سيرين رحمه الله: «لم يكونوا يسألون عن الإسناد، فلما وقعت الفتنة قالوا: سَمُّوا لنا رجالكم؛ فيُنظر إلى أهل السنة فيُؤخذ حديثهم، ويُنظر إلى أهل البدع فلا يُؤخذ حديثهم».<br><br>
+              <strong>3. نشأة علم الجرح والتعديل ونقد الرواة:</strong> بدأ التابعون بتمحيص أحوال الرواة، والتفريق بين الثقة والضعيف، وبيان من يقبل حديثه ومن يرد.<br><br>
+              <strong>4. حلقات العلم ومجالس الفتوى:</strong> اشتهرت المدينة المنورة بـ «الفقهاء السبعة» (سعيد بن المسيب، عروة بن الزبير، القاسم بن محمد، خارجة بن زيد، عبيد الله بن عبد الله بن عتبة، سليمان بن يسار، أبو بكر بن عبد الرحمن أو سالم بن عبد الله) الذين صانوا الحديث والفقه.<br><br>
+              <strong>5. التدوين المنهجي والمصنفات الأولى:</strong> تدوين الإمام الزهري، وقتادة، والحسن البصري، وعمرو بن دينار، وجمع الصحف والكتب التأسيسية التي مهّدت لعصر التصنيف الأكبر.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              താബിഉകളുടെ പ്രധാന ഹദീഥ് സേവനങ്ങൾ:
+              <ol>
+                <li><strong>ഹദീഥ് തേടിയുള്ള ദീർഘയാത്രകൾ (രിഹ്‌ല):</strong> ജീവിച്ചിരിക്കുന്ന സ്വഹാബികളെ കണ്ട് നേരിട്ട് ഹദീഥുകൾ ശ്രവിക്കാൻ നാടുകൾ തോറും സഞ്ചരിച്ചു.</li>
+                <li><strong>ഇസ്‌നാദ് ശാസ്ത്രത്തിന്റെ സ്ഥാപനം:</strong> ഫിത്‌നകൾ ഉടലെടുത്തപ്പോൾ നിവേദക പരമ്പര (ഇസ്‌നാദ്) ചോദിക്കാൻ തുടങ്ങി. «നിങ്ങളുടെ നിവേദകരുടെ പേരുകൾ പറയൂ; എങ്കിൽ അഹ്‌ലുസ്സുന്നത്തിൽ നിന്നുള്ളവരുടെ ഹദീഥ് സ്വീകരിക്കുകയും ബിദ്അത്തുകാരുടെ ഹദീഥ് തള്ളുകയും ചെയ്യാം» എന്ന മുഹമ്മദ് ബ്നു സീരീന്റെ പ്രഖ്യാപനം ഈ ഘട്ടത്തിലായിരുന്നു.</li>
+                <li><strong>ജർഹ് വ തഅ്ദീലിന്റെ ഉദയം:</strong> നിവേദകരുടെ സ്വഭാവവും മനഃപാഠശേഷിയും പരിശോധിച്ച് വിശ്വസ്തരെയും ബലഹീനരെയും വേർതിരിച്ചു.</li>
+                <li><strong>ഫുഖഹാഉസ്സബ്അഃ (മദീനയിലെ 7 മഹാ പണ്ഡിതന്മാർ):</strong> സഈദ് ബ്നുൽ മുസയ്യബ്, ഉർവത് ബ്നുസ്സുബൈർ തുടങ്ങിയ മദീനയിലെ 7 ഫഖീഹുമാർ സുന്നത്തിനെ സംരക്ഷിക്കുന്നതിൽ മുന്നിൽ നിന്നു.</li>
+                <li><strong>ഔദ്യോഗികവും ക്രമാനുഗതവുമായ ക്രോഡീകരണം:</strong> ഇമാം ഇബ്നു ശിഹാബ് അസ്സുഹ്‌രിയെപ്പോലുള്ളവർ ഹദീഥുകൾ എഴുതി സൂക്ഷിക്കാൻ മുൻകൈയെടുത്തു.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION III: اكتب فقرة عن (2 X 9 = 18 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-3">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">III. اكتب فقرة عن (سؤالان لكل منهما 9 درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 3: ഉപന്യാസ രൂപത്തിൽ വിശദമായി എഴുതുക (2 ചോദ്യങ്ങൾ - ഓരോന്നിനും 9 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">2 x 9 = 18 Marks</div>
+      </div>
+
+      <!-- Q 7 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">في شروط الإمام البخاري رحمه الله ومنهجه في صحيحه</div>
+            <div class="q-text-ml">1. ഇമാം ബുഖാരി(റഹി)യുടെ സ്വഹീഹുൽ ബുഖാരിയിലെ നിബന്ധനകളും (ശുറൂത്വുൽ ബുഖാരി) അദ്ദേഹത്തിന്റെ വിശിഷ്ടമായ രീതിശാസ്ത്രവും (മൻഹജ്) സമഗ്രമായി പ്രതിപാദിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              <strong>مقدمة:</strong> الإمام أبو عبد الله محمد بن إسماعيل البخاري (194 - 256 هـ)، وكتابه هو «الجامع المسند الصحيح المختصر من أمور رسول الله ﷺ وسننه وأيامه»، وهو أصح كتاب بعد كتاب الله تعالى بإجماع المسلمين.<br><br>
+              <strong>أولاً - شروط الإمام البخاري في صحيحه:</strong><br>
+              اشترط البخاري في كتابه أعلى درجات الصحة المقبولة عند أئمة الحديث، وأهمها:<br>
+              <strong>1. اتصال السند واشتراط اللقاء والسماع المباشر:</strong> يشترط البخاري ثبوت المعاصرة مع <strong>ثبوت اللقاء والسماع المباشر ولو لمرة واحدة</strong> بين الراوي وشيخه، ولا يكتفي بمجرد إمكان اللقاء والمعاصرة كما اكتفى الإمام مسلم رحمه الله.<br>
+              <strong>2. العدالة التامة والضبط التام:</strong> اشترط ألا يروي في الأصول إلا عن رواة بلغوا أعلى درجات العدالة في دينهم والضبط التام في حفظهم وإتقانهم (أصحاب الطبقة الأولى من تلاميذ الشيوخ).<br>
+              <strong>3. انتفاء الشذوذ والعلة القادحة:</strong> التحقق من سلامة الحديث من أي انقطاع خفي أو مخالفة لمن هو أوثق منه.<br><br>
+              <strong>ثانياً - معالم منهج الإمام البخاري في صحيحه:</strong><br>
+              <strong>1. فقه البخاري في تراجمه:</strong> اشتهرت مقولة العلماء: «فقه البخاري في تراجم أبوابه»؛ حيث يضع عناوين فقهية دقيقة ومبتكرة تدل على استنباطاته العميقة ودقة استدلاله من الأحاديث.<br>
+              <strong>2. تقطيع الحديث وتكراره بحسب الفوائد الفقهية:</strong> قلّما يكرر البخاري حديثاً بتمامه في موضعين بالسند والمتن عينهما، بل يقطّع الحديث في الأبواب المختلفة ليستدل بكل جملة منه على حكم فقهي مستقل، مبرزاً أسانيد وطرقاً متعددة.<br>
+              <strong>3. المعلقات والمتابعات:</strong> يورد في تراجم الأبواب أحاديث معلقة (بحذف أول السند) أو متابعات للاستئناس والاستشهاد وتقوية المعنى، مع التفريق الدقيق بين صيغة الجزم (المفيدة للصحة) وصيغة التمريض.<br>
+              <strong>4. التثبت والتعبد في التأليف:</strong> مكث في تأليفه ست عشرة سنة، وكان يغتسل ويصلي ركعتين ويستخير الله تعالى قبل كتابة أي حديث في كتابه للتبرك والتحري التام.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              ഇമാം ബുഖാരി(റ)യുടെ നിബന്ധനകളും ശൈലിയും:
+              <ul>
+                <li><strong>വിശുദ്ധ ഗ്രന്ഥത്തിന് ശേഷമുള്ള ഏറ്റവും ആധികാരിക ഗ്രന്ഥം:</strong> 16 വർഷം കൊണ്ട് 6 ലക്ഷം ഹദീഥുകളിൽ നിന്ന് തിരഞ്ഞെടുത്തതാണ് സ്വഹീഹുൽ ബുഖാരി.</li>
+                <li><strong>ഇമാം ബുഖാരിയുടെ കഠിനമായ നിബന്ധനകൾ (ശുറൂത്വ്):</strong>
+                  <ol>
+                    <li><strong>നേരിട്ടുള്ള സമാഗമം ഉറപ്പുവരുത്തൽ (ശർതുല്ലിഖാഅ്):</strong> നിവേദകനും ഗുരുവുമായി ഒരേ കാലഘട്ടത്തിൽ ജീവിച്ചു (മുആസ്വറത്ത്) എന്നത് കൊണ്ട് മാത്രം ബുഖാരി തൃപ്തിപ്പെട്ടില്ല; അവർ പരസ്പരം <strong>നേരിട്ട് കാണുകയും കേൾക്കുകയും ചെയ്തു (സമാഅ് &amp; ലിഖാഅ്)</strong> എന്ന് തെളിയണമെന്ന് നിർബന്ധമാക്കി. (ഇമാം മുസ്‌ലിം സമകാലികരായാൽ മതി എന്ന നിലപാടാണ് സ്വീകരിച്ചത്).</li>
+                    <li><strong>ഉന്നതമായ ദ്വബ്ത്തും അദാലത്തും:</strong> നിവേദകരുടെ സ്വഭാവ ശുദ്ധിയും മനഃപാഠശേഷിയും ഒന്നാം നിരയിലുള്ളവരായിരിക്കണം.</li>
+                    <li><strong>ഇല്ലത്തും ശുദൂദും ഇല്ലാതിരിക്കൽ:</strong> സൂക്ഷ്മമായ ന്യൂനതകളിൽ നിന്ന് പൂർണ്ണ മുക്തമായിരിക്കണം.</li>
+                  </ol>
+                </li>
+                <li><strong>ബുഖാരിയുടെ സവിശേഷ രീതിശാസ്ത്രം (മൻഹജ്):</strong>
+                  <ul>
+                    <li><strong>'ഫിഖ്ഹുൽ ബുഖാരി ഫീ തറാജിമിഹി':</strong> ഇമാം ബുഖാരിയുടെ ആഴത്തിലുള്ള ഫിഖ്ഹീ ജ്ഞാനം അദ്ദേഹത്തിന്റെ ഓരോ അധ്യായങ്ങളുടെയും തലക്കെട്ടുകളിൽ (തർജമതുൽ ബാബ്) പ്രകടമാണ്.</li>
+                    <li><strong>ഹദീഥുകൾ മുറിച്ചുകൊണ്ടുവരൽ (തഖ്ത്വീഅ്):</strong> ഒരൊറ്റ ഹദീഥിലെ വ്യത്യസ്ത ഭാഗങ്ങൾ വിവിധ കർമ്മശാസ്ത്ര വിധികൾക്ക് തെളിവായി അതത് അധ്യായങ്ങളിൽ കൊണ്ടുവരുന്നു.</li>
+                    <li><strong>മുഅല്ലഖാത്തുകൾ:</strong> അധ്യായങ്ങളുടെ തുടക്കത്തിൽ പരമ്പരയുടെ തുടക്കം ഒഴിവാക്കി സഹായകമായ ഹദീഥുകൾ കൊണ്ടുവരുന്നു (സ്വഹീഹായതിന് സ്വിഗത്തുൽ ജസ്മും മറ്റുള്ളവക്ക് സ്വിഗത്തുത്തംരീളും ഉപയോഗിക്കുന്നു).</li>
+                    <li><strong>ഇസ്തിഖാറത്തും നിസ്കാരവും:</strong> ഓരോ ഹദീഥ് എഴുതുന്നതിന് മുൻപും കുളിച്ച് 2 റക്അത്ത് നിസ്കരിച്ച് ഇസ്തിഖാറത്ത് നടത്തി പൂർണ്ണ ആത്മീയ വിശുദ്ധിയോടെയാണ് രേഖപ്പെടുത്തിയത്.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="exam-tip-badge">
+              🎯 പരീക്ഷാ പോയിന്റ്: ശർതുൽ ലിഖാഅ് (ഇമാം മുസ്‌ലിമുമായുള്ള താരതമ്യം), ഫിഖ്ഹുൽ ബുഖാരി ഫീ തറാജിമിഹി, തഖ്ത്വീഉൽ ഹദീഥ് എന്നിവ ഈ 9 മാർക്കിന്റെ ഉത്തരത്തിൽ നിർബന്ധമായും ഉൾപ്പെടുത്തണം.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 8 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مساهمات الأئمة الأربعة ومناهجهم في الحديث النبوي</div>
+            <div class="q-text-ml">2. നാല് മദ്ഹബിന്റെ ഇമാമുമാർ (ഇമാം അബൂഹനീഫ, ഇമാം മാലിക്, ഇമാം ശാഫിഈ, ഇമാം അഹ്മദ്) ഹദീഥ് ശാഖക്ക് നൽകിയ സംഭാവനകളും അവരുടെ ഹദീഥ് സ്വീകരണ രീതികളും വിശദമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              اتفق الأئمة الأربعة رحمهم الله جميعاً على أن السنة النبوية هي الأصل الثاني للتشريع الإسلامي، غير أن لكل إمام منهم منهجاً علمياً أصيلاً وبصمة فريدة في التعامل مع الحديث:<br><br>
+              <strong>1. الإمام أبو حنيفة النعمان (80 - 150 هـ):</strong><br>
+              • <strong>منهجه:</strong> واجه كثرة الوضع والفرق في الكوفة، فاشترط شروطاً مشددة في قبول خبر الواحد، منها: ألا يعمل الراوي بخلاف ما روى، وألا يخالف الحديث القياس الجلي أو القواعد العامة للشريعة، وأن يحفظ الراوي الحديث من وقت السماع إلى وقت الأداء.<br>
+              • <strong>مساهمته:</strong> تفريغ جهده في استنباط الأحكام الدقيقة والتفريع الفقهي على الأحاديث، وجُمعت مروياته في «مسانيد أبي حنيفة» وكتاب «الآثار» للإمام محمد بن الحسن وأبي يوسف.<br><br>
+              <strong>2. الإمام مالك بن أنس (93 - 179 هـ):</strong><br>
+              • <strong>منهجه:</strong> اعتمد على النقل المتوارث في مهبط الوحي، وكان يقدم «عمل أهل المدينة» في تخصيص عموم الأحاديث وترجيح الروايات؛ لأن عمل أهل المدينة عنده سنة قطعية متواترة جيلاً عن جيل تفوق خبر الآحاد الظني.<br>
+              • <strong>مساهمته:</strong> صنّف كتاب «الموطأ» الذي جمع فيه الصحيح من حديث أهل الحجاز ممزوجاً بفتاوى الصحابة والتابعين، قال عنه الشافعي: «ما على ظهر الأرض كتاب بعد كتاب الله أصح من كتاب مالك».<br><br>
+              <strong>3. الإمام محمد بن إدريس الشافعي (150 - 204 هـ):</strong><br>
+              • <strong>منهجه:</strong> يُلقب بـ «ناصر السنة»؛ أصّل قواعد حجية خبر الواحد الثابت في كتابه «الرسالة»، وردّ على منكري حجية السنة وأهل الرأي المفرطين. وضع منهجاً بديعاً في «مختلف الحديث» (التوفيق بين الأحاديث المتعارضة أولاً، فإن تعذر فالنسخ، فإن تعذر فالترجيح). قاعدته الذهبية: «إذا صح الحديث فهو مذهبي، واضربوا بقولي عرض الحائط».<br>
+              • <strong>مساهمته:</strong> كتبه الرائدة «الرسالة»، و«الأم»، و«اختلاف الحديث»، و«مسند الشافعي».<br><br>
+              <strong>4. الإمام أحمد بن حنبل (164 - 241 هـ):</strong><br>
+              • <strong>منهجه:</strong> إمام أهل السنة وأعظم المحدثين حفظاً وورعاً؛ جعل الحديث والآثار الأصل الأول، ويقدم الحديث الضعيف (الذي لم يشتد ضعفه) على الرأي والقياس العقلي؛ لأنه يرى الضعيف غير الموضوع أقوى من رأي الرجال.<br>
+              • <strong>مساهمته:</strong> جمع أعظم موسوعة مسندية جامعة في الإسلام وهو «مسند الإمام أحمد» الذي يضم نحو ثلاثين ألف حديث، وصبر على المحنة دفاعاً عن السنة والعقيدة.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 സമഗ്ര വിശദീകരണം (മലയാളത്തിൽ):</div>
+            <div class="explanation-text">
+              നാല് ഇമാമുമാരുടെ ഹദീഥ് സേവനങ്ങളും രീതിശാസ്ത്രങ്ങളും:
+              <ol>
+                <li><strong>ഇമാം അബൂഹനീഫ (റ):</strong> കൂഫയിലെ വ്യാജ ഹദീഥ് നിർമ്മാണങ്ങളെയും രാഷ്ട്രീയ ഭിന്നതകളെയും പ്രതിരോധിക്കാൻ ഖബറുൽ വാഹിദിൽ കർശന നിബന്ധനകൾ വെച്ചു. ഹദീഥ് നിവേദനം ചെയ്ത വ്യക്തി അതിനെതിരായി പ്രവർത്തിച്ചിട്ടില്ലെന്ന് ഉറപ്പുവരുത്തൽ, ഖുർആന്റെ വ്യക്തമായ സാമാന്യതത്ത്വങ്ങൾക്ക് വിരുദ്ധമാകാതിരിക്കൽ എന്നിവ നിഷ്കർഷിച്ചു. അബൂഹനീഫയുടെ മസ്നദുകളിലും ഇസ്‌ലാം ലോകത്ത് ഫിഖ്ഹീ വിധികൾ ഹദീഥുകളിൽ നിന്ന് വേർതിരിച്ചെടുക്കുന്നതിലും മുൻപന്തിയിലായിരുന്നു.</li>
+                <li><strong>ഇമാം മാലിക് (റ):</strong> മദീനക്കാരുടെ ഏകോപിത കർമ്മത്തിന് (അമലു അഹ്‌ലിൽ മദീനഃ) അതീവ പ്രാധാന്യം നൽകി. കാരണം മദീനക്കാരുടെ കൂട്ടായ പ്രവർത്തനം ഒരൊറ്റ വ്യക്തി നിവേദനം ചെയ്യുന്ന ഖബറുൽ വാഹിദിനേക്കാൾ ബലമേറിയ തലമുറകളിലൂടെയുള്ള തിരുസുന്നത്ത് കൈമാറ്റമാണ്. അദ്ദേഹത്തിന്റെ 'മുവത്വ' ഇസ്‌ലാമിലെ എക്കാലത്തെയും മഹത്തായ ഹദീഥ്-ഫിഖ്ഹ് സമാഹാരമാണ്.</li>
+                <li><strong>ഇമാം ശാഫിഈ (റ):</strong> 'നാസ്വിറുസ്സുന്ന' (സുന്നത്തിന്റെ സംരക്ഷകൻ) എന്നറിയപ്പെടുന്നു. ഖബറുൽ വാഹിദിന്റെ ആധികാരികത തെളിയിച്ചുകൊണ്ട് ചരിത്രപ്രസിദ്ധമായ 'അർരിസാല' രചിച്ചു. ഒരേ വിഷയത്തിൽ പരസ്പരവിരുദ്ധമെന്ന് തോന്നുന്ന ഹദീഥുകളെ ഏകോപിപ്പിക്കാൻ 'ഇഖ്തിലാഫുൽ ഹദീഥ്' രചിച്ചു. 'ഹദീഥ് സ്വഹീഹായാൽ അതാണ് എന്റെ മദ്ഹബ്' എന്ന നയം പ്രഖ്യാപിച്ചു.</li>
+                <li><strong>ഇമാം അഹ്മദ് ബ്നു ഹൻബൽ (റ):</strong> ഹദീഥുകളെ സർവ്വകാര്യങ്ങളിലും മുൻഗണന നൽകിയ ഹദീഥ് പണ്ഡിതൻ. സ്വന്തം അഭിപ്രായത്തേക്കാളും ഖിയാസിനേക്കാളും ദുർബലമല്ലാത്ത ഹദീഥുകളെ സ്വീകരിച്ചു. 30,000-ത്തോളം ഹദീഥുകൾ ഉൾക്കൊള്ളുന്ന ലോകോത്തര ഗ്രന്ഥമായ 'മുസ്‌നദുൽ ഇമാം അഹ്മദ്' ക്രോഡീകരിച്ചു.</li>
+              </ol>
+            </div>
+            <div class="exam-tip-badge">
+              🎯 പരീക്ഷാ പോയിന്റ്: നാല് ഇമാമുമാരുടെയും പേരുകൾ, അവരുടെ പ്രത്യേക രീതി (മൻഹജ്), അവരുടെ പ്രസിദ്ധമായ ഗ്രന്ഥങ്ങൾ എന്നിവ പോയിന്റുകളാക്കി വ്യക്തമായി എഴുതുക.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <div style="margin-top:3.5rem; padding:1.8rem; background:var(--bg-surface-elevated); border:1px solid var(--border-subtle); border-radius:var(--radius-md); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.2rem;">
+      <div>
+        <div style="font-size:0.85rem; color:var(--text-muted);">മുൻവർഷ ചോദ്യപേപ്പറുകൾ:</div>
+        <div style="display:flex; gap:0.6rem; margin-top:0.4rem;">
+          <a href="hadees_paper_2025.html" class="btn btn-secondary" style="font-size:0.88rem; padding:0.45rem 0.9rem;">
+            &larr; 2025 ചോദ്യോത്തരങ്ങൾ
+          </a>
+          <a href="hadees_paper_2024.html" class="btn btn-secondary" style="font-size:0.88rem; padding:0.45rem 0.9rem;">
+            &larr; 2024 ചോദ്യോത്തരങ്ങൾ
+          </a>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:0.8rem;">
+        <a href="papers/hadees/index.html" class="btn btn-secondary" style="font-size:0.88rem; padding:0.5rem 1.1rem;">
+          📁 ഹദീഥ് ആർക്കൈവ് ഹബ്ബ്
+        </a>
+        <a href="hadees_index.html" class="btn btn-primary" style="background:#1a4356; border-color:#1a4356; font-size:0.88rem; padding:0.5rem 1.1rem;">
+          📖 സ്വഹീഹുൽ ബുഖാരി പോർട്ടൽ &rarr;
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-title" style="color:var(--accent-gold);">JJC Hadees Study Companion</div>
+        <div class="logo-subtitle">ജാമിഅ നൂരിയ്യ കോർഡിനേഷൻ പരീക്ഷാ സഹായക പോർട്ടൽ | സ്വഹീഹുൽ ബുഖാരി</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">ഫിഖ്ഹ് 1 (ശറഹുൽ മഹല്ലി 3)</a>
+        <a href="fiqh2_index.html">ഫിഖ്ഹ് 2 (ശറഹുൽ മഹല്ലി 4)</a>
+        <a href="hadees_index.html">ഹദീഥ് (സ്വഹീഹുൽ ബുഖാരി)</a>
+        <a href="papers/hadees/index.html">ഹദീഥ് ചോദ്യപേപ്പറുകൾ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    }
+  </script>
+</body>
+</html>

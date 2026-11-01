@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="ml" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 ഉസൂലുൽ ഫിഖ്ഹ് ചോദ്യോത്തരങ്ങൾ (S8) - ജംഉൽ ജവാമിഅ് | JJC Usoolul Fiqh</title>
+  <meta name="description" content="2024 ഒക്ടോബർ 20 ലെ ഉസൂലുൽ ഫിഖ്ഹ് പരീക്ഷാ ചോദ്യപേപ്പറും ജംഉൽ ജവാമിഅ് ശറഹുൽ മഹല്ലിയിൽ നിന്നുള്ള ആധികാരിക ഉത്തരങ്ങളും മലയാള വിശദീകരണവും.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .paper-banner {
+      background: linear-gradient(135deg, #1b2838 0%, #2a3d54 50%, #1f4056 100%);
+      color: #ffffff;
+      padding: 2.2rem 1.5rem 1.8rem;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+    .paper-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .exam-meta-box {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(226, 186, 73, 0.35);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .exam-meta-item .label {
+      font-size: 0.75rem;
+      color: #e5ded0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .exam-meta-item .val {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-top: 0.2rem;
+    }
+    .paper-nav-tabs {
+      display: flex;
+      gap: 0.6rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.5rem;
+      overflow-x: auto;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: var(--shadow-sm);
+    }
+    .paper-nav-tab {
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .paper-nav-tab:hover {
+      background: #eef4f8;
+      color: #1b2838;
+      border-color: #2a3d54;
+    }
+    .paper-nav-tab.active {
+      background: #2a3d54;
+      color: #ffffff;
+      border-color: #2a3d54;
+      box-shadow: 0 2px 6px rgba(42, 61, 84, 0.25);
+    }
+    .paper-nav-tab.kitab-link {
+      margin-left: auto;
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      border-color: var(--accent-gold-border);
+    }
+    .section-group {
+      margin-bottom: 2.5rem;
+    }
+    .section-group-header {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-left: 5px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.5rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .section-group-title-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1b2838;
+      direction: rtl;
+    }
+    .section-group-title-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 0.2rem;
+    }
+    .section-group-badge {
+      background: #2a3d54;
+      color: #ffffff;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .question-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .question-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .question-card-header {
+      background: var(--bg-surface-elevated);
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .q-number {
+      background: #2a3d54;
+      color: #ffffff;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .q-text-wrap {
+      flex: 1;
+    }
+    .q-text-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.35rem;
+      color: #1b2838;
+      font-weight: 700;
+      direction: rtl;
+      line-height: 1.8;
+      margin-bottom: 0.3rem;
+    }
+    .q-text-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .question-card-body {
+      padding: 1.5rem;
+    }
+    .answer-box {
+      background: #f8fafd;
+      border: 1px solid #d4e0ec;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .answer-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #1b2838;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .arabic-ans-text {
+      font-family: var(--font-arabic);
+      font-size: 1.3rem;
+      line-height: 1.9;
+      color: #1a2530;
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+    .explanation-box {
+      background: #fdfbf7;
+      border: 1px solid #ebd9b6;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .explanation-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .explanation-text {
+      font-size: 0.96rem;
+      line-height: 1.7;
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Global Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <a href="../../index.html" class="logo-link">
+          <div class="logo-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-title">JJC Islamic Studies</div>
+            <div class="logo-subtitle">ഉസൂലുൽ ഫിഖ്ഹ് പരീക്ഷാ സഹായി &amp; ചോദ്യോത്തരങ്ങൾ</div>
+          </div>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="../../index.html" class="nav-link">ഫിഖ്ഹ് 1 (മഹല്ലി 3)</a>
+        <a href="../../fiqh2_index.html" class="nav-link">ഫിഖ്ഹ് 2 (മഹല്ലി 4)</a>
+        <a href="../../hadees_index.html" class="nav-link">ഹദീഥ് (ബുഖാരി)</a>
+        <a href="../../thafseer_index.html" class="nav-link">തഫ്സീർ (ജലാലൈനി)</a>
+        <a href="../../usool_index.html" class="nav-link active">ഉസൂലുൽ ഫിഖ്ഹ് (ജംഉൽ ജവാമിഅ്)</a>
+        <a href="index.html" class="nav-link">ചോദ്യപേപ്പറുകൾ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-button" title="തീം മാറ്റുക">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="paper-banner">
+    <div class="paper-container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span style="background:var(--accent-gold); color:#102231; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:12px; text-transform:uppercase;">
+            Semester 7 Exam | الفصل الدراسي السابع
+          </span>
+          <h1 style="font-size:2rem; font-weight:800; margin-top:0.6rem; color:#ffffff;">
+            2024 ഉസൂലുൽ ഫിഖ്ഹ് ചോദ്യോത്തരങ്ങൾ (S8)
+          </h1>
+          <p style="color:#d5e5f2; font-size:1rem; margin-top:0.3rem;">
+            جامعة النورية العربية - تنسيق الكليات | أسئلة أصول الفقه (S8) - جمع الجوامع (الجزء الثاني)
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <a href="../../usool_index.html" style="background:#ffffff; color:#1b2838; font-weight:700; padding:0.65rem 1.25rem; border-radius:var(--radius-sm); text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+            📚 ജംഉൽ ജവാമിഅ് പോർട്ടൽ
+          </a>
+        </div>
+      </div>
+
+      <!-- Exam Metadata -->
+      <div class="exam-meta-box">
+        <div class="exam-meta-item">
+          <div class="label">തീയ്യതി (التاريخ)</div>
+          <div class="val">20.10.2024</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">സമയം (الوقت)</div>
+          <div class="val">9.30 AM – 11.30 AM</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">വിഷയം (الموضوع)</div>
+          <div class="val">أصول الفقه (جمع الجوامع)</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ആകെ മാർക്ക് (العلامة)</div>
+          <div class="val">100 Marks</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ക്ലാസ് &amp; കോഡ്</div>
+          <div class="val">S 8 (JCSB7)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Year Switcher Tabs -->
+  <div class="paper-nav-tabs">
+    <div class="paper-container" style="display:flex; gap:0.6rem; align-items:center; width:100%;">
+      <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted); margin-right:0.4rem;">വർഷങ്ങൾ:</span>
+      <a href="paper_2025.html" class="paper-nav-tab">
+        📄 2025 (S8 &amp; HS6 - 100 Marks)
+      </a>
+      <a href="paper_2024.html" class="paper-nav-tab active">
+        ★ 2024 (S8 - 100 Marks)
+      </a>
+      <a href="paper_2023.html" class="paper-nav-tab">
+        📄 2023 മിഡ് ടേം (100 Marks)
+      </a>
+      <a href="index.html" class="paper-nav-tab">
+        📚 മുഴുവൻ ഉസൂൽ പേപ്പറുകളും
+      </a>
+      <a href="../../usool_index.html" class="paper-nav-tab kitab-link">
+        📖 ജംഉൽ ജവാമിഅ് കിതാബ് പോർട്ടൽ
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Questions Content -->
+  <main class="paper-container" style="padding: 2.5rem 1.5rem 4rem;">
+
+    <!-- ==========================================
+         SECTION I: عرف (4 X 4 = 16 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-1">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">I. عرّف المصطلحات الآتية (٤ مصطلحات لكل منها ٤ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 1: നിർവ്വചിക്കുക (4 പദങ്ങൾ - ഓരോന്നിനും 4 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">4 x 4 = 16 Marks</div>
+      </div>
+
+      <!-- Q 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الاستثناء</div>
+            <div class="q-text-ml">1. ഇസ്തിഥ്നാഅ് (الاستثناء) നിർവ്വചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (التعريف في جمع الجوامع وشرح المحلي):</div>
+            <div class="arabic-ans-text">
+              <strong>الاستثناء:</strong> «إِخْرَاجُ بَعْضِ مَا يَتَنَاوَلُهُ الْمُسْتَثْنَى مِنْهُ بـ (إِلَّا) أَوْ إِحْدَى أَخَوَاتِهَا، لَوْلَاهُ لَدَخَلَ فِي الْكَلَامِ»؛ بشرط اتصاله بالصدر عادةً، وأن يكون من ناطق واحد، وصحة استقلاله.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              'ഇല്ലാ' അല്ലെങ്കിൽ അതിന്റെ സഹോദര പദങ്ങൾ ഉപയോഗിച്ച്, ഒഴിവാക്കൽ ഇല്ലായിരുന്നുവെങ്കിൽ വാക്യത്തിൽ ഉൾപ്പെടുമായിരുന്ന ചില വ്യക്തികളെ ആദ്യത്തെ പദത്തിൽ നിന്ന് പുറത്തുനിർത്തുന്നതിനാണ് <strong>ഇസ്തിഥ്നാഅ്</strong> എന്ന് പറയുന്നത്.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">التأويل</div>
+            <div class="q-text-ml">2. തഅ്‌വീൽ (التأويل) നിർവ്വചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>التأويل:</strong> «حَمْلُ الظَّاهِرِ عَلَى الْمُحْتَمَلِ الْمَرْجُوحِ؛ فَإِنْ حُمِلَ لِدَلِيلٍ فَصَحِيحٌ، أَوْ لِمَا يُظَنُّ دَلِيلاً فَفَاسِدٌ، أَوْ لَا لِشَيْءٍ فَلَعِبٌ».
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ഒരു വാക്കിന്റെ പ്രബലമായ ബാഹ്യാർത്ഥത്തെ വിട്ട്, അത് ഉൾക്കൊള്ളാൻ സാധ്യതയുള്ള മറ്റൊരു അപ്രബല അർത്ഥത്തിലേക്ക് അതിനെ വ്യാഖ്യാനിക്കുന്നതിനാണ് <strong>തഅ്‌വീൽ</strong> എന്ന് പറയുന്നത്. തെളിവ് അടിസ്ഥാനമാക്കിയാണെങ്കിൽ അത് സ്വീകാര്യവും (സ്വഹീഹ്), തെളിവില്ലാതെയോ ദുർബലമായത് കൊണ്ടോ ആണെങ്കിൽ ഫാസിദും (അസാധു) ആകുന്നു.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 3 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">البيان</div>
+            <div class="q-text-ml">3. ബയാൻ (البيان) നിർവ്വചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>البيان:</strong> «إِخْرَاجُ الشَّيْءِ مِنْ حَيِّزِ الْإِشْكَالِ إِلَى حَيِّزِ التَّجَلِّي وَالْوُضُوحِ»؛ وقيل: هو الدليل الموصل إلى معرفة الحكم الشرعي وإيضاح المعنى المراد للمكلفين.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ഒരു കാര്യത്തെ അവ്യക്തതയുടെയും സംശയത്തിന്റെയും മേഖലയിൽ നിന്ന് പൂർണ്ണമായ വെളിപ്പെടലിലേക്കും വ്യക്തതയിലേക്കും പുറത്തെടുക്കുന്നതിനാണ് <strong>ബയാൻ (വിശദീകരണം / വ്യക്തമാക്കൽ)</strong> എന്ന് പറയുന്നത്.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 4 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">4</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">المتواتر</div>
+            <div class="q-text-ml">4. മുതവാത്തിർ (المتواتر) നിർവ്വചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>الخبر المتواتر:</strong> «مَا رَوَاهُ جَمْعٌ عَنْ جَمْعٍ تُحِيلُ الْعَادَةُ تَوَاطُؤَهُمْ عَلَى الْكَذِبِ، عَنْ مِثْلِهِمْ مِنْ أَوَّلِ السَّنَدِ إِلَى مُنْتَهَاهُ، وَكَانَ مُسْتَنَدُ انْتِهَائِهِمُ الْحِسَّ»، ويفيد العلم اليقيني الضروري.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              പരമ്പരയുടെ തുടക്കം മുതൽ ഒടുക്കം വരെ കള്ളം പറയാൻ പരസ്പരം ഒത്തുകളിക്കുന്നത് സാധാരണഗതിയിൽ അസാധ്യമായത്ര വലിയൊരു സംഘം ആളുകൾ കണ്ടോ കേട്ടോ നിവേദനം ചെയ്ത വാർത്തക്കാണ് <strong>മുതവാത്തിർ</strong> എന്ന് പറയുന്നത്. ഇത് ഉറപ്പുള്ള ജ്ഞാനം (ഇൽമ് യഖീനി) നൽകുന്നു.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION II: أجب مختصرا (4 X 2 = 8 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-2">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">II. أجب مختصراً (٤ أسئلة لكل منها درجتان)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 2: ചുരുക്കി ഉത്തരം എഴുതുക (4 ചോദ്യങ്ങൾ - ഓരോന്നിനും 2 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">4 x 2 = 8 Marks</div>
+      </div>
+
+      <!-- Q 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">هل يتمسك بالعام في حياة النبي ﷺ قبل البحث عن المخصص؟</div>
+            <div class="q-text-ml">1. നബി ﷺ യുടെ കാലത്ത് തഖ്‌സ്വീസ്വിനെക്കുറിച്ച് അന്വേഷിക്കുന്നതിന് മുമ്പ് ആം കൊണ്ട് തെളിവ് പിടിക്കാമോ?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>الأصح عند الجمهور:</strong> نعم، يجوز التمسك بالعام بمجرد وروده؛ لأن الأصل عدم المخصص، ولأن الصحابة بادروا للامتثال حين نزل قوله: «كُتِبَ عَلَيْكُمُ الصِّيَامُ» ونحوه دون توقف على التفتيش.<br>
+              <strong>وخالف ابن سريج:</strong> فقال لا يجوز في حياته ﷺ قبل البحث لتوقع نزول الوحي بالتخصيص في كل لحظة.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ജംഹൂറിന്റെ പ്രബലാഭിപ്രായപ്രകാരം തഖ്‌സ്വീസ്വ് അന്വേഷിക്കുന്നതിന് മുമ്പ് തന്നെ തെളിവ് പിടിക്കാം. കാരണം തഖ്‌സ്വീസ്വ് ഇല്ലെന്നതാണ് അടിസ്ഥാനം. എന്നാൽ ഇബ്നു സുറൈജ്(റ) നബിയുടെ ജീവിതകാലത്ത് ഏത് നിമിഷവും വഹ്‌യ് അവതരിക്കാൻ സാധ്യതയുള്ളതിനാൽ അന്വേഷണം നിർബന്ധമാണെന്ന് അഭിപ്രായപ്പെട്ടു.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">هل يجوز تخصيص السنة بالسنة على الأصح؟</div>
+            <div class="q-text-ml">2. പ്രബലാഭിപ്രായപ്രകാരം സുന്നത്തിനെ മറ്റൊരു സുന്നത്ത് കൊണ്ട് തഖ്‌സ്വീസ്വ് ചെയ്യാൻ പറ്റുമോ?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>نعم، يجوز تخصيص السنة بالسنة إجماعاً على الأصح</strong>؛ ومثاله المشهور: تخصيص عموم قوله ﷺ: <strong>«فِيمَا سَقَتِ السَّمَاءُ الْعُشْرُ»</strong> (وهو عام في كل قليل وكثير) بحديث: <strong>«لَيْسَ فِيمَا دُونَ خَمْسَةِ أَوْسُقٍ صَدَقَةٌ»</strong>، فخُصِّص الوجوب بما بلغ خمسة أوسق فصاعداً.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              അതെ, ഇജ്മാഅ് പ്രകാരം സുന്നത്തിനെ സുന്നത്ത് കൊണ്ട് തഖ്‌സ്വീസ്വ് ചെയ്യാം. ഉദാഹരണം: "മഴ നനച്ചതിൽ പത്തിലൊന്ന് സകാത്ത് നൽകണം" എന്ന പൊതുവായ ഹദീഥിനെ "അഞ്ച് വസ്‌ഖിൽ കുറഞ്ഞതിൽ സകാത്തില്ല" എന്ന മറ്റൊരു ഹദീഥ് കൊണ്ട് തഖ്‌സ്വീസ്വ് ചെയ്ത് 5 വസ്‌ഖ് തികഞ്ഞതിൽ മാത്രമാക്കി പരിമിതപ്പെടുത്തി.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 3 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">هل يجوز نسخ بعض القرآن تلاوة؟</div>
+            <div class="q-text-ml">3. വിശുദ്ധ ഖുർആനിലെ ചില വചനങ്ങളുടെ പാരായണം (തിലാവത്ത്) മാത്രം നസ്ഖ് ചെയ്യപ്പെടുന്നത് അനുവദനീയമാണോ?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>نعم، يجوز نسخ التلاوة مع بقاء الحكم إجماعاً على الأصح</strong>؛ ومثاله الصريح آية الرجم: <strong>«الشَّيْخُ وَالشَّيْخَةُ إِذَا زَنَيَا فَارْجُمُوهُمَا أَلْبَتَّةَ نَكَالاً مِنَ اللَّهِ»</strong>؛ فقد نُسخت تلاوتها ورُفعت من المصحف الشريف، وبقي حكم الرجم ثابتاً معمولاً به في الشريعة بإجماع الصحابة.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              അതെ, ഇജ്മാഅ് പ്രകാരം വിധി നിലനിർത്തിക്കൊണ്ട് ആയത്തിന്റെ തിലാവത്ത് (പാരായണം) മാത്രം നസ്ഖ് ചെയ്യപ്പെടാം. റജ്മിന്റെ (എറിഞ്ഞുകൊല്ലൽ) ആയത്ത് ഇതിന് ഉദാഹരണമാണ്; അതിന്റെ പാരായണം ഉയർത്തപ്പെട്ടെങ്കിലും വിവാഹിതനായ വ്യഭിചാരിയെ റജ്മ് ചെയ്യുക എന്ന വിധി ഇസ്‌ലാമിൽ അന്ത്യനാൾ വരെ സ്ഥിരമാണ്.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 4 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">4</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">هل يشترط الإسلام في رواة المتواتر؟</div>
+            <div class="q-text-ml">4. മുതവാത്തിറായ വാർത്ത നിവേദനം ചെയ്യുന്ന ആളുകൾ മുസ്‌ലിംകളായിരിക്കൽ നിബന്ധനയാണോ?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>لا، لا يُشترط الإسلام في رواة المتواتر على الأصح المعتمد</strong>؛ وكذا لا تشترط العدالة؛ لأن العلم بالمتواتر يحصل بحكم العادة لكثرة الرواة واستحالة تواطئهم على الكذب، وليس مستنداً إلى عدالتهم الدينية؛ فيحصل العلم بخبر جمع من الكفار إذا أخبروا عن مشاهدات كوجود البلدان الشاسعة والوقائع العظام.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ഇല്ല, മുതവാത്തിറായ വാർത്ത നിവേദനം ചെയ്യുന്നവർ മുസ്‌ലിംകളോ നീതിമാന്മാരോ ആയിരിക്കൽ ശർത്വല്ല. കാരണം മുതവാത്തിറിൽ അറിവുണ്ടാകുന്നത് ആളുകളുടെ ബാഹുല്യവും അവർ ഒരുമിച്ച് കള്ളം പറയാൻ സാധ്യതയില്ലെന്ന സാധാരണ യുക്തിയും വെച്ചാണ് (ഉദാഹരണം: ചൈനയോ അമേരിക്കയോ ഉള്ളതായി അവിശ്വാസികളായ ഒരുപാട് ആളുകൾ പറഞ്ഞാലും നമുക്ക് ഉറപ്പ് ലഭിക്കുന്നു).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION III: كمل بالأمثلة المناسبة (9 X 2 = 18 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-3">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">III. كمّل بالأمثلة المناسبة مما بين القوسين (٩ مسائل لكل منها درجتان)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 3: ബ്രാക്കറ്റിൽ നൽകിയിട്ടുള്ളതിൽ നിന്ന് അനുയോജ്യമായ ഉദാഹരണങ്ങൾ തിരഞ്ഞെടുത്ത് പൂരിപ്പിക്കുക (9 x 2 = 18 Marks)</div>
+        </div>
+        <div class="section-group-badge">9 x 2 = 18 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1-9</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الخيارات: (اقتلوا المشركين / الشيخ والشيخة إذا زنيا فارجموهما ألبتة / عشرة إلا عشرة / الله خالق كل شيء / أكرم أصحابك إن كانوا علماء / القرء / ما في الدار أحد إلا الحمار / الغاية / الذين قال لهم الناس)</div>
+            <div class="q-text-ml">തന്നിരിക്കുന്ന ബ്രാക്കറ്റിലെ ഉദാഹരണങ്ങളെ അതത് ഉസൂലി ഇനങ്ങൾക്ക് നേരെ യോജിപ്പിക്കുക:</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ശരിയായ ഉത്തരങ്ങൾ (الأجوبة الصحيحة المطابقة):</div>
+            <div class="arabic-ans-text" style="line-height:2.2;">
+              <strong>١. العام المراد به الخصوص:</strong> «الَّذِينَ قَالَ لَهُمُ النَّاسُ» (فإن المراد بالناس هنا نعيم بن مسعود فقط).<br>
+              <strong>٢. العام المخصوص:</strong> «اقْتُلُوا الْمُشْرِكِينَ» (خُص منه أهل الذمة والنساء والصبيان والمعاهدون).<br>
+              <strong>٣. المخصص المتصل:</strong> «الْغَايَةُ» (كقوله: ثم أتموا الصيام إلى الليل).<br>
+              <strong>٤. الاستثناء المنقطع:</strong> «مَا فِي الدَّارِ أَحَدٌ إِلَّا الْحِمَارَ».<br>
+              <strong>٥. الاستثناء المستغرق:</strong> «عَشَرَةٌ إِلَّا عَشَرَةً» (وهو باطل بالإجماع).<br>
+              <strong>٦. الشرط:</strong> «أَكْرِمْ أَصْحَابَكَ إِنْ كَانُوا عُلَمَاءَ».<br>
+              <strong>٧. التخصيص بالعقل:</strong> «اللَّهُ خَالِقُ كُلِّ شَيْءٍ» (خص العقل ذات الله وصفاته من المخلوقات).<br>
+              <strong>٨. المجمل:</strong> «الْقُرْءُ» (يتردد لغةً بين الحيض والطهر على السواء).<br>
+              <strong>٩. منسوخ التلاوة:</strong> «الشَّيْخُ وَالشَّيْخَةُ إِذَا زَنَيَا فَارْجُمُوهُمَا أَلْبَتَّةَ».
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. <strong>ഖാസ്വ് ഉദ്ദേശിക്കപ്പെട്ട ആം:</strong> «ജനങ്ങൾ അവരോട് പറഞ്ഞു» (ഇവിടെ ജനങ്ങൾ എന്നതുകൊണ്ട് ഒരാൾ മാത്രമാണ്).<br>
+              2. <strong>തഖ്‌സ്വീസ്വ് ചെയ്യപ്പെട്ട ആം:</strong> «മുശ്‌രിക്കുകളെ കൊല്ലുക» (സ്ത്രീകളും കുട്ടികളും കരാറുകാരും ഒഴിവാക്കപ്പെട്ടു).<br>
+              3. <strong>മുത്തസ്വിലായ മുഖസ്സ്വിസ്വ്:</strong> «ഗായത്ത്» (പരിധി).<br>
+              4. <strong>ഇസ്തിഥ്നാഉൽ മുൻഖത്വിഅ്:</strong> «വീട്ടിൽ ആരുമില്ല, കഴുതയല്ലാതെ».<br>
+              5. <strong>ഇസ്തിഥ്നാഉൽ മുസ്തഗ്‌റഖ്:</strong> «പത്ത്, പത്തും ഒഴികെ».<br>
+              6. <strong>ശർത്വ്:</strong> «നിന്റെ കൂട്ടുകാരെ ആദരിക്കുക, അവർ പണ്ഡിതന്മാരാണെങ്കിൽ».<br>
+              7. <strong>ബുദ്ധികൊണ്ടുള്ള തഖ്‌സ്വീസ്വ്:</strong> «അല്ലാഹു എല്ലാ വസ്തുക്കളുടെയും സ്രഷ്ടാവാണ്» (അല്ലാഹുവും അവന്റെ ഗുണങ്ങളും സൃഷ്ടിയല്ലെന്ന് ബുദ്ധി തഖ്‌സ്വീസ്വ് ചെയ്യുന്നു).<br>
+              8. <strong>മുജ്‌മൽ:</strong> «ഖുർഉ» (ആർത്തവമാണോ ശുദ്ധിയാണോ എന്ന് ഭാഷയിൽ സംശയിച്ചുനിൽക്കുന്നു).<br>
+              9. <strong>തിലാവത്ത് നസ്ഖ് ചെയ്യപ്പെട്ടത്:</strong> «വൃദ്ധനും വൃദ്ധയും വ്യഭിചരിച്ചാൽ എറിഞ്ഞുകൊല്ലുക».
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION IV: اكتب الدليل (1 X 6 = 6 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-4">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">IV. اكتب الدليل (مسألة واحدة بست درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 4: പ്രമാണം എഴുതുക (1 ചോദ്യം - 6 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">1 x 6 = 6 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">قيل: لا يجوز تخصيص الكتاب بالكتاب، فما دليل هذا القيل، وما هو الرد عليه؟</div>
+            <div class="q-text-ml">1. "ഖുർആനെ മറ്റൊരു ഖുർആൻ ആയത്തുകൊണ്ട് തഖ്‌സ്വീസ്വ് ചെയ്യാൻ പാടില്ല" എന്ന് ചിലർ വാദിച്ചതിന്റെ ദലീൽ എന്ത്? അതിനുള്ള മറുപടി എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (دليل القول المرجوح والرد القاطع عليه):</div>
+            <div class="arabic-ans-text">
+              <strong>دليل القيل (المانعين):</strong> استدلوا بقوله تعالى: <strong>«لِّتُبَيِّنَ لِلنَّاسِ مَا نُزِّلَ إِلَيْهِمْ»</strong>، فقالوا: جعل الله وظيفة البيان والتخصيص لرسوله ﷺ وسنته دون القرآن نفسه، فلو بَيَّن القرآنُ القرآنَ لَفَاتَتْ فائدةُ هذه الآية ولم يكن البيان خاصاً بالنبي ﷺ.<br>
+              <strong>الرد الصريح المعتمد في جمع الجوامع:</strong><br>
+              ١. أن الآية الكريمة تفيد أن النبي ﷺ مبيِّن، ولا تنفي أن يكون بعض القرآن مبيِّناً ومخصصاً لبعض آخر؛ فالقرآن يفسر بعضه بعضاً.<br>
+              ٢. <strong>الوقوع الفعلي في الشريعة:</strong> والوقوع أعظم دليل على الجواز؛ فقد خصص الله آية عدة المطلقات بالأقراء بآية عدة الحوامل بوضع الحمل وآية نكاح المؤمنات قبل المسيس إجماعاً، وما وقع قطعاً يستحيل القول بامتناعه.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              <strong>നിഷേധകരുടെ ന്യായം:</strong> «ജനങ്ങൾക്ക് അവതരിപ്പിക്കപ്പെട്ടത് താങ്കൾ അവർക്ക് വ്യക്തമാക്കി കൊടുക്കാൻ വേണ്ടി» എന്ന ആയത്തിൽ വിശദീകരിക്കുന്ന ചുമതല നബി ﷺ ക്കാണ് നൽകിയത്; അതിനാൽ ഖുർആൻ ആയത്ത് കൊണ്ട് ഖുർആനെ തഖ്‌സ്വീസ്വ് ചെയ്യാൻ പറ്റില്ലെന്ന് അവർ വാദിച്ചു.<br>
+              <strong>ഖണ്ഡനം:</strong> നബി ﷺ വിശദീകരിക്കുന്നു എന്നത് ഖുർആൻ സ്വയം പരസ്പരം വിശദീകരിക്കാൻ പാടില്ലെന്ന് അർത്ഥമാക്കുന്നില്ല. മാത്രമല്ല, ഖുർആനിൽ ആയത്തുകൾ പരസ്പരം തഖ്‌സ്വീസ്വ് ചെയ്തതിന് എത്രയോ വ്യക്തമായ തെളിവുകൾ പ്രാവർത്തികമായി സംഭവിച്ചിട്ടുണ്ട് (ഗർഭിണികളുടെ ഇദ്ദ കൊണ്ട് പൊതുവായ ത്വലാഖ് ആയത്തിനെ തഖ്‌സ്വീസ്വ് ചെയ്തത് പോലെ). സംഭവിച്ചു കഴിഞ്ഞ കാര്യത്തെ സാധ്യമല്ലെന്ന് പറയുന്നത് അസാധുവാണ്.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION V: أمثلة للتأويل البعيد (3 X 3 = 9 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-5">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">V. اكتب ثلاثة أمثلة للتأويل البعيد (٣ أمثلة لكل منها ۳ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 5: വിദൂര വ്യാഖ്യാനങ്ങൾക്ക് (തഅ്‌വീൽ ബഈദ്) 3 ഉദാഹരണങ്ങൾ എഴുതുക (3 x 3 = 9 Marks)</div>
+        </div>
+        <div class="section-group-badge">3 x 3 = 9 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1-3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">اكتب ثلاثة أمثلة للتأويل البعيد مع بيان وجه البعد فيها</div>
+            <div class="q-text-ml">വിദൂര വ്യാഖ്യാനങ്ങൾക്ക് 3 ഉദാഹരണങ്ങളും അവ വിദൂരമാവാനുള്ള കാരണവും വ്യക്തമാക്കുക:</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>المثال الأول:</strong> تأويل الحنفية قوله تعالى في كفارة الظهار: «فَإِطْعَامُ سِتِّينَ مِسْكِيناً» على دفع ستين مداً لمسكين واحد في ستين يوماً؛ ووجه بعده أن لفظ «ستين مسكيناً» نص في عدد الرقاب والأشخاص، فصرفه لعدد الأمداد تأويل بعيد بلا دليل كافٍ.<br><br>
+              <strong>المثال الثاني:</strong> تأويل حديث: «أَيُّمَا امْرَأَةٍ نَكَحَتْ بِغَيْرِ إِذْنِ وَلِيِّهَا فَنِكَاحُهَا بَاطِلٌ» بحمله على الأمة المأذونة أو المكاتبة دون الحرة؛ ووجه بعده أن لفظ «أيما امرأة» من أصيغ العموم المستغرقة لجميع النساء، وتخصيصه بالأمة يخالف ظاهر السياق التشريعي.<br><br>
+              <strong>المثال الثالث:</strong> تأويل الحنفية قوله ﷺ في زكاة الغنم: «فِي كُلِّ أَرْبَعِينَ شَاةً شَاةٌ» بحمله على دفع الشاة أو قيمتها دراهم؛ ووجه بعده أن الشارع عيَّن جنساً مخصوصاً لدفع حاجة الفقير عيناً وصرفه للقيمة عدول عن النص الصريح.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. <strong>60 അഗതികൾക്ക് ഭക്ഷണം നൽകൽ:</strong> എന്നതിനെ 60 മുദ്ദ് ഒരാൾക്ക് തന്നെ നൽകിയാൽ മതിയെന്ന് ഹനഫികൾ വ്യാഖ്യാനിച്ചത്. (ആളുകളുടെ എണ്ണത്തെ മുദ്ദുകളുടെ എണ്ണമാക്കി മാറ്റിയ വിദൂര വ്യാഖ്യാനം).<br>
+              2. <strong>'ഏതൊരു സ്ത്രീയും വലിയ്യ് ഇല്ലാതെ നിക്കാഹ് ചെയ്താൽ ബാത്വിലാണ്':</strong> എന്നതിനെ അടിമസ്ത്രീയുടെ കാര്യത്തിലാണെന്ന് വ്യാഖ്യാനിച്ചത്.<br>
+              3. <strong>40 ആടുകൾക്ക് ഒരു ആട് സകാത്ത് നൽകുക:</strong> എന്നതിന് പകരം പണം നൽകിയാൽ മതിയെന്ന് വ്യാഖ്യാനിച്ചത്.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION VI: أمثلة للإجمال (3 X 2 = 6 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-6">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">VI. اكتب ثلاثة أمثلة للإجمال في الألفاظ (٣ أمثلة لكل منها درجتان)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 6: മുജ്‌മലിന് (അവ്യക്ത പദങ്ങൾക്ക്) 3 ഉദാഹരണങ്ങൾ എഴുതുക (3 x 2 = 6 Marks)</div>
+        </div>
+        <div class="section-group-badge">3 x 2 = 6 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1-3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ثلاثة أمثلة للإجمال بسبب الاشتراك اللفظي أو التردد</div>
+            <div class="q-text-ml">മുജ്‌മലിന് (ഇജ്മാലിന്) 3 ഉദാഹരണങ്ങൾ വ്യക്തമാക്കുക:</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>١. لفظ «الْقُرْء» في قوله تعالى: «ثَلَاثَةَ قُرُوءٍ»:</strong> فإنه مجمل لاشتراكه اللغوي المتساوي بين الحيض والطهر دون ترجيح من اللفظ نفسه.<br>
+              <strong>٢. لفظ «عَسْعَسَ» في قوله تعالى: «وَاللَّيْلِ إِذَا عَسْعَسَ»:</strong> فإنه مشترك لغوي بين إقبال الليل بظلامه وإدباره بطلوع الفجر.<br>
+              <strong>٣. لفظ «الْمُخْتَار»:</strong> لتردده بين كونه اسم فاعل لمن يختار غيره، أو اسم مفعول لمن وقع عليه الاختيار بصيغة واحدة.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. <strong>ഖുർഉ (القرء):</strong> ആർത്തവം (ഹൈള്), ശുദ്ധി (തുഹ്ർ) എന്നീ രണ്ട് വിരുദ്ധ അർത്ഥങ്ങൾ തുല്യമായി വരുന്ന മുശ്തരകായ പദം.<br>
+              2. <strong>അസ്അസ (عَسْعَسَ):</strong> രാത്രി കടന്നുവരിക, രാത്രി പിന്നിട്ടുപോവുക എന്നീ രണ്ടിനും ഭാഷയിൽ ഉപയോഗിക്കുന്ന പദം.<br>
+              3. <strong>അൽമുഖ്താർ (المختار):</strong> തെരഞ്ഞെടുക്കുന്നവൻ (ഇസ്മു ഫാഇൽ), തെരഞ്ഞെടുക്കപ്പെട്ടവൻ (ഇസ്മു മഫ്ഊൽ) എന്നിവ ഒരേ ഉച്ചാരണത്തിൽ വരുന്ന പദം.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION VII: أجب مفصلا (2 X 4 = 8 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-7">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">VII. أجب مفصلاً (مسألتان لكل منها ٤ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 7: വിശദമായി ഉത്തരം എഴുതുക (2 ചോദ്യങ്ങൾ - 4 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">2 x 4 = 8 Marks</div>
+      </div>
+
+      <!-- Q 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">بيّن وجه بُعد تأويل الحنفية قوله تعالى «ستين مسكيناً» على ستين مداً لمسكين واحد؟</div>
+            <div class="q-text-ml">1. ഹനഫികൾ "60 അഗതികൾക്ക് ഭക്ഷണം നൽകുക" എന്നതിനെ ഒരു അഗതിക്ക് 60 മുദ്ദ് നൽകിയാൽ മതി എന്ന് വ്യാഖ്യാനിച്ചതിലെ വീഴ്ചയും വിദൂരതയും വ്യക്തമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (التحرير الأصولي لبطلان هذا التأويل):</div>
+            <div class="arabic-ans-text">
+              <strong>وجه البعد:</strong><br>
+              ١. أن لفظ <strong>«سِتِّينَ مِسْكِيناً» نصٌّ صريح في عدد الأشخاص والذوات</strong> لا في قدر الطعام المدفوع؛ فالمسكين اسم للشخص الفقير، والستون تمييز للعدد محدد للرؤوس.<br>
+              ٢. أن الشارع الحكيم قصد <strong>إشاعة النفع وسد خلة ستين بيتاً وفقيراً في يوم واحد</strong>، وحملُ اللفظ على تكرار الدفع لمسكين واحد في ستين يوماً يُسقط هذا المقصد الشرعي الظاهر دون موجب.<br>
+              ٣. مخالفة الظاهر اللغوي والشرعي بغير قرينة معتبرة، فكان تأويلاً بعيداً فاسداً عند أئمة الأصول.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. ആയത്തിൽ 'മിസ്കീൻ' എന്ന് പറഞ്ഞത് ഭക്ഷണം സ്വീകരിക്കുന്ന വ്യക്തികളെയാണ്, അല്ലാതെ അളവിനെയല്ല.<br>
+              2. അല്ലാഹു ഉദ്ദേശിച്ചത് ഒരൊറ്റ ദിവസം കൊണ്ട് 60 പാവപ്പെട്ട കുടുംബങ്ങളുടെ പട്ടിണി മാറ്റലാണ്; അതിനെ ഒരു വ്യക്തിക്ക് 60 ദിവസങ്ങളിലായി കൊടുക്കലാക്കി മാറ്റുന്നത് ആ ലക്ഷ്യത്തെ അട്ടിമറിക്കലാണ്.<br>
+              3. യാതൊരു തെളിവുമില്ലാതെ ഭാഷാ അർത്ഥത്തെ നിഷേധിക്കുന്നതിനാൽ ഇത് അസാധുവായ തഅ്‌വീൽ ബഈദാണ്.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">اكتب ثلاثة طرق لمعرفة الناسخ من المنسوخ في الشريعة؟</div>
+            <div class="q-text-ml">2. ശരീഅത്തിൽ നാസിഖും (മാറ്റിവന്നത്) മൻസൂഖും (ദുർബലപ്പെട്ടത്) തിരിച്ചറിയാനുള്ള 3 വഴികൾ എഴുതുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              طرق معرفة الناسخ من المنسوخ ثلاثة رئيسية:<br>
+              <strong>١. النص الصريح من الشارع:</strong> كقوله ﷺ: «كُنْتُ نَهَيْتُكُمْ عَنْ زِيَارَةِ الْقُبُورِ أَلَا فَزُورُوهَا».<br>
+              <strong>٢. إخبار الصحابي بالمتأخر تاريخاً:</strong> كقول جابر رضي الله عنه: «كَانَ آخِرَ الْأَمْرَيْنِ مِنْ رَسُولِ اللَّهِ ﷺ تَرْكُ الْوُضُوءِ مِمَّا مَسَّتِ النَّارُ».<br>
+              <strong>٣. معرفة التاريخ وتقدم أحدهما على الآخر قطعاً:</strong> كأن يُعلم أن أحد الحكمين شُرع عام الخندق والآخر شُرع عام الفتح أو حجة الوداع المتأخرة.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. <strong>നബി ﷺ യുടെ വ്യക്തമായ വാക്ക്:</strong> "ഞാൻ നിങ്ങളോട് വിരോധിച്ചിരുന്നു, ഇപ്പോൾ ചെയ്തുകൊള്ളുക" എന്ന് പറയുന്നതുപോലെ.<br>
+              2. <strong>സ്വഹാബിയുടെ സാക്ഷ്യം:</strong> "രണ്ട് കാര്യങ്ങളിൽ നബിയുടെ അവസാനത്തെ നടപടി ഇന്നതായിരുന്നു" എന്ന് ജാബിർ(റ) പറഞ്ഞതുപോലെ.<br>
+              3. <strong>ചരിത്രപരമായ മുൻഗണന അറിയൽ:</strong> ഒരു നിയമം ബദ്ർ യുദ്ധകാലത്തും മറ്റൊന്ന് മക്കാ വിജയത്തിലോ വഫാത്തിന്റെ സമയത്തോ ആണെന്ന് ഉറപ്പായി അറിയുമ്പോൾ രണ്ടാമത്തേത് നാസിഖായി നിശ്ചയിക്കപ്പെടുന്നു.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION VIII: بين المختار في عودة الصفة (1 X 5 = 5 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-8">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">VIII. بيّن المختار في المسألة (مسألة واحدة بـ ٥ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 8: മുഖ്താറായ (പ്രബലമായ) അഭിപ്രായം വ്യക്തമാക്കുക (1 ചോദ്യം - 5 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">1 x 5 = 5 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">بيّن المختار في عودة الصفة المتوسطة مثل: «وقفتُ داري على أولادي المحتاجين وأولادهم»؟</div>
+            <div class="q-text-ml">1. "ഞാൻ എന്റെ വീട് എന്റെ ആവശ്യക്കാരായ മക്കൾക്കും അവരുടെ മക്കൾക്കും വഖ്ഫ് ചെയ്തു" എന്ന വാചകത്തിലെ മധ്യത്തിൽ വന്ന 'ആവശ്യക്കാരായ' (മുഹ്താജീൻ) എന്ന വിശേഷണം (സ്വിഫത്ത്) ആർക്കൊക്കെയാണ് ബാധകമാവുക?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (المختار عند السبكي والمحلي في جمع الجوامع):</div>
+            <div class="arabic-ans-text">
+              <strong>المختار المعتمد:</strong> أن الصفة المتوسطة <strong>«تعود إلى الموصوف الملاصق لها فقط وهو (أولادي)، ولا تعود إلى المعطوف المتأخر وهو (أولادهم)»</strong>؛<br>
+              فيكون الوقف على أولاده مقيداً بصفة الفقر والحاجة، أما أولاد الأولاد فيستحقون الوقف مطلقاً أغنياء كانوا أم فقراء؛ لأن الأصل في الصفة الاختصاص بالموصوف المتقدم ما لم يقم دليل على سرايتها للمتأخر.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              <strong>പ്രബലാഭിപ്രായം:</strong> മധ്യത്തിൽ വന്ന 'ആവശ്യക്കാരായ' എന്ന വിശേഷണം <strong>തൊട്ടുമുമ്പുള്ള മക്കൾക്ക് (അവ്‌ലാദി) മാത്രമാണ് ബാധകം</strong>; പിന്നീട് പറഞ്ഞ പേരമക്കൾക്ക് (അവ്‌ലാദിഹിം) അത് ബാധകമല്ല.<br>
+              അതുകൊണ്ട് മക്കൾ ദരിദ്രരാണെങ്കിൽ മാത്രമേ അവർക്ക് വഖ്ഫ് ലഭിക്കൂ. എന്നാൽ പേരമക്കൾക്ക് അവർ ധനികരായാലും ദരിദ്രരായാലും നിരുപാധികം വഖ്ഫ് ലഭിക്കുന്നതാണ്.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION IX: بين الفرق (3 X 4 = 12 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-9">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">IX. بيّن الفروق بين المصطلحات الآتية (٣ مسائل لكل منها ٤ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 9: തമ്മിലുള്ള വ്യത്യാസങ്ങൾ വ്യക്തമാക്കുക (3 ചോദ്യങ്ങൾ - 4 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">3 x 4 = 12 Marks</div>
+      </div>
+
+      <!-- Q 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما الفرق بين المخصص المتصل والمخصص المنفصل؟</div>
+            <div class="q-text-ml">1. മുത്തസ്വിലായ മുഖസ്സ്വിസ്വുകളും മുൻഫസ്വിലായ മുഖസ്സ്വിസ്വുകളും തമ്മിലുള്ള വ്യത്യാസം എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>المخصص المتصل:</strong> ما لا يستقل بنفسه، بل يكون مذكوراً مع العام في نفس السياق والتركيب (كالاستثناء والشرط والصفة والغاية).<br>
+              <strong>المخصص المنفصل:</strong> ما يستقل بنفسه كدليل منفصل قائم بذاته بعيداً عن النص العام (كدليل العقل، والحس، والإجماع، ونص قرآني أو حديثي آخر في موضع مستقل).
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              • <strong>മുത്തസ്വിൽ:</strong> സ്വതന്ത്രമായി നിൽക്കാതെ ആം അടങ്ങിയ വാക്യത്തോടൊപ്പം ചേർന്നുനിൽക്കുന്നവ (ഇസ്തിഥ്നാഅ്, ശർത്വ്, സ്വിഫത്ത്, ഗായത്ത്).<br>
+              • <strong>മുൻഫസ്വിൽ:</strong> ആമിൽ നിന്ന് വേറിട്ട് മറ്റൊരു സ്വതന്ത്ര പ്രമാണമായി വരുന്നവ (ബുദ്ധി, പഞ്ചേന്ദ്രിയങ്ങൾ, ഇജ്മാഅ്, മറ്റൊരു സ്വതന്ത്ര ആയത്തോ ഹദീഥോ).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما الفرق بين المطلق والمقيد؟</div>
+            <div class="q-text-ml">2. മുത്വ്‌ലഖും മുഖയ്യദും തമ്മിലുള്ള വ്യത്യാസം എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>المطلق:</strong> المتناول للماهية من حيث هي بلا قيد، ويدل على شائع في جنسه كـ «رقبة».<br>
+              <strong>المقيد:</strong> المتناول للماهية موصوفة بقيد زائد يُقلل شيوعها كـ «رقبة مؤمنة».
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              നിരുപാധികം ആ വർഗ്ഗത്തിലുള്ള ഒന്നിനെ സൂചിപ്പിക്കുന്നതാണ് മുത്വ്‌ലഖ് (ഉദാ: അടിമ). വിശേഷണം ചേർത്തുകൊണ്ട് നിർദ്ദിഷ്ടമാക്കുന്നതാണ് മുഖയ്യദ് (ഉദാ: സത്യവിശ്വാസിയായ അടിമ).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 3 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما الفرق بين التأويل الصحيح والتأويل الفاسد؟</div>
+            <div class="q-text-ml">3. സ്വഹീഹായ തഅ്‌വീലും ഫാസിദായ തഅ്‌വീലും തമ്മിലുള്ള വ്യത്യാസം എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>التأويل الصحيح:</strong> صرف اللفظ عن ظاهره إلى معنى محتمل بدليل شرعي صحيح وراجح.<br>
+              <strong>التأويل الفاسد:</strong> صرف اللفظ بغير دليل أو بدليل واهٍ لا يقوى على معارضة النص الشرعي الظاهر.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ശരിയായ തെളിവ് അടിസ്ഥാനമാക്കി വ്യാഖ്യാനിച്ചാൽ തഅ്‌വീൽ സ്വഹീഹാകുന്നു; തെളിവില്ലാതെ സ്വേച്ഛാനുസരണം വ്യാഖ്യാനിച്ചാൽ അത് ഫാസിദാകുന്നു.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION X: اكتب الآراء (2 X 6 = 12 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-10">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">X. اكتب الآراء في المسائل الآتية (مسألتان لكل منها ٦ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 10: അഭിപ്രായങ്ങൾ വ്യക്തമാക്കുക (2 ചോദ്യങ്ങൾ - 6 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">2 x 6 = 12 Marks</div>
+      </div>
+
+      <!-- Q 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">العام المخصوص: هل هو حقيقة في الباقي بعد التخصيص أو مجاز؟</div>
+            <div class="q-text-ml">1. തഖ്‌സ്വീസ്വ് ചെയ്യപ്പെട്ട ആം അവശേഷിക്കുന്ന വ്യക്തികളിൽ ഹഖീഖത്താണോ (യഥാർത്ഥ അർത്ഥം) അതോ മജാസാണോ (രൂപകാർത്ഥം)?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (تحرير المذاهب في جمع الجوامع):</div>
+            <div class="arabic-ans-text">
+              <strong>المذهب الأول (الأصح عند الشافعية وأكثر المحققين):</strong> أنه <strong>«مجازٌ في الباقي»</strong>؛ لأن اللفظ العام وُضع أصلاً لاستغراق جميع الأفراد، فإذا استُعمل في بعضها بعد التخصيص فقد استُعمل في غير ما وُضع له لعلاقة، وهذا هو حقيقة المجاز.<br>
+              <strong>المذهب الثاني (مذهب الحنفية وابن حامد وأبي ثور):</strong> أنه <strong>«حقيقةٌ في الباقي»</strong>؛ لأن دلالة العام على كل فرد من أفراده كانت بالوضع، وبقاء البعض بعد خروج البعض إبقاءٌ للوضع الأصلي في ذلك البعض الباقي.<br>
+              <strong>المذهب الثالث (قول القاضي أبي بكر الباقلاني):</strong> أنه حقيقة إن كان التخصيص بشرط أو صفة، ومجاز إن كان باستثناء.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. <strong>ശാഫിഈ മദ്ഹബിലെ പ്രബലാഭിപ്രായം (ജംഹൂർ):</strong> അത് <strong>മജാസാണ് (രൂപകാർത്ഥമാണ്)</strong>. കാരണം മുഴുവൻ ആളുകളെയും ഉദ്ദേശിക്കാൻ നിശ്ചയിച്ച വാക്കിനെ ചിലരിലേക്ക് മാത്രമായി ചുരുക്കി ഉപയോഗിച്ചതിനാൽ അത് ഭാഷാപരമായി മജാസായി മാറുന്നു.<br>
+              2. <strong>ഹനഫീ മദ്ഹബ്:</strong> അത് <strong>ഹഖീഖത്താണ്</strong>. കാരണം ആദ്യമേ ആ പദത്തിൽ അവശേഷിക്കുന്ന വ്യക്തികളും ഉൾപ്പെട്ടിരുന്നു; മറ്റുള്ളവർ ഒഴിവായെങ്കിലും ഇവർ ഇപ്പോഴും യഥാർത്ഥ അർത്ഥത്തിൽ നിലനിൽക്കുന്നു.<br>
+              3. <strong>ഖാളി അബൂബക്കർ ബാഖില്ലാനി:</strong> ശർത്വോ സ്വിഫത്തോ ആണെങ്കിൽ ഹഖീഖത്തും, ഇസ്തിഥ്നാഅ് ആണെങ്കിൽ മജാസുമാണ്.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">اكتب الآراء في عودة الاستثناء الوارد بعد جمل متعاطفة بالواو</div>
+            <div class="q-text-ml">2. വാവ് കൊണ്ട് ബന്ധിപ്പിച്ച പല വാക്യങ്ങൾക്ക് ശേഷം ഒടുവിൽ വരുന്ന ഇസ്തിഥ്നാഅ് ഏതിലേക്കാണ് മടങ്ങുക എന്നതിലെ പണ്ഡിതാഭിപ്രായങ്ങൾ എഴുതുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              <strong>الرأي الأول (مذهب الشافعي ومالك وأحمد وجمهور الأصوليين):</strong> أن الاستثناء <strong>يعود إلى جميع الجمل المتعاطفة السابقة</strong> ما لم يمنع من ذلك مانع شرعي أو عقلي؛ لأن حرف العطف يشرك المعطوف بالمعطوف عليه في الحكم والتقييد.<br>
+              <strong>الرأي الثاني (مذهب أبي حنيفة وأصحابه):</strong> يختص الاستثناء <strong>بالجملة الأخيرة الملاصقة له فقط</strong>، ولا يعود لما قبلها إلا بدليل منفصل؛ صيانةً للأصل المستقل في الجمل المتقدمة.<br>
+              <strong>الرأي الثالث (قول الواقفية كالغزالي والآمدي):</strong> التوقف، فلا يُحكم بعوده للجميع ولا للأخيرة إلا بقرينة خاصة تبيّن مراد المتكلم.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              1. <strong>ഇമാം ശാഫിഈ, മാലിക്, അഹ്മദ് (ജംഹൂർ):</strong> ഇസ്തിഥ്നാഅ് മുമ്പുള്ള <strong>എല്ലാ വാക്യങ്ങളിലേക്കും ഒരുപോലെ മടങ്ങും</strong>. കാരണം വാവ് തൊട്ടുമുമ്പുള്ളതിനെ എല്ലാറ്റോടും ബന്ധിപ്പിക്കുന്നു.<br>
+              2. <strong>ഇമാം അബൂഹനീഫ:</strong> തൊട്ടടുത്തുള്ള <strong>അവസാനത്തെ വാക്യത്തിലേക്ക് മാത്രമേ മടങ്ങുകയുള്ളൂ</strong>.<br>
+              3. <strong>ഇമാം ഗസ്സാലി:</strong> തവഖുഫ് (പ്രത്യേക ലക്ഷണം കാണുന്നത് വരെ തീരുമാനം പറയാതെ മൗനം പാലിക്കൽ).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>© 2026 JJC Islamic Studies Portal. ആധികാരിക ചോദ്യപേപ്പർ പരിഹാര സമാഹാരം.</p>
+        <p class="footer-subtext">ഉസൂലുൽ ഫിഖ്ഹ് - ജംഉൽ ജവാമിഅ് (ശറഹുൽ മഹല്ലി) സമഗ്ര പഠന സഹായി</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

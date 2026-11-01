@@ -1,0 +1,305 @@
+/* TOP TOOLS
+--------------------------------------------------------- */
+#bookLoading {
+  width: 150px;
+  height: 150px;
+  border: 1px #33A solid;
+  background: #FFF;
+  opacity: .75;
+  float: left;
+  position: fixed;
+  left: 300px;
+  top: 220px;
+  text-align: center;
+}
+
+#pagenum {
+	margin:0 auto;
+	width:137px;
+}
+
+#pagenum .previous {
+	background:url("../images/page-right.gif") no-repeat scroll 0 0 transparent;
+	width:8px;
+	height:12px;
+	display:block;
+	margin:10px 10px;
+}
+
+#pagenum .next {
+	background:url("../images/page-left.gif") no-repeat scroll 0 0 transparent;	
+	width:8px;
+	height:12px;
+	display:block;
+	margin:10px 10px;
+}
+
+#pagenum label {
+	background:url("../images/page-input.gif") no-repeat scroll 0 0 transparent;
+	height:22px;
+	width:36px;
+	margin: 5px 5px 0 0;
+	display:block;
+
+}
+
+#pagenum .previous, #pagenum .next, #pagenum form, #pagenum span {
+	float:left;
+}
+
+#pagenum span {
+	margin:6px 0 0 0;
+}
+
+#pagenum input{
+	background:none repeat scroll 0 0 transparent;
+	border:0 solid #000000;
+	color:#708632;
+	font-size:12px;
+	height:20px;
+	margin-right:2px;
+	margin-top:1px;
+	padding:0;
+	width:34px;
+}
+span.display {
+	float:right;
+	margin:6px 6px 0 0;
+}
+
+#font-style, #pagecount {
+	float: right;
+	margin: 6px 6px 0 6px;
+	position:relative;
+}
+
+#font-style select {
+  width:80px;
+  
+}
+
+#font-style #fontSec {
+	width:120px;
+  float: right;
+  position: absolute;
+  top: 25px;
+  right: -4px;
+  padding: 3px;
+  color: #333;
+  background: #FFF;
+  border: 1px #515756 solid;
+  text-align: right;
+}
+
+#font-style #fontSec a {
+  color: #333;
+}
+
+#pagecount select {
+	width:40px;
+}
+
+#pagecount span{
+	float:right;
+	margin-left:5px;
+	font-size:120%;
+}
+
+/* READING COLUMNS
+--------------------------------------------------------- */
+div.main {
+	margin:0;
+	padding:1px;
+	display:block;
+}
+table.main-wrap {
+	border: none 0;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+table.main-wrap tbody, table.main-wrap tr {
+	border:0;
+	margin:0;
+	padding:0;
+}
+td.main-l {
+	/*width:80%;*/
+}
+
+.main-l-wrap ,.main-r-wrap {
+	margin:0;
+	padding:0;
+}
+
+div.main .main-l-top {
+	height:33px;
+}
+
+div.main .main-l-middle {
+	background: #F1F1F1;
+	padding:5px 3px;	
+}
+
+table.main-l-middle-wraper {
+	width:100%;
+}
+
+td.page-wrap {
+
+}
+
+td.page-next, td.page-active-next, td.page-prev, td.page-active-prev{
+	width: 12px;
+	cursor:pointer;
+}
+
+td.page-next {
+	background: url(../images/page-next.gif) repeat-y scroll left top;
+}
+
+td.page-active-next {
+	background: url(../images/page-active-next.gif) repeat-y scroll left top;
+}
+
+td.page-prev {
+	background: url(../images/page-prev.gif) repeat-y scroll left top;
+}
+
+td.page-active-prev {
+	background: url(../images/page-active-prev.gif) repeat-y scroll left top;
+}
+
+td.main-r {
+	background: url(../images/index-bg.gif) repeat-y scroll 100% 0;
+	border-left: 1px solid #D4D4D4;
+	display: marker;
+}
+
+.rightsidewidth {
+	width:240px;	
+}
+
+div.main .main-r-top {
+	background: url(../images/box-top-tools-gr.gif) no-repeat scroll right top;
+	height:33px;
+}
+
+/* page
+------------------------------------ */
+#bookText {
+	margin:0 auto;
+	width:600px;
+}
+.page {
+	margin:20px auto;
+	width:100%;	
+	border: 1px solid #CCCCCC;
+	background:#FFF;
+}
+
+.page .content {
+	padding:10%;
+	word-wrap:break-word;
+	direction:rtl;
+	text-align:justify;
+}
+
+/* index & indextab in main_r_bottom */
+
+.main .main-r-bottom {
+	background: none;
+	/*width:240px;*/
+	/*height:150px;  blue highlight in firebug : agar zir mazmue az float estefade kardeh bashad pedar digar be andazeye farzandan highlight nadarad magar khadash andaze dashte bashad */
+}
+
+.main-r-bottom table {
+	width:100%;	
+}
+.main-r-bottom .td1 {
+}
+.tab-content {
+	float:right;
+	overflow:hidden;
+	width:214px;
+	direction:rtl;
+}
+
+#tab-content1, #tab-content3, #tab-content4, #tab-content5, #tab-content6 {
+	text-align:justify;
+	direction:rtl;
+}
+
+#tab-content1 .bookcover {
+	margin-top:10px;
+}
+#tab-content1 .bookinfo {
+	margin:12px;
+	
+}
+#tab-content1 .bookcover img{
+	border:1px solid #BABABA;
+	background:#FFF;
+	padding:1px;
+}
+
+#tab-content2 {
+	padding-right:7px;
+	text-align:justify;
+	white-space:nowrap;
+	overflow: visible;
+	direction:rtl;
+}
+#tab-content6 {
+	padding:0 7px;
+	text-align:justify;
+	overflow-y: scroll;
+	direction:rtl;
+}
+
+.tab {
+	/*float:right;*/
+	width:26px;
+}
+/* Search in this book*/
+#search-this-box {
+	padding-top: 5px;
+}
+
+#search-this-box .search {
+	background: url(../images/search-bg.png) no-repeat;
+	width: 142px;
+	height: 20px;
+	margin: 0 auto;	
+}
+
+#search-this-box .inputbox {
+	width: 100px;
+	padding: 0;
+	border: none;
+	margin: 2px 3px 0 3px;
+	color: #708632;
+	background: #FFFFFF;
+  direction: rtl;
+}
+
+#searchTextButton {
+  float: left;
+  position: relative;
+  left: 0px;
+  width: 25px;
+  height: 20px;
+  pointer: hand;
+  cursor: pointer;
+}
+/* Control panel
+--------------------------------------------------------------*/
+#controlpanelwrap {
+
+}
+
+#cp {
+	background: url(../images/cp_bg.png) repeat-x scroll 0 0 transparent;
+	height:35px;
+	width:100%;
+}

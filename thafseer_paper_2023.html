@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ml" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 തഫ്സീർ (തഖസ്സുസ്) ചോദ്യോത്തരങ്ങൾ (S8 & HS6) - ഉലൂമുൽ ഖുർആൻ & ഇഅ്ജാസ് | JJC Thafseer</title>
+  <meta name="description" content="2023 ഒക്ടോബർ 11 ലെ തഫ്സീർ തഖസ്സുസ് പരീക്ഷാ ചോദ്യപേപ്പറും ആധികാരിക ഉത്തരങ്ങളും മലയാള വിശദീകരണവും.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .paper-banner {
+      background: linear-gradient(135deg, #1b3a2b 0%, #23523c 50%, #2d6b4f 100%);
+      color: #ffffff;
+      padding: 2.2rem 1.5rem 1.8rem;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+    .paper-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .exam-meta-box {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(226, 186, 73, 0.35);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .exam-meta-item .label {
+      font-size: 0.75rem;
+      color: #e5ded0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .exam-meta-item .val {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-top: 0.2rem;
+    }
+    .paper-nav-tabs {
+      display: flex;
+      gap: 0.6rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.5rem;
+      overflow-x: auto;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: var(--shadow-sm);
+    }
+    .paper-nav-tab {
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .paper-nav-tab:hover {
+      background: #eef7f2;
+      color: #1b3a2b;
+      border-color: #23523c;
+    }
+    .paper-nav-tab.active {
+      background: #23523c;
+      color: #ffffff;
+      border-color: #23523c;
+      box-shadow: 0 2px 6px rgba(35, 82, 60, 0.25);
+    }
+    .paper-nav-tab.kitab-link {
+      margin-left: auto;
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      border-color: var(--accent-gold-border);
+    }
+    .section-group {
+      margin-bottom: 2.5rem;
+    }
+    .section-group-header {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-left: 5px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.5rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .section-group-title-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #23523c;
+      direction: rtl;
+    }
+    .section-group-title-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 0.2rem;
+    }
+    .section-group-badge {
+      background: #23523c;
+      color: #ffffff;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .question-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .question-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .question-card-header {
+      background: var(--bg-surface-elevated);
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .q-number {
+      background: #23523c;
+      color: #ffffff;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .q-text-wrap {
+      flex: 1;
+    }
+    .q-text-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1b3a2b;
+      direction: rtl;
+      line-height: 1.5;
+      text-align: right;
+    }
+    .q-text-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      font-weight: 500;
+    }
+    .question-card-body {
+      padding: 1.5rem;
+    }
+    .answer-box {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+      border-right: 4px solid #23523c;
+    }
+    .answer-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #23523c;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .arabic-ans-text {
+      font-family: var(--font-arabic);
+      font-size: 1.3rem;
+      line-height: 1.9;
+      color: #1c2d37;
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+    .explanation-box {
+      background: #fdfbf7;
+      border: 1px solid #ebd9b6;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .explanation-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .explanation-text {
+      font-size: 0.96rem;
+      line-height: 1.7;
+      color: var(--text-main);
+    }
+    .exam-tip-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      background: #eef7ee;
+      color: #2e7d32;
+      border: 1px solid #c8e6c9;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      margin-top: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Global Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <a href="index.html" class="logo-link">
+          <div class="logo-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-title">JJC Islamic Studies</div>
+            <div class="logo-subtitle">ജാമിഅ നൂരിയ്യ കോർഡിനേഷൻ പരീക്ഷാ സഹായി</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="main-nav" style="display:flex; gap:0.5rem; align-items:center;">
+        <a href="index.html" class="nav-tab" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:600; font-size:0.85rem; text-decoration:none; color:var(--text-muted); border:1px solid var(--border-subtle);">
+          📘 ഫിഖ്ഹ് 1
+        </a>
+        <a href="fiqh2_index.html" class="nav-tab" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:600; font-size:0.85rem; text-decoration:none; color:var(--text-muted); border:1px solid var(--border-subtle);">
+          📗 ഫിഖ്ഹ് 2
+        </a>
+        <a href="hadees_index.html" class="nav-tab" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:600; font-size:0.85rem; text-decoration:none; color:var(--text-muted); border:1px solid var(--border-subtle);">
+          📜 ഹദീഥ്
+        </a>
+        <a href="thafseer_index.html" class="nav-tab active" style="padding:0.45rem 0.9rem; border-radius:6px; font-weight:700; font-size:0.85rem; text-decoration:none; background:#23523c; color:#ffffff; border:1px solid #23523c;">
+          📖 തഫ്സീർ (ജലാലൈനി)
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn btn-icon" title="തീം മാറ്റുക">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button onclick="window.print()" class="btn btn-icon" title="പ്രിന്റ് ചെയ്യുക">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="paper-banner">
+    <div class="paper-container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span style="background:var(--accent-gold); color:#103426; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:12px; text-transform:uppercase;">
+            Specialization Mid-Term Exam | തഖസ്സുസ് പരീക്ഷ
+          </span>
+          <h1 style="font-size:2rem; font-weight:800; margin-top:0.6rem; color:#ffffff;">
+            2023 തഫ്സീർ (തഖസ്സുസ്) ചോദ്യോത്തരങ്ങൾ
+          </h1>
+          <p style="color:#d5e8dc; font-size:1rem; margin-top:0.3rem;">
+            جامعة النورية العربية - تنسيق الكليات | أسئلة التخصص (التفسير وعلوم القرآن والإعجاز العلمي)
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <a href="thafseer_index.html" style="background:#ffffff; color:#1b3a2b; font-weight:700; padding:0.65rem 1.25rem; border-radius:var(--radius-sm); text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+            📖 തഫ്സീറുൽ ജലാലൈനി പോർട്ടൽ
+          </a>
+        </div>
+      </div>
+
+      <!-- Exam Metadata -->
+      <div class="exam-meta-box">
+        <div class="exam-meta-item">
+          <div class="label">തീയ്യതി (التاريخ)</div>
+          <div class="val">11.10.2023</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">സമയം (الوقت)</div>
+          <div class="val">7.00 AM – 8.00 AM</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">വിഷയം (الموضوع)</div>
+          <div class="val">التخصص (التفسير)</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ആകെ മാർക്ക് (العلامة)</div>
+          <div class="val">50 Marks</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ക്ലാസ് (الصف)</div>
+          <div class="val">S 8 &amp; HS 6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Year Switcher Tabs -->
+  <div class="paper-nav-tabs">
+    <div class="paper-container" style="display:flex; gap:0.6rem; align-items:center; width:100%;">
+      <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted); margin-right:0.4rem;">വർഷങ്ങൾ:</span>
+      <a href="thafseer_paper_2025.html" class="paper-nav-tab">
+        📄 2025 (S6 Thafseer)
+      </a>
+      <a href="thafseer_paper_2024.html" class="paper-nav-tab">
+        📄 2024 (S8 - 100 Marks)
+      </a>
+      <a href="thafseer_paper_2023.html" class="paper-nav-tab active">
+        ★ 2023 തഖസ്സുസ് (50 Marks)
+      </a>
+      <a href="papers/thafseer/index.html" class="paper-nav-tab">
+        📁 ആർക്കൈവ് ഹബ്ബ്
+      </a>
+      <a href="thafseer_index.html" class="paper-nav-tab kitab-link">
+        📖 തഫ്സീറുൽ ജലാലൈനി &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Questions Content -->
+  <main class="paper-container" style="padding: 2.5rem 1.5rem 4rem;">
+
+    <!-- ==========================================
+         SECTION I: عرّف (3 X 3 = 9 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-1">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">I. عرّف (٣ مصطلحات لكل منها ٣ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 1: നിർവ്വചിക്കുക (3 പദങ്ങൾ - ഓരോന്നിനും 3 മാർക്ക് വീതം)</div>
+        </div>
+        <div class="section-group-badge">3 x 3 = 9 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">التفسير الموضوعي</div>
+            <div class="q-text-ml">1. തഫ്സീറുൽ മൗളൂഈ (വിഷയാധിഷ്ഠിത തഫ്സീർ) എന്നാൽ എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              هو علم يتناول القضايا والموضوعات القرآنية المختلفة؛ بجمع الآيات المتفرقة في سور القرآن الكريم ذات الصلة بالموضوع والهدف الواحد، ودراستها وتفسيرها تحليلياً متكاملاً؛ لبيان رؤية القرآن وهدايته وأحكامه الشاملة في ذلك الموضوع المحدد (كالأخلاق، أو المال، أو المرأة في القرآن).
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">💡 മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              വിശുദ്ധ ഖുർആനിലെ വിവിധ അധ്യായങ്ങളിലായി ചിതറിക്കിടക്കുന്ന ഒരു പ്രത്യേക വിഷയവുമായി ബന്ധപ്പെട്ട (ഉദാഹരണത്തിന്: കുടുംബ ജീവിതം, സാമ്പത്തിക ഇടപാടുകൾ, നീതി) എല്ലാ ആയത്തുകളെയും ഒരിടത്ത് ശേഖരിച്ച് സമഗ്രമായി അപഗ്രഥിച്ച് നടത്തുന്ന തഫ്സീർ രീതിശാസ്ത്രമാണ് തഫ്സീറുൽ മൗളൂഈ.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">التفسير الإشاري</div>
+            <div class="q-text-ml">2. തഫ്സീറുൽ ഇശാരി (ആത്മീയ സൂചനകളുള്ള തഫ്സീർ) എന്നാൽ എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              هو تأويل آيات القرآن الكريم على خلاف ما يظهر منها بمقتضى إشارات خفية ودقائق روحية تفيض على أرباب السلوك والمجاهدة من أولياء الله وأهل المعرفة، مع إمكان الجمع بينها وبين المعنى الظاهر المراد دون معارضة لظاهر الشريعة ولا ادعاء أنه المعنى الوحيد.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الباطنية</div>
+            <div class="q-text-ml">3. ബാത്വനിയ്യാ വിഭാഗം എന്നാൽ ആര്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              فرقة ضالة تدعي أن للنصوص الشرعية والقرآن الكريم ظاهراً وباطناً، وأن الظاهر قشرٌ لا قيمة له وأن المراد الحقيقي هو الباطن الذي لا يعلمه إلا إمامهم المعصوم المزعوم؛ فاستحلوا بذلك المحرمات وأسقطوا التكاليف والعبادات وتلاعبوا بدين الله تعالى.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION II: اختر السبب الصحيح (3 X 3 = 9 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-2">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">II. اختر السبب الصحيح (٣ أسئلة لكل منها ٣ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 2: ശരിയായ കാരണം തെരഞ്ഞെടുക്കുക (3 ചോദ്യങ്ങൾ - 9 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">3 x 3 = 9 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">أمر عثمان رضي الله عنه بتحريق مصاحف غير مصاحفه؟ (لما فيه من الأخطاء / لقطع عرق النزاع / لإثبات سلطانه)</div>
+            <div class="q-text-ml">1. ഉഥ്മാൻ(റ) സ്വന്തം മുസ്വ്ഹഫല്ലാത്ത മറ്റ് വ്യക്തിഗത ഏടുകൾ കരിച്ചുകളയാൻ കൽപ്പിച്ചതിന്റെ കാരണം?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ശരിയായ ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              السبب الصحيح: <strong>لقطع عرق النزاع</strong>.<br>
+              (وذلك لتوحيد الأمة الإسلامية على مصحف إمام معتمد بالرسم العثماني بلسان قريش، ودفعاً للفتنة والشقاق بعدما كاد المسلمون يختلفون في القراءات في فتوحات أرمينية وأذربيجان).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">علي رضي الله عنه كان أكثر من فسّر القرآن من الخلفاء الأربعة؟ (لأن زمنه تأخر يحتاج الناس إلى التفسير / لأنه كان ابن عمه ﷺ / لأنه كان عنده رجاجة العقل)</div>
+            <div class="q-text-ml">2. ഖുലഫാഉർറാശിദുകളിൽ ഏറ്റവും കൂടുതൽ തഫ്സീർ വിവരണം നൽകിയത് അലി(റ) ആകാൻ കാരണം?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ശരിയായ ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              السبب الصحيح: <strong>لأن زمنه تأخر واحتاج الناس إلى التفسير</strong>.<br>
+              (حيث امتدت حياته الشريفة إلى سنة 40 هـ بعدما كثرت الفتوحات ودخل الأعاجم في الإسلام واحتاجوا إلى بيان دقائق القرآن، بخلاف أبي بكر وعمر وعثمان الذين استشهدوا مبكراً أو انشغلوا بأمر تثبيت الدولة والفتوحات).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الماء مقدم على الهواء؟ (لأن الهواء ليس ضرورياً / لا تستطيع الحيوانات أن تستغني عن الماء / لأن الماء يحتوي على أكسجين)</div>
+            <div class="q-text-ml">3. വായുവിനേക്കാൾ ജലത്തിന് മുൻഗണന നൽകപ്പെടുന്നത് എന്തുകൊണ്ട്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ശരിയായ ഉത്തരം:</div>
+            <div class="arabic-ans-text">
+              السبب الصحيح: <strong>لا تستطيع الحيوانات والكائنات الحية أن تستغني عن الماء</strong>.<br>
+              (قال تعالى: ﴿وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ﴾؛ فالماء هو أصل مادة التخليق ومصدر النماء والحياة لجميع الأحياء في الأرض).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION III: أجب مختصرا (5 X 3 = 15 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-3">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">III. أجب مختصرا (٥ أسئلة لكل منها ٣ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 3: ചുരുക്കി ഉത്തരം എഴുതുക (5 ചോദ്യങ്ങൾ - 15 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">5 x 3 = 15 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما معنى الوتد لغة؟</div>
+            <div class="q-text-ml">1. ഭാഷയിൽ 'വതദ്' (الوتد) എന്നാൽ എന്താണ്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              الوتد لغة: ما يُدقُّ في الأرض أو الحائط من خشب أو حديد لتثبيت الخيمة أو البناء (وجمعه أوتاد)، ومنه قوله تعالى: ﴿وَالْجِبَالَ أَوْتَادًا﴾ لتثبيت قشرة الأرض ومنعها من المَيَدان والاضطراب.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">من الذي أعجم المصحف ونقّط الأحرف المتشابهة؟</div>
+            <div class="q-text-ml">2. വിശുദ്ധ ഖുർആനിലെ ഒരേപോലെയുള്ള അക്ഷരങ്ങൾക്ക് പുള്ളികൾ (നുഖ്ത്വകൾ) ഇട്ട് വേർതിരിച്ചത് ആര്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              هما العالمان الجليلان: <strong>نصر بن عاصم الليثي، ويحيى بن يَعْمُر العدواني</strong> رحمهما الله، بأمرٍ من الحجاج بن يوسف الثقفي والي العراق بتوجيه من كبار التابعين لحماية لسان المسلمين من اللحن ودخول العجمة.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">متى ظهرت التفاسير الموضوعية للقرآن؟</div>
+            <div class="q-text-ml">3. വിജ്ഞാന ശാഖയെന്ന നിലയിൽ വിഷയാധിഷ്ഠിത തഫ്സീറുകൾ (അത്തഫാസീറുൽ മൗളൂഇയ്യഃ) എപ്പോഴാണ് നിലവിൽ വന്നത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              وإن كانت بذورها الأولى موجودة قديماً في كتب «أحكام القرآن» و«مفردات القرآن»، إلا أنها ظهرت كعلمٍ مستقل ومنهج مدون أكاديمي في <strong>العصر الحديث في القرن الرابع عشر الهجري (القرن العشرين الميلادي)</strong> على يد علماء الأزهر الشريف وأساتذة كليات أصول الدين.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">4</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ما هي مفاتيح الغيب؟</div>
+            <div class="q-text-ml">4. അദൃശ്യത്തിന്റെ താക്കോലുകൾ (മഫാതീഹുൽ ഗൈബ്) ഏതെല്ലാമാണ്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              هي الخمس المذكورة في قوله تعالى: ﴿إِنَّ اللَّهَ عِندَهُ عِلْمُ السَّاعَةِ وَيُنَزِّلُ الْغَيْثَ وَيَعْلَمُ مَا فِي الْأَرْحَامِ ۖ وَمَا تَدْرِي نَفْسٌ مَّاذَا تَكْسِبُ غَدًا ۖ وَمَا تَدْرِي نَفْسٌ بِأَيِّ أَرْضٍ تَمُوتُ﴾ [لقمان: 34]، وهي:
+              ١) وقت قيام الساعة، ۲) وقت نزول الغيث، ۳) حقيقة ما في الأرحام وسعادته وشقاوته، ٤) ما تكسبه النفس غداً، ٥) مكان موت كل إنسان.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">5</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">من هو أكثر من فسّر القرآن من الخلفاء الأربعة؟</div>
+            <div class="q-text-ml">5. ഖുലഫാഉർറാശിദുകളിൽ ഏറ്റവും കൂടുതൽ ഖുർആൻ ആയത്തുകൾ തഫ്സീർ ചെയ്തത് ആര്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              هو أمير المؤمنين <strong>علي بن أبي طالب رضي الله عنه وكرم الله وجهه</strong>؛ لكثرة مروياته وتفرغه لتعليم الناس وسعة باعه في أسباب النزول ووجوه الإعراب.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION IV: بيّن (3 X 3 = 9 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-4">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">IV. بيّن (٣ أسئلة لكل منها ٣ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 4: വ്യക്തമാക്കുക (3 ചോദ്യങ്ങൾ - 9 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">3 x 3 = 9 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">انخفاض نسبة الأكسجين عند الصعود إلى الأعلى في العلم والقرآن</div>
+            <div class="q-text-ml">1. അന്തരീക്ഷത്തിൽ ഉയരങ്ങളിലേക്ക് പോകുമ്പോൾ ഓക്സിജൻ കുറയുന്ന ശാസ്ത്ര സത്യവും ഖുർആനും തമ്മിലുള്ള പൊരുത്തം വ്യക്തമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              <strong>في القرآن:</strong> قال تعالى: ﴿وَمَن يُرِدْ أَن يُضِلَّهُ يَجْعَلْ صَدْرَهُ ضَيِّقًا حَرَجًا كَأَنَّمَا يَصَّعَّدُ فِي السَّمَاءِ﴾ [الأنعام: 125].<br><br>
+              <strong>في العلم الحديث:</strong> أثبت طب الطيران والفضاء أن الإنسان كلما ارتفع في طبقات الجو العليا انخفض الضغط الجوي ونقصت نسبة الأكسجين تدريجياً، مما يسبب ضيقاً شديداً في التنفس وضغطاً هائلاً على القفص الصدري وشعوراً بالاختناق حتى يضيق الصدر تماماً، وهو أدق تشبيه قرآني معجز أُنزل قبل معرفة الإنسان لطبقات الجو بمئات السنين.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الإعجاز القرآني في بيت العنكبوت</div>
+            <div class="q-text-ml">2. ചിലന്തിയുടെ വീടുമായി ബന്ധപ്പെട്ട ഖുർആനിക ശാസ്ത്ര വിസ്മയം (ഇഅ്ജാസ്) വ്യക്തമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              قال تعالى: ﴿مَثَلُ الَّذِينَ اتَّخَذُوا مِن دُونِ اللَّهِ أَوْلِيَاءَ كَمَثَلِ الْعَنكَبُوتِ اتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ الْبُيُوتِ لَبَيْتُ الْعَنكَبُوتِ ۖ لَوْ كَانُوا يَعْلَمُونَ﴾ [العنكبوت: 41].<br><br>
+              <strong>أوجه الإعجاز العلمي:</strong><br>
+              ١) استعمال تاء التأنيث «اتَّخَذَتْ»: أثبت علم الحشرات أن <strong>أنثى العنكبوت</strong> هي وحدها التي تقوم بنسج وبناء البيت من غددها الخاصة.<br>
+              ۲) الوهن الاجتماعي والأسري: لا يقتصر الوهن على هشاشة الخيوط من الناحية المادية، بل الوهن الأكبر هو الوهن الأسري والاجتماعي؛ حيث تقوم أنثى العنكبوت بافتراس زوجها بعد التلقيح، وتأكل الصغار أمهم أحياناً، فبيتها خالٍ تماماً من المودة والرحمة.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">اهتمام الصحابة في حفظ كتاب الله تعالى</div>
+            <div class="q-text-ml">3. അല്ലാഹുവിന്റെ വിശുദ്ധ വേദഗ്രന്ഥം സംരക്ഷിക്കുന്നതിൽ സ്വഹാബത്തുൽ കിറാം കാണിച്ച നിസ്തുലമായ ശ്രദ്ധ വിശദമാക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              تجلّى اهتمام الصحابة رضي الله عنهم في حفظ القرآن في ركائز عظيمة:<br>
+              ١) الحفظ التام في الصدور والمدارسة المستمرة ليلاً ونهاراً في صلواتهم وخلواتهم.<br>
+              ۲) كتابة الآيات فور نزولها بين يدي رسول الله ﷺ بأمر كتاب الوحي (كعلي وعثمان وزيد بن ثابت وأبي بن كعب).<br>
+              ۳) العرضة الأخيرة في رمضان ومراجعة النص القرآني كاملاً.<br>
+              ٤) الجمع البكري الشامل في عهد أبي بكر الصديق إثر استشهاد القراء في اليمامة، ثم النسخ والتوحيد العثماني الشامل للمصاحف.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION V: أجب مفصلا (1 X 4 = 4 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-5">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">V. أجب مفصلا (سؤال واحد ٤ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 5: വിശദമായി ഉത്തരം എഴുതുക (4 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">1 x 4 = 4 Marks</div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">متى صارت نظرية الانفجار العظيم (Big Bang) نموذجا لأصل الكون وتطوره؟</div>
+            <div class="q-text-ml">1. പ്രപഞ്ചോല്പത്തിയെക്കുറിച്ചുള്ള 'മഹാവിസ്ഫോടന സിദ്ധാന്തം' (ബിഗ് ബാംഗ്) ശാസ്ത്രലോകത്ത് അംഗീകരിക്കപ്പെട്ട മാതൃകയായി മാറിയത് എപ്പോൾ? ഖുർആനുമായുള്ള ബന്ധമെന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              صاغ فكرة الانفجار العظيم العالم جورج لوميتر عام 1927م، وتأكدت باكتشاف إدوين هابل لتمدد وتباعد المجرات عام 1929م. ولكنها أصبحت <strong>النموذج العلمي القياسي السائد والمقبول عالمياً في منتصف القرن العشرين، وتحديداً عام 1965م</strong> بعد الاكتشاف التجريبي القاطع لـ «إشعاع الخلفية الكونية الميكروي» (CMB) بواسطة العالمين بنزياس وويلسون.<br><br>
+              وهذا يطابق تماماً إخبار القرآن الكريم قبل أكثر من 14 قرناً: ﴿أَوَلَمْ يَرَ الَّذِينَ كَفَرُوا أَنَّ السَّمَاوَاتِ وَالْأَرْضَ كَانَتَا رَتْقًا فَفَتَقْنَاهُمَا ۖ وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ ۖ أَفَلَا يُؤْمِنُونَ﴾ [الأنبياء: 30].
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION VI: أعد مذكرة عن إحدى الآتية (1 X 4 = 4 MARKS)
+         ========================================== -->
+    <section class="section-group" id="sec-6">
+      <div class="section-group-header">
+        <div>
+          <div class="section-group-title-ar">VI. أعد مذكرة عن إحدى الآتية (سؤال واحد ٤ درجات)</div>
+          <div class="section-group-title-ml">സെക്ഷൻ 6: താഴെ പറയുന്നവയിൽ ഏതെങ്കിലും ഒന്നിനെക്കുറിച്ച് കുറിപ്പ് തയ്യാറാക്കുക (4 മാർക്ക്)</div>
+        </div>
+        <div class="section-group-badge">1 x 4 = 4 Marks</div>
+      </div>
+
+      <!-- Option 1 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الخيار الأول: إعجاز في سطح القمر أثبتتها الصور والبيانات الملتقطة من شاندريان 3 (Chandrayaan-3)</div>
+            <div class="q-text-ml">ഓപ്ഷൻ 1: ചാന്ദ്രയാൻ 3 പകർത്തിയ ചിത്രങ്ങളും വിവരങ്ങളും അടിവരയിടുന്ന ചന്ദ്രന്റെ ഉപരിതലത്തിലെ അത്ഭുതം (ചന്ദ്രൻ പിളർന്ന ചരിത്രപരമായ വിസ്മയം).</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              أكدت الصور الحديثة والتحليلات الجيولوجية المأخوذة من مسابر ومركبات الفضاء (ومنها مهمة شاندريان 3 الهندية عام 2023م ومجسات وكالات الفضاء العالمية) وجود <strong>أخاديد وشقوق صدعية عميقة ومستمرة (Rilles)</strong> تمتد لآلاف الكيلومترات وتخترق سطح القمر من جانب إلى آخر، تدل على أن القمر تعرض في ماضيه لحدث جيولوجي تصدعي هائل وانفلاق ثم التأم والتحم ثانية، مما يثبت بالدليل العلمي القاطع معجزة انشقاق القمر للنبي ﷺ: ﴿اقْتَرَبَتِ السَّاعَةُ وَانشَقَّ الْقَمَرُ﴾ [القمر: 1].
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الخيار الثاني: دواعي جمع القرآن في عهد عثمان بن عفان رضي الله عنه</div>
+            <div class="q-text-ml">ഓപ്ഷൻ 2: ഉഥ്മാൻ(റ)വിന്റെ ഭരണകാലത്ത് ഖുർആൻ ഒരൊറ്റ മുസ്വ്ഹഫിലേക്ക് ക്രോഡീകരിച്ച് ഏകീകരിക്കാനുണ്ടായ സാഹചര്യങ്ങൾ.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">ഉത്തരം (الجواب الصحيح المعتمد):</div>
+            <div class="arabic-ans-text">
+              تمثلت دواعي الجمع العثماني الشريف في أمور حاسمة:<br>
+              ١) اتساع رقعة الدولة الإسلامية واختلاط المسلمين العرب بالأعاجم في الفتوحات البعيدة.<br>
+              ۲) اختلاف وتنازع جنود المسلمين في فتح أرمينية وأذربيجان حول وجوه القراءات القرآنية حتى كاد كل فريق يخطئ الآخر ويكفره.<br>
+              ۳) استغاثة الصحابي الجليل حذيفة بن اليمان رضي الله عنه بأمير المؤمنين عثمان: «يا أمير المؤمنين، أدرك هذه الأمة قبل أن يختلفوا في الكتاب اختلاف اليهود والنصارى».<br>
+              ٤) فقام عثمان رضي الله عنه بتشكيل لجنة برئاسة زيد بن ثابت، واستنسخوا الصحف البكرية إلى مصاحف أئمة موحدة بلسان قريش، وأرسلوها للأمصار وأحرقوا ما سواها حماية لوحدة الأمة.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <div style="margin-top:3.5rem; padding:1.8rem; background:var(--bg-surface-elevated); border:1px solid var(--border-subtle); border-radius:var(--radius-md); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.2rem;">
+      <div>
+        <div style="font-size:0.85rem; color:var(--text-muted);">മറ്റു മുൻവർഷ ചോദ്യപേപ്പറുകൾ:</div>
+        <div style="display:flex; gap:0.6rem; margin-top:0.4rem;">
+          <a href="thafseer_paper_2025.html" class="btn btn-secondary" style="font-size:0.88rem; padding:0.45rem 0.9rem;">
+            2025 പരീക്ഷ
+          </a>
+          <a href="thafseer_paper_2024.html" class="btn btn-secondary" style="font-size:0.88rem; padding:0.45rem 0.9rem;">
+            2024 പരീക്ഷ (100 Marks)
+          </a>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:0.8rem;">
+        <a href="papers/thafseer/index.html" class="btn btn-secondary" style="font-size:0.88rem; padding:0.5rem 1.1rem;">
+          📁 തഫ്സീർ ആർക്കൈവ് ഹബ്ബ്
+        </a>
+        <a href="thafseer_index.html" class="btn btn-primary" style="background:#23523c; border-color:#23523c; font-size:0.88rem; padding:0.5rem 1.1rem;">
+          📖 തഫ്സീറുൽ ജലാലൈനി പോർട്ടൽ &rarr;
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-title" style="color:var(--accent-gold);">JJC Thafseer Study Portal</div>
+        <div class="logo-subtitle">ജാമിഅ നൂരിയ്യ കോർഡിനേഷൻ പരീക്ഷാ സഹായക പോർട്ടൽ | തഫ്സീറുൽ ജലാലൈനി</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">ഫിഖ്ഹ് 1</a>
+        <a href="fiqh2_index.html">ഫിഖ്ഹ് 2</a>
+        <a href="hadees_index.html">ഹദീഥ്</a>
+        <a href="thafseer_index.html">തഫ്സീർ</a>
+        <a href="papers/thafseer/index.html">ചോദ്യപേപ്പറുകൾ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    }
+  </script>
+</body>
+</html>

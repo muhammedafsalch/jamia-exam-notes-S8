@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="ml" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 ഹദീഥ് ചോദ്യോത്തരങ്ങൾ (S8) - സ്വഹീഹുൽ ബുഖാരി | JJC Hadees</title>
+  <meta name="description" content="2024 ഒക്ടോബർ 21 ലെ ഹദീഥ് പരീക്ഷാ ചോദ്യപേപ്പറും സ്വഹീഹുൽ ബുഖാരിയിൽ നിന്നുള്ള ആധികാരിക ഉത്തരങ്ങളും മലയാള വിശദീകരണവും.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .paper-banner {
+      background: linear-gradient(135deg, #132f3c 0%, #1a4356 50%, #235973 100%);
+      color: #ffffff;
+      padding: 2.2rem 1.5rem 1.8rem;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+    .paper-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .exam-meta-box {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(226, 186, 73, 0.35);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .exam-meta-item .label {
+      font-size: 0.75rem;
+      color: #e5ded0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .exam-meta-item .val {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-top: 0.2rem;
+    }
+    .paper-nav-tabs {
+      display: flex;
+      gap: 0.6rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.5rem;
+      overflow-x: auto;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: var(--shadow-sm);
+    }
+    .paper-nav-tab {
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .paper-nav-tab:hover {
+      background: #eaf3f8;
+      color: #1a4356;
+      border-color: #1a4356;
+    }
+    .paper-nav-tab.active {
+      background: #1a4356;
+      color: #ffffff;
+      border-color: #1a4356;
+      box-shadow: 0 2px 6px rgba(26, 67, 86, 0.25);
+    }
+    .paper-nav-tab.kitab-link {
+      margin-left: auto;
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      border-color: var(--accent-gold-border);
+    }
+    .section-group {
+      margin-bottom: 2.5rem;
+    }
+    .section-group-header {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-left: 5px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.5rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .section-group-title-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.6rem;
+      color: #1a4356;
+      font-weight: 700;
+      direction: rtl;
+    }
+    .section-group-title-ml {
+      font-family: var(--font-malayalam);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .section-marks-badge {
+      background: #eaf3f8;
+      color: #1a4356;
+      font-weight: 700;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      border: 1px solid rgba(26, 67, 86, 0.2);
+    }
+    .qa-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.2rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .qa-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-gold-border);
+    }
+    .qa-header {
+      padding: 1rem 1.4rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .q-number-pill {
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      border: 1px solid var(--accent-gold-border);
+    }
+    .q-text-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.45rem;
+      color: var(--text-arabic);
+      direction: rtl;
+      text-align: right;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+    .qa-body {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .qa-box-sharh {
+      background: #f4f8fa;
+      border: 1px solid rgba(26, 67, 86, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem 1.4rem;
+      position: relative;
+    }
+    .qa-box-malayalam {
+      background: var(--bg-card-trans);
+      border: 1px solid #d4e1f0;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem 1.4rem;
+    }
+    .qa-box-ref {
+      background: var(--bg-surface-elevated);
+      border-left: 3px solid var(--accent-gold);
+      padding: 0.65rem 1rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .search-filter-bar {
+      max-width: 1200px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .filter-input {
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-main);
+      font-size: 0.9rem;
+      min-width: 260px;
+    }
+    .btn-print {
+      background: var(--accent-gold);
+      color: #ffffff;
+      border: none;
+      padding: 0.55rem 1.2rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+    }
+    .btn-print:hover {
+      background: var(--accent-gold-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Hero Header -->
+  <header class="paper-banner">
+    <div class="paper-container">
+      <div class="header-badge" style="margin-bottom: 0.6rem;">
+        <span>🏛️ تنسيق الكليات التابعة للجامعة النورية العربية</span>
+        <span>•</span>
+        <span>ഹദീഥ് പരീക്ഷാ സഹായി</span>
+      </div>
+      <h1 class="arabic-header-title">أسئلة اختبارات الفصل الدراسي السابع - الحديث (2024)</h1>
+      <h2 class="main-title-ml" style="margin-top: 0.3rem;">
+        2024 ഹദീഥ് പരീക്ഷാ ചോദ്യപേപ്പറും സ്വഹീഹുൽ ബുഖാരി ആധികാരിക ഉത്തരങ്ങളും
+      </h2>
+      <p class="sub-header-desc" style="margin: 0.6rem auto 0;">
+        പാഠഭാഗം: <strong>സ്വഹീഹുൽ ബുഖാരി (കിതാബു ബദ്ഇൽ വഹിയ് മുതൽ കിതാബുൽ ജമാഅത് / അദാൻ വരെ)</strong>.
+        ഹദീഥ് ഇബാറത്തുകൾ സഹിതം സമ്പൂർണ്ണ ഉത്തരങ്ങളും ലളിതമായ മലയാള വിശദീകരണവും.
+      </p>
+
+      <!-- Exam Meta Grid -->
+      <div class="exam-meta-box">
+        <div class="exam-meta-item">
+          <div class="label">കോഡ് (رمز الفصل)</div>
+          <div class="val">JCSB7</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">തീയതി (التاريخ)</div>
+          <div class="val">21.10.2024</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">തലം / ക്ലാസ്സ് (المرحلة)</div>
+          <div class="val">البكالوريا (S 8)</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">സമയം (الوقت)</div>
+          <div class="val">9.30 AM – 11.30 AM</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ആകെ മാർക്ക് (العلامة)</div>
+          <div class="val">100 മാർക്ക്</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar between Question Papers -->
+  <nav class="paper-nav-tabs">
+    <a href="hadees_index.html" class="paper-nav-tab kitab-link">
+      📖 സ്വഹീഹുൽ ബുഖാരി ദർസ് പഠനം
+    </a>
+    <a href="hadees_paper_2025.html" class="paper-nav-tab">
+      📝 2025 ഹദീഥ്
+    </a>
+    <a href="hadees_paper_2024.html" class="paper-nav-tab active">
+      📝 2024 ഹദീഥ്
+    </a>
+    <a href="hadees_paper_2023.html" class="paper-nav-tab">
+      📝 2023 ഹദീഥ് (തഖസ്സുസ്)
+    </a>
+    <a href="index.html" class="paper-nav-tab" style="background: rgba(15, 76, 58, 0.08);">
+      🔄 ഫിഖ്ഹ് 1 ലേക്ക്
+    </a>
+    <a href="fiqh2_index.html" class="paper-nav-tab" style="background: rgba(15, 76, 58, 0.08);">
+      🔄 ഫിഖ്ഹ് 2 ലേക്ക്
+    </a>
+  </nav>
+
+  <!-- Filter & Actions Bar -->
+  <div class="search-filter-bar">
+    <div style="display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap;">
+      <input type="text" id="paperSearchInput" class="filter-input" placeholder="ചോദ്യങ്ങൾ തിരയുക (അറബിക് / മലയാളം)...">
+      <span style="font-size: 0.88rem; color: var(--text-muted);">ആകെ 12 വിഭാഗങ്ങൾ (Sections I - XII)</span>
+    </div>
+    <div style="display: flex; gap: 0.6rem;">
+      <button class="btn-print" onclick="window.print()">
+        🖨️ പ്രിന്റ് / PDF സേവ്
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Questions & Answers Content -->
+  <main class="paper-container" style="padding: 0 1.5rem 3rem;">
+
+    <!-- SECTION I -->
+    <div class="section-group" id="sec_1">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">I. اكتب المعاني بالعربية</h2>
+          <span class="section-group-title-ml">ഹദീഥിലെ പദങ്ങളുടെ ശറഈ അർത്ഥം അറബിയിൽ എഴുതുക</span>
+        </div>
+        <span class="section-marks-badge">10 X 1 = 10 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 1</span>
+          <div class="q-text-ar">يَنْفَصِمُ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              يَنْفَصِمُ: يَنْقَطِعُ وَيَنْفَصِلُ؛ كَمَا فِي الْحَدِيثِ: «فَيَفْصِمُ عَنِّي وَقَدْ وَعَيْتُ عَنْهُ مَا قَالَ» أَيْ يَقْلَعُ عَنِّي الْوَحْيُ وَيَنْقَطِعُ عَنِّي جِبْرِيلُ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              മുറിഞ്ഞുപോവുക, വേർപിരിയുക (വഹ്‍യ് ഇറങ്ങുന്നത് അവസാനിക്കുകയും ജിബ്‌രീൽ(അ) വിട്ടുപിരിയുകയും ചെയ്യുമ്പോൾ).
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബു ബദ്ഇൽ വഹിയ് (حديث 2).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 2</span>
+          <div class="q-text-ar">الصَّخَبُ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الصَّخَبُ: رَفْعُ الصَّوْتِ وَالْجَلَبَةُ وَالصِّيَاحُ وَالْمُنَازَعَةُ؛ وَفِي الْحَدِيثِ فِي بِشَارَةِ خَدِيجَةَ: «بِبَيْتٍ فِي الْجَنَّةِ مِنْ قَصَبٍ لَا صَخَبَ فِيهِ وَلَا نَصَبَ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              ബഹളം, ഒച്ചപ്പാട്, തർക്കം. ഖദീജ(റ)ക്ക് സ്വർഗ്ഗത്തിൽ യാതൊരു ഒച്ചപ്പാടോ ക്ഷീണമോ ഇല്ലാത്ത മുത്തുമാളിക കൊണ്ടുള്ള കൊട്ടാരം ലഭിക്കുമെന്ന സന്തോഷവാർത്തയിലെ പദം.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി.</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 3 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 3</span>
+          <div class="q-text-ar">مِنْهَاجٌ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الْمِنْهَاجُ: الطَّرِيقُ الْوَاضِحُ الْمُسْتَقِيمُ؛ وَفِي الْحَدِيثِ أَنَّ ابْنَ عَبَّاسٍ فَسَّرَ قَوْلَهُ: {شِرْعَةً وَمِنْهَاجاً} أَيْ: «سَبِيلاً وَسُنَّةً».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              വ്യക്തവും നേരായതുമായ സന്മാർഗ്ഗ പാത (സുന്നത്തും വഴിയും).
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (باب دعاؤكم إيمانكم).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 4 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 4</span>
+          <div class="q-text-ar">خَوَلٌ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الْخَوَلُ: الْخَدَمُ وَالْعَبِيدُ وَالْأَتْبَاعُ؛ سُمُّوا بِذَلِكَ لِأَنَّهُمْ يَتَخَوَّلُونَ الْأُمُورَ أَيْ يُصْلِحُونَهَا، وَفِي الْحَدِيثِ: «إِخْوَانُكُمْ خَوَلُكُمْ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              സേവകരും അടിമകളും. കാര്യങ്ങൾ ഭംഗിയായി പരിപാലിക്കുന്നവർ എന്ന നിലക്കാണ് ഇവരെ ഖവൽ എന്ന് വിളിക്കുന്നത്.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 30).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 5 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 5</span>
+          <div class="q-text-ar">الدُّلْجَةُ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الدُّلْجَةُ: السَّيْرُ فِي آخِرِ اللَّيْلِ (أَوْ اللَّيْلِ كُلِّهِ)؛ وَفِي الْحَدِيثِ: «اسْتَعِينُوا بِالْغَدْوَةِ وَالرَّوْحَةِ وَشَيْءٍ مِنْ الدُّلْجَةِ» لِتَسْهِيلِ الْعِبَادَةِ دُونَ مَشَقَّةٍ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              രാത്രിയുടെ അന്ത്യയാമങ്ങളിലുള്ള (അല്ലെങ്കിൽ രാത്രിയിലെ) യാത്ര. ഇബാദത്തുകൾ ക്ഷീണമില്ലാതെ എളുപ്പമാക്കാൻ പ്രഭാതവും വൈകുന്നേരവും അല്പം രാത്രി നമസ്കാരവും ഉപയോഗപ്പെടുത്തണമെന്ന് നബി ﷺ ഉപദേശിച്ചു.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 39).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 6 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 6</span>
+          <div class="q-text-ar">تَلَاحَى</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              تَلَاحَى: تَخَاصَمَ وَتَنَازَعَ وَتَسَابَّ؛ كَمَا فِي حَدِيثِ لَيْلَةِ الْقَدْرِ: «خَرَجْتُ لِأُخْبِرَكُمْ بِلَيْلَةِ الْقَدْرِ، فَتَلَاحَى فُلَانٌ وَفُلَانٌ فَرُفِعَتْ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              വാക്കുകൾ കൊണ്ട് തർക്കിക്കുകയും കലഹിക്കുകയും ചെയ്യുക (ലൈലത്തുൽ ഖദ്റിന്റെ തീയതി അറിയിക്കാൻ നബി ﷺ വന്നപ്പോൾ രണ്ട് പേർ തമ്മിൽ കലഹിച്ചതിനാലാണ് ആ കൃത്യമായ തീയതി ഉയർത്തപ്പെട്ടത്).
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 49).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 7 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 7</span>
+          <div class="q-text-ar">خِمَارٌ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الْخِمَارُ: كُلُّ مَا سَتَرَ شَيْئاً، وَأَغْلَبُ اسْتِعْمَالِهِ فِي الثَّوْبِ الَّذِي تُغَطِّي بِهِ الْمَرْأَةُ رَأْسَهَا وَعُنُقَهَا وَصَدْرَهَا.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              സ്ത്രീകൾ തലയും കഴുത്തും മറയ്ക്കുന്ന തട്ടം / ശിരോവസ്ത്രം.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുസ്സ്വലാത് & കിതാബുൽ വുളൂഅ്.</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 8 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 8</span>
+          <div class="q-text-ar">مَجَّةٌ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الْمَجَّةُ: طَرْحُ الْمَاءِ أَوْ اللَّبَنِ مِنْ الْفَمِ وَرَشُّهُ؛ كَمَا قَالَ مَحْمُودُ بْنُ الرَّبِيعِ: «عَقَلْتُ مِنْ النَّبِيِّ ﷺ مَجَّةً مَجَّهَا فِي وَجْهِي وَأَنَا ابْنُ خَمْسِ سِنِينَ مِنْ دَلْوٍ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              വായിലെ വെള്ളം പുറത്തേക്ക് തുപ്പൽ / തെറിപ്പിക്കൽ. മഹ്മൂദ് ബിൻ റബീഅ്(റ) തനിക്ക് അഞ്ചു വയസ്സുള്ളപ്പോൾ നബി ﷺ ഒരു തൊട്ടിയിൽ നിന്ന് വെള്ളമെടുത്ത് തന്റെ മുഖത്തേക്ക് സ്നേഹത്തോടെ ചിതറിച്ചു തന്നത് ഓർത്തെടുക്കുന്ന ഹദീഥിൽ വന്നത്.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 77).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 9 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 9</span>
+          <div class="q-text-ar">الْقُرْطُ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الْقُرْطُ (وَجَمْعُهُ أَقْرَاطٌ): مَا يُعَلَّقُ فِي شَحْمَةِ أُذُنِ الْمَرْأَةِ مِنْ حُلِيٍّ كَالذَّهَبِ وَالْفِضَّةِ؛ كَمَا كَانَتْ النِّسَاءُ يَتَصَدَّقْنَ بِأَقْرَاطِهِنَّ يَوْمَ الْعِيدِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              കമ്മൽ (സ്ത്രീകൾ ചെവിയിൽ അണിയുന്ന ആഭരണം). പെരുന്നാൾ ദിനത്തിൽ നബി ﷺ യുടെ ഉപദേശം കേട്ട് സ്ത്രീകൾ തങ്ങളുടെ കമ്മലുകൾ ഊരി സ്വദഖ ചെയ്ത ഹദീഥിൽ വന്നത്.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 98).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 10 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">I. 10</span>
+          <div class="q-text-ar">مُنْشِدٌ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി</span>
+            <div class="arabic-text" style="font-size: 1.3rem;">
+              الْمُنْشِدُ: الطَّالِبُ لِلشَّيْءِ الضَّائِعِ (الضَّالَّةِ) الَّذِي يَرْفَعُ صَوْتَهُ فِي الْمَسْجِدِ يَسْأَلُ عَنْهُ؛ وَقَدْ نَهَى ﷺ عَنْ نَشْدِ الضَّالَّةِ فِي الْمَسَاجِدِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള അർത്ഥം</span>
+            <div class="malayalam-text">
+              നഷ്ടപ്പെട്ട സാധനത്തെക്കുറിച്ച് പള്ളിയിൽ വെച്ച് ഉച്ചത്തിൽ വിളിച്ചുചോദിക്കുന്നവൻ (പള്ളിയിൽ വെച്ച് കളഞ്ഞുപോയ വസ്തുക്കൾ വിളിച്ചുപറയുന്നത് നബി ﷺ വിരോധിച്ചിട്ടുണ്ട്).
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുസ്സ്വലാത് (حديث 450).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION II -->
+    <div class="section-group" id="sec_2">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">II. بيّن السياق</h2>
+          <span class="section-group-title-ml">ഹദീഥ് വചനങ്ങളുടെ സന്ദർഭവും പശ്ചാത്തലവും വ്യക്തമാക്കുക</span>
+        </div>
+        <span class="section-marks-badge">3 X 3 = 9 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">II. 1</span>
+          <div class="q-text-ar">«كَيْفَ وَقَدْ قِيلَ؟»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥ് സന്ദർഭം</span>
+            <div class="arabic-text">
+              قَائِلُهَا: رَسُولُ اللَّهِ ﷺ لِعُقْبَةَ بْنِ الْحَارِثِ رَضِيَ اللَّهُ عَنْهُ.
+              <br>السِّيَاقُ: لَمَّا تَزَوَّجَ عُقْبَةُ ابْنَةً لِأَبِي إِهَابِ بْنِ عَزِيزٍ، جَاءَتْ امْرَأَةٌ سَوْدَاءُ فَقَالَتْ: «إِنِّي قَدْ أَرْضَعْتُ عُقْبَةَ وَالَّتِي تَزَوَّجَ»، فَأَنْكَرَ عُقْبَةُ وَقَالَ: «مَا أَعْلَمُ أَنَّكِ أَرْضَعْتِنِي وَلَا أَخْبَرْتِنِي»، فَرَكِبَ إِلَى رَسُولِ اللَّهِ ﷺ بِالْمَدِينَةِ فَسَأَلَهُ، فَقَالَ ﷺ مُنْكِراً بَقَاءَهَا مَعَهُ: «كَيْفَ وَقَدْ قِيلَ؟ فَارِقْهَا»، فَفَارَقَهَا عُقْبَةُ وَنَكَحَتْ زَوْجاً غَيْرَهُ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>പറഞ്ഞത്:</strong> നബി ﷺ ഉഖ്ബത് ബിൻ ഹാരിസിനോട്.
+              <br><strong>സന്ദർഭം:</strong> ഉഖ്ബത്(റ) വിവാഹം ചെയ്ത ശേഷം ഒരു സ്ത്രീ വന്ന് "ഞാൻ ഉഖ്ബത്തിനെയും ഈ പെണ്ണിനെയും മുലയൂട്ടിയിട്ടുണ്ട്" എന്ന് പറഞ്ഞു. ഇത് കേട്ട് സംശയം തീർക്കാൻ ഉഖ്ബത് മക്കയിൽ നിന്ന് മദീനയിലെത്തി നബി ﷺ യോട് ചോദിച്ചപ്പോൾ നബി ﷺ അരുളി: "അവൾ അങ്ങനെ പറഞ്ഞിരിക്കെ എങ്ങനെ നീ അവളെ ഭാര്യയായി നിലനിർത്തും? അവളെ ഒഴിവാക്കുക!".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 88).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">II. 2</span>
+          <div class="q-text-ar">«إِنَّ الْمُؤْمِنَ لَا يَنْجُسُ»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥ് സന്ദർഭം</span>
+            <div class="arabic-text">
+              قَائِلُهَا: رَسُولُ اللَّهِ ﷺ لِأَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ.
+              <br>السِّيَاقُ: لَقِيَ النَّبِيُّ ﷺ أَبَا هُرَيْرَةَ فِي بَعْضِ طُرُقِ الْمَدِينَةِ وَهُوَ جُنُبٌ، فَانْخَنَسَ مِنْهُ أَبُو هُرَيْرَةَ فَمَضَى فَاغْتَسَلَ ثُمَّ جَاءَ، فَقَالَ ﷺ: «أَيْنَ كُنْتَ يَا أَبَا هُرَيْرَةَ؟» قَالَ: كُنْتُ جُنُباً فَكَرِهْتُ أَنْ أُجَالِسَكَ عَلَى غَيْرِ طَهَارَةٍ، فَقَالَ رَسُولُ اللَّهِ ﷺ: «سُبْحَانَ اللَّهِ! إِنَّ الْمُؤْمِنَ لَا يَنْجُسُ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>പറഞ്ഞത്:</strong> നബി ﷺ അബൂഹുറൈറ(റ)വിനോട്.
+              <br><strong>സന്ദർഭം:</strong> വലിയ അശുദ്ധിയുള്ള (ജനാബത്ത്) വേളയിൽ മദീനയിലെ വഴിയിൽ വെച്ച് നബി ﷺ യെ കണ്ടുമുട്ടിയ അബൂഹുറൈറ(റ) അശുദ്ധിയോടെ നബിക്കൊപ്പം ഇരിക്കുന്നത് മോശമാണെന്ന് കരുതി ഒളിച്ചുമാറിപ്പോയി കുളിച്ച ശേഷം തിരിച്ചെത്തി. കാര്യം തിരക്കിയ നബി ﷺ അരുളി: "സുബ്ഹാനല്ലാഹ്! തീർച്ചയായും സത്യവിശ്വാസി അശുദ്ധനാവുകയില്ല (നജസാകുകയില്ല)".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഗുസ്ൽ (حديث 279, 283).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 3 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">II. 3</span>
+          <div class="q-text-ar">«أَوَ لِكُلِّكُمْ ثَوْبَانِ؟»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥ് സന്ദർഭം</span>
+            <div class="arabic-text">
+              قَائِلُهَا: رَسُولُ اللَّهِ ﷺ.
+              <br>السِّيَاقُ: سَأَلَ رَجُلٌ رَسُولَ اللَّهِ ﷺ عَنْ الصَّلَاةِ فِي ثَوْبٍ وَاحِدٍ، فَقَالَ ﷺ مُنَبِّهاً عَلَى سِعَةِ الرُّخْصَةِ وَعَدَمِ التَّشْدِيدِ فِي الدِّينِ مَعَ مُرَاعَاةِ فَقْرِ النَّاسِ حِينَئِذٍ: «أَوَ لِكُلِّكُمْ ثَوْبَانِ؟!».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>പറഞ്ഞത്:</strong> റസൂലുല്ലാഹി ﷺ.
+              <br><strong>സന്ദർഭം:</strong> ഒരൊറ്റ തുണി മാത്രം ധരിച്ച് നമസ്കരിക്കാമോ എന്ന് ഒരാൾ ചോദിച്ചപ്പോൾ, സ്വഹാബികൾക്കിടയിലെ സാമ്പത്തിക പരാധീനതകൾ ഓർമ്മിപ്പിച്ചുകൊണ്ട് നബി ﷺ പറഞ്ഞു: "നിങ്ങളിൽ എല്ലാവർക്കും രണ്ടു വസ്ത്രങ്ങൾ വീതം ഉണ്ടോ?!". ഔറത്ത് മറയുന്ന വിധത്തിൽ ഒരൊറ്റ തുണിയിലാണെങ്കിലും നമസ്കാരം സാധുവാകുമെന്ന ഇളവാണ് നബി ﷺ വ്യക്തമാക്കിയത്.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുസ്സ്വലാത് (حديث 358).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION III -->
+    <div class="section-group" id="sec_3">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">III. أجب مختصرا</h2>
+          <span class="section-group-title-ml">ചുരുക്കി ഉത്തരം എഴുതുക</span>
+        </div>
+        <span class="section-marks-badge">4 X 2 = 8 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">III. 1</span>
+          <div class="q-text-ar">كَيْفَ يَأْتِي الْوَحْيُ؟</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി ഇബാറത്ത്</span>
+            <div class="arabic-text">
+              يَأْتِي الْوَحْيُ عَلَى حَالَيْنِ:
+              <br>١. «أَحْيَاناً يَأْتِينِي مِثْلَ صَلْصَلَةِ الْجَرَسِ، وَهُوَ أَشَدُّهُ عَلَيَّ فَيَفْصِمُ عَنِّي وَقَدْ وَعَيْتُ عَنْهُ مَا قَالَ».
+              <br>٢. «وَأَحْيَاناً يَتَمَثَّلُ لِيَ الْمَلَكُ رَجُلاً فَيُكَلِّمُنِي فَأَعِي مَا يَقُولُ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം</span>
+            <div class="malayalam-text">
+              വഹ്‍യ് പ്രധാനമായും രണ്ട് രൂപത്തിൽ വന്നിരുന്നു:
+              <br>1. <strong>മണിനാദം പോലെ (സ്വൽസ്വലത്തുൽ ജറസ്):</strong> ഇതാണ് ഏറ്റവും ഭാരമേറിയ രൂപം; അത് അവസാനിക്കുമ്പോഴേക്കും സന്ദേശം ഹൃദിസ്ഥമായിട്ടുണ്ടാകും.
+              <br>2. <strong>മനുഷ്യരൂപത്തിൽ:</strong> ജിബ്‌രീൽ(അ) മനുഷ്യരൂപം പൂണ്ട് വന്ന് നേരിട്ട് സംസാരിക്കൽ.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബു ബദ്ഇൽ വഹിയ് (حديث 2).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">III. 2</span>
+          <div class="q-text-ar">مَتَى يَبْلُغُ الْعَبْدُ حَقِيقَةَ التَّقْوَى؟</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി വിവരണം</span>
+            <div class="arabic-text">
+              «لَا يَبْلُغُ الْعَبْدُ حَقِيقَةَ التَّقْوَى حَتَّى يَدَعَ مَا حَاكَ فِي الصَّدْرِ»، وَكَمَا رُوِيَ: «حَتَّى يَدَعَ مَا لَا بَأْسَ بِهِ حَذَراً مِمَّا بِهِ بَأْسٌ» لِئَلَّا يَقَعَ فِي الشُّبُهَاتِ وَالْمُحَرَّمَاتِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം</span>
+            <div class="malayalam-text">
+              മനസ്സിൽ സംശയം ജനിപ്പിക്കുന്ന കാര്യങ്ങൾ ഉപേക്ഷിക്കുമ്പോഴും, തെറ്റുകളിൽ അകപ്പെട്ടുപോകുമോ എന്ന ഭയം കാരണം കുഴപ്പമില്ലാത്ത ചില അനുവദനീയ കാര്യങ്ങൾ പോലും ഉപേക്ഷിക്കുമ്പോഴുമാണ് ഒരു അടിമ തഖ്‌വയുടെ യഥാർത്ഥ പദവിയിലെത്തുന്നത്.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (باب فضل من استبرأ لدينه).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 3 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">III. 3</span>
+          <div class="q-text-ar">مَنْ الْمُهَاجِرُ؟</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി ഇബാറത്ത്</span>
+            <div class="arabic-text">
+              قَالَ رَسُولُ اللَّهِ ﷺ: «الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ، <strong>وَالْمُهَاجِرُ مَنْ هَجَرَ مَا نَهَى اللَّهُ عَنْهُ</strong>».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം</span>
+            <div class="malayalam-text">
+              നബി ﷺ അരുളി: <strong>"അല്ലാഹു നിരോധിച്ച തിന്മകളെ വെടിഞ്ഞവനാണ് യഥാർത്ഥ മുഹാജിർ (ഹിജ്റ പോയവൻ)"</strong>.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 10).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 4 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">III. 4</span>
+          <div class="q-text-ar">مَا فِي الصَّحِيفَةِ الَّتِي عِنْدَ عَلِيٍّ رَضِيَ اللَّهُ عَنْهُ؟</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി ഇബാറത്ത്</span>
+            <div class="arabic-text">
+              قَالَ عَلِيٌّ رَضِيَ اللَّهُ عَنْهُ: «فِيهَا الْعَقْلُ (أَحْكَامُ الدِّيَاتِ)، وَفَكَاكُ الْأَسِيرِ، وَأَنْ لَا يُقْتَلَ مُسْلِمٌ بِكَافِرٍ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം</span>
+            <div class="malayalam-text">
+              അലി(റ)വിന്റെ വാളിലെ ഏട്ടിൽ രേഖപ്പെടുത്തിയിരുന്നത്: <strong>1. നഷ്ടപരിഹാര നിയമങ്ങൾ (അൽഅഖ്ൽ / ദിയത്ത്), 2. തടവുകാരെ മോചിപ്പിക്കാനുള്ള ഉത്തരവ്, 3. അവിശ്വാസിക്ക് പകരമായി മുസ്‌ലിമിനെ വധിക്കാൻ പാടില്ലെന്ന നിയമം</strong>.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 111).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION IV -->
+    <div class="section-group" id="sec_4">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">IV. بيّن المراد بما تحته خط</h2>
+          <span class="section-group-title-ml">അടിവരയിട്ട പദങ്ങളുടെ ഉദ്ദേശ്യം വ്യക്തമാക്കുക</span>
+        </div>
+        <span class="section-marks-badge">2 X 3 = 6 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">IV. 1</span>
+          <div class="q-text-ar">«إِنَّمَا يَرِثُنِي <span style="text-decoration: underline; color: #1a4356;">كَلَالَةً</span>»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരി വിവരണം</span>
+            <div class="arabic-text">
+              الْمُرَادُ بِـ «كَلاَلَةً»: الْمَيِّتُ الَّذِي لَيْسَ لَهُ وَلَدٌ (لَا فَرْعَ) وَلَا وَالِدٌ (لَا أَصْلَ) يَرِثُهُ، وَإِنَّمَا يَرِثُهُ الْإِخْوَةُ وَالْأَخَوَاتُ أَوْ الْعَصَبَاتُ الْأَبَاعِدُ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>കലാലത്:</strong> മക്കളോ മാതാപിതാക്കളോ ഇല്ലാതെ സഹോദരീസഹോദരന്മാരോ മറ്റു അകന്ന ബന്ധുക്കളോ മാത്രം അനന്തരാവകാശികളായി ബാക്കിയാവുന്ന അവസ്ഥ.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ വുളൂഅ് (حديث 194).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">IV. 2</span>
+          <div class="q-text-ar">«وَأَيُّكُمْ يَمْلِكُ <span style="text-decoration: underline; color: #1a4356;">إِرْبَهُ</span>»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരി വിവരണം</span>
+            <div class="arabic-text">
+              الْمُرَادُ بِـ «إِرْبَهُ»: حَاجَتَهُ وَوَطَرَهُ وَشَهْوَتَهُ؛ كَمَا قَالَتْ عَائِشَةُ رَضِيَ اللَّهُ عَنْهَا: «كَانَ النَّبِيُّ ﷺ يُقَبِّلُ وَهُوَ صَائِمٌ، وَأَيُّكُمْ يَمْلِكُ إِرْبَهُ كَمَا كَانَ ﷺ يَمْلِكُ إِرْبَهُ» أَيْ مَنْ يَسْتَطِيعُ أَنْ يَضْبِطَ نَفْسَهُ وَيَكْبَحَ شَهْوَتَهُ كَمَا كَانَ يَفْعَلُ ﷺ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>ഇർബ് (إرب):</strong> വികാരങ്ങളും ഇച്ഛകളും. ആയിശ(റ) പറഞ്ഞു: "നബി ﷺ നോമ്പുകാരനായിരിക്കെ ചുംബിക്കാറുണ്ടായിരുന്നു; എന്നാൽ നബി ﷺ സ്വന്തം വികാരങ്ങളെ നിയന്ത്രിച്ചിരുന്നതുപോലെ വികാര നിയന്ത്രണ ശേഷി നിങ്ങളിൽ ആർക്കുണ്ട്?!".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഹൈള്.</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION V -->
+    <div class="section-group" id="sec_5">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">V. كَمِّل بلفظة</h2>
+          <span class="section-group-title-ml">ഹദീഥിലെ കൃത്യമായ പദങ്ങൾ ചേർത്ത് പൂരിപ്പിക്കുക</span>
+        </div>
+        <span class="section-marks-badge">4 X 2 = 8 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">V. 1</span>
+          <div class="q-text-ar">قَالَ النَّبِيُّ ﷺ: يُقْبَضُ... وَيَظْهَرُ الْجَهْلُ وَالْفِتَنُ وَيَكْثُرُ...</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">പൂർണ്ണ ഹദീഥ്</span>
+            <div class="arabic-text">
+              «يُقْبَضُ <strong>الْعِلْمُ</strong>، وَيَظْهَرُ الْجَهْلُ وَالْفِتَنُ، وَيَكْثُرُ <strong>الْهَرْجُ</strong>».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള പരിഭാഷ</span>
+            <div class="malayalam-text">
+              "<strong>അറിവ് (അൽഇൽമ്)</strong> ഉയർത്തപ്പെടും, അജ്ഞതയും കുഴപ്പങ്ങളും പ്രത്യക്ഷപ്പെടും, <strong>കൊലപാതകം (അൽഹർജ്ജ്)</strong> വർദ്ധിക്കുകയും ചെയ്യും".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 85).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">V. 2</span>
+          <div class="q-text-ar">بَايَعْتُ رَسُولَ اللَّهِ ﷺ عَلَى... وَإِيتَاءِ الزَّكَاةِ... لِكُلِّ مُسْلِمٍ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">പൂർണ്ണ ഹദീഥ്</span>
+            <div class="arabic-text">
+              «بَايَعْتُ رَسُولَ اللَّهِ ﷺ عَلَى <strong>إِقَامِ الصَّلَاةِ</strong>، وَإِيتَاءِ الزَّكَاةِ، <strong>وَالنُّصْحِ</strong> لِكُلِّ مُسْلِمٍ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള പരിഭാഷ</span>
+            <div class="malayalam-text">
+              "<strong>നമസ്കാരം നിലനിർത്താനും</strong> സകാത്ത് നൽകാനും എല്ലാ മുസ്‌ലിംകൾക്കും <strong>ഗുണകാംക്ഷ പുലർത്താനും (അന്നുസ്വഹ്)</strong> ഞാൻ നബി ﷺ യോട് ബൈഅത്ത് ചെയ്തു".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 57).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 3 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">V. 3</span>
+          <div class="q-text-ar">قَالَ ﷺ: يَسِّرُوا... وَبَشِّرُوا...</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">പൂർണ്ണ ഹദീഥ്</span>
+            <div class="arabic-text">
+              «يَسِّرُوا <strong>وَلَا تُعَسِّرُوا</strong>، وَبَشِّرُوا <strong>وَلَا تُنَفِّرُوا</strong>».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള പരിഭാഷ</span>
+            <div class="malayalam-text">
+              "നിങ്ങൾ എളുപ്പമുണ്ടാക്കുക, <strong>പ്രയാസമുണ്ടാക്കരുത് (വലാ തുഅസ്സിറൂ)</strong>; നിങ്ങൾ സന്തോഷവാർത്ത അറിയിക്കുക, <strong>വെറുപ്പിച്ച് അകറ്റരുത് (വലാ തുനഫ്ഫിറൂ)</strong>".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 69).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 4 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">V. 4</span>
+          <div class="q-text-ar">قَالَ ﷺ: لَا يَلْبَسُ الْقَمِيصَ وَلَا... وَلَا السَّرَاوِيلَاتِ وَلَا الْبَرَانِسَ وَلَا ثَوْباً... الْوَرْسُ أَوِ الزَّعْفَرَانُ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">പൂർണ്ണ ഹദീഥ്</span>
+            <div class="arabic-text">
+              «لَا يَلْبَسُ الْقَمِيصَ وَلَا <strong>الْعَمَائِمَ</strong> وَلَا السَّرَاوِيلَاتِ وَلَا الْبَرَانِسَ وَلَا ثَوْباً <strong>مَسَّهُ</strong> الْوَرْسُ أَوِ الزَّعْفَرَانُ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള പരിഭാഷ</span>
+            <div class="malayalam-text">
+              ഇഹ്‌റാമിലുള്ളവൻ കുപ്പായമോ, <strong>തലപ്പാവോ (അൽഅമാഇം)</strong>, കാൽശരായിയോ, തൊപ്പിയുള്ള കുപ്പായങ്ങളോ (ബറാനിസ്), കുങ്കുമപ്പൂവോ വറസോ <strong>തൊട്ട (മസ്സഹു)</strong> സുഗന്ധ വസ്ത്രങ്ങളോ ധരിക്കരുത്.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 134).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION VI -->
+    <div class="section-group" id="sec_6">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">VI. اشرح الحديث</h2>
+          <span class="section-group-title-ml">ഹദീഥുകൾ സമഗ്രമായി വ്യാഖ്യാനിക്കുക</span>
+        </div>
+        <span class="section-marks-badge">2 X 4 = 8 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VI. 1</span>
+          <div class="q-text-ar">قَالَ ﷺ: «الدِّينُ النَّصِيحَةُ، لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരി വിശദീകരണം</span>
+            <div class="arabic-text">
+              شَرْحُ الْحَدِيثِ:
+              <br>«النَّصِيحَةُ» هِيَ إِخْلَاصُ النِّيَّةِ وَإِرَادَةُ الْخَيْرِ لِلْمَنْصُوحِ لَهُ، وَبَيَّنَ ﷺ أَرْكَانَهَا:
+              <br>١. <strong>لِلَّهِ:</strong> بِالْإِيمَانِ بِهِ، وَإِخْلَاصِ الْعِبَادَةِ لَهُ، وَنَفْيِ الشَّرِيكِ عَنْهُ، وَوَصْفِهِ بِصِفَاتِ الْكَمَالِ.
+              <br>٢. <strong>وَلِكِتَابِهِ:</strong> بِتِلَاوَتِهِ حَقَّ تِلَاوَتِهِ، وَتَدَبُّرِهِ، وَالْعَمَلِ بِمُحْكَمِهِ، وَالدِّفَاعِ عَنْهُ.
+              <br>٣. <strong>وَلِرَسُولِهِ:</strong> بِتَصْدِيقِهِ فِيمَا أَخْبَرَ، وَطَاعَتِهِ فِيمَا أَمَرَ، وَإِحْيَاءِ سُنَّتِهِ، وَمَحَبَّتِهِ.
+              <br>٤. <strong>وَلِأَئِمَّةِ الْمُسْلِمِينَ:</strong> بِمُعَاوَنَتِهِمْ عَلَى الْحَقِّ، وَطَاعَتِهِمْ فِي الْمَعْرُوفِ، وَتَنْبِيهِهِمْ بِرِفْقٍ.
+              <br>٥. <strong>وَلِعَامَّتِهِمْ:</strong> بِإِرْشَادِهِمْ إِلَى مَصَالِحِهِمْ، وَكَفِّ الْأَذَى عَنْهُمْ، وَأَنْ يُحِبَّ لَهُمْ مَا يُحِبُّ لِنَفْسِهِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              നസീഹത്ത് എന്നാൽ നിഷ്കളങ്കതയും ഗുണകാംക്ഷയുമാണ്.
+              <br>1. <strong>അല്ലാഹുവോട്:</strong> അവനിൽ പങ്കുചേർക്കാതെ വിശ്വസിക്കുകയും ആരാധനകളിൽ ആത്മാർത്ഥത പാലിക്കുകയും ചെയ്യുക.
+              <br>2. <strong>വേദഗ്രന്ഥത്തോട്:</strong> ഖുർആൻ ഭംഗിയായി പാരായണം ചെയ്യുകയും അതിന്റെ കൽപനകൾ പ്രാവർത്തികമാക്കുകയും ചെയ്യുക.
+              <br>3. <strong>പ്രവാചകനോട്:</strong> തിരുനബിയെ സ്നേഹിക്കുകയും അവിടുത്തെ സുന്നത്ത് മുറുകെപ്പിടിക്കുകയും ചെയ്യുക.
+              <br>4. <strong>നേതാക്കളോട്:</strong> സത്യത്തിൽ അവരെ പിന്തുണയ്ക്കുകയും ഗുണകാംക്ഷാപൂർവ്വം ഓർമ്മിപ്പിക്കുകയും ചെയ്യുക.
+              <br>5. <strong>പൊതുജനങ്ങളോട്:</strong> തനിക്ക് ഇഷ്ടപ്പെടുന്നത് അവർക്കും ഇഷ്ടപ്പെടുകയും അവരുടെ നന്മക്കായി സഹായിക്കുകയും ചെയ്യുക.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (باب قول النبي ﷺ: الدين النصيحة).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VI. 2</span>
+          <div class="q-text-ar">قَالَ ﷺ: «لَا يَزَالُ الْعَبْدُ فِي صَلَاةٍ مَا كَانَ فِي الْمَسْجِدِ يَنْتَظِرُ الصَّلَاةَ مَا لَمْ يُحْدِثْ»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരി വിശദീകരണം</span>
+            <div class="arabic-text">
+              شَرْحُ الْحَدِيثِ:
+              <br>يُبَيِّنُ النَّبِيُّ ﷺ فَضْلَ حَبْسِ النَّفْسِ فِي الْمَسْجِدِ لِانْتِظَارِ الصَّلَاةِ، وَأَنَّ لِلْمُنْتَظِرِ ثَوَابَ الْمُصَلِّي كَأَنَّهُ قَائِمٌ يَرْكَعُ وَيَسْجُدُ؛ وَتَدْعُو لَهُ الْمَلَائِكَةُ قَائِلَةً: «اللَّهُمَّ اغْفِرْ لَهُ، اللَّهُمَّ ارْحَمْهُ»، مَا لَمْ يُحْدِثْ؛ وَالْحَدَثُ يَشْمَلُ الْحَدَثَ الْأَصْغَرَ النَّاقِضَ لِلْوُضُوءِ، كَمَا يَشْمَلُ إِحْدَاثَ الْإِثْمِ كَالْغِيبَةِ وَالْكَلَامِ الْبَاطِلِ وَأَذَى الْمُسْلِمِينَ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              പള്ളിയിൽ അടുത്ത നമസ്കാരത്തെ കാത്തിരിക്കുന്നവന് നമസ്കാരത്തിൽ നിൽക്കുന്നവന്റെ അതേ പ്രതിഫലം തുടർച്ചയായി രേഖപ്പെടുത്തപ്പെടുന്നു. അവൻ വുളൂഅ് നഷ്ടപ്പെടുകയോ, അല്ലെങ്കിൽ പരദൂഷണവും അനാവശ്യ സംസാരവും കൊണ്ട് തിന്മ പ്രവർത്തിക്കുകയോ ചെയ്യാതിരിക്കുന്ന കാലത്തോളം മലക്കുകൾ അവനു വേണ്ടി: "അല്ലാഹുവേ, ഇയാൾക്ക് പൊറുത്തു കൊടുക്കണമേ, കാരുണ്യം ചൊരിയണമേ" എന്ന് പ്രാർത്ഥിച്ചുകൊണ്ടിരിക്കും.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ വുളൂഅ് & കിതാബുസ്സ്വലാത് (حديث 176, 445).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION VII -->
+    <div class="section-group" id="sec_7">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">VII. اكتب ثلاثا من كل ما يأتي</h2>
+          <span class="section-group-title-ml">താഴെ പറയുന്നവയിൽ നിന്ന് മൂന്നെണ്ണം വീതം എഴുതുക</span>
+        </div>
+        <span class="section-marks-badge">3 X 3 = 9 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VII. 1</span>
+          <div class="q-text-ar">سُؤَالُ جِبْرِيلَ لِلنَّبِيِّ ﷺ فِي حَدِيثِ الإِيمَانِ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥിലെ ചോദ്യങ്ങൾ</span>
+            <div class="arabic-text">
+              سَأَلَهُ عَنْ أَرْبَعَةِ أُمُورٍ:
+              <br>١. «مَا الْإِيمَانُ؟» (فَأَجَابَهُ عَنْ أَرْكَانِ الْإِيمَانِ).
+              <br>٢. «مَا الْإِسْلَامُ؟» (فَأَجَابَهُ عَنْ شَعَائِرِ الْإِسْلَامِ).
+              <br>٣. «مَا الْإِحْسَانُ؟» (قَالَ: أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ).
+              <br>٤. «مَتَى السَّاعَةُ وَمَا أَشْرَاطُهَا؟» (قَالَ: مَا الْمَسْئُولُ عَنْهَا بِأَعْلَمَ مِنَ السَّائِلِ).
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം (3 ചോദ്യങ്ങൾ)</span>
+            <div class="malayalam-text">
+              1. "എന്താണ് ഈമാൻ?" എന്ന് ചോദിച്ചു.<br>
+              2. "എന്താണ് ഇസ്‌ലാം?" എന്ന് ചോദിച്ചു.<br>
+              3. "എന്താണ് ഇഹ്സാൻ?" എന്ന് ചോദിച്ചു.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 50).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VII. 2</span>
+          <div class="q-text-ar">أَشْرَاطُ السَّاعَةِ الْمَذْكُورَةُ فِي حَدِيثِ جِبْرِيلَ وَالْعِلْمِ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥിലെ അടയാളങ്ങൾ</span>
+            <div class="arabic-text">
+              مِنْ أَشْرَاطِ السَّاعَةِ:
+              <br>١. «أَنْ تَلِدَ الْأَمَةُ رَبَّتَهَا (أَوْ رَبَّهَا)» (عُقُوقُ الْوَالِدَيْنِ وَانْقِلَابُ الْأَحْوَالِ).
+              <br>٢. «أَنْ تَرَى الْحُفَاةَ الْعُرَاةَ الْعَالَةَ رِعَاءَ الشَّاءِ يَتَطَاوَلُونَ فِي الْبُنْيَانِ».
+              <br>٣. «أَنْ يُقْبَضَ الْعِلْمُ وَيَفْشُوَ الْجَهْلُ وَيَكْثُرَ الزِّنَا وَالْهَرْجُ».
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം (3 അടയാളങ്ങൾ)</span>
+            <div class="malayalam-text">
+              1. അടിമസ്ത്രീ തന്റെ യജമാനത്തിയെ പ്രസവിക്കുക (മാതാപിതാക്കളോട് ധിക്കാരം കാണിക്കുന്ന കാലം).<br>
+              2. നഗ്നപാദരും ദരിദ്രരുമായ ആട്ടിടയന്മാർ വലിയ കെട്ടിടങ്ങൾ പണിയുന്നതിൽ മത്സരിക്കുക.<br>
+              3. അറിവ് നഷ്ടപ്പെടുകയും അജ്ഞതയും വ്യഭിചാരവും കൊലപാതകവും വ്യാപകമാവുകയും ചെയ്യുക.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 50) & കിതാബുൽ ഇൽമ് (حديث 80, 85).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 3 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VII. 3</span>
+          <div class="q-text-ar">نَهَى النَّبِيُّ ﷺ وَفْدَ عَبْدِ الْقَيْسِ عَنْ أَرْبَعٍ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥിലെ പാത്രങ്ങൾ</span>
+            <div class="arabic-text">
+              نَهَاهُمْ عَنْ الْأَوْعِيَةِ:
+              <br>١. الْحَنْتَمِ (الجِرَارِ الخُضْرِ).
+              <br>٢. الدُّبَّاءِ (القَرْعِ اليَابِسِ).
+              <br>٣. النَّقِيرِ (جِذْعِ النَّخْلِ المَنْقُورِ).
+              <br>٤. المُزَفَّتِ (المَطْلِيِّ بِالزِّفْتِ).
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള ഉത്തരം (3 പാത്രങ്ങൾ)</span>
+            <div class="malayalam-text">
+              1. ഹംതം (മൺപാത്രങ്ങൾ).<br>
+              2. ദുബ്ബാഅ് (ഉണങ്ങിയ ചുരയ്ക്ക തോട്).<br>
+              3. നഖീർ (ഈത്തപ്പനത്തടി തുരന്ന പാത്രം).
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഈമാൻ (حديث 53).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION VIII -->
+    <div class="section-group" id="sec_8">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">VIII. وَفِّقْ بين الحديثين</h2>
+          <span class="section-group-title-ml">പരസ്പര വിരുദ്ധമെന്ന് തോന്നുന്ന രണ്ട് ഹദീഥുകൾ തമ്മിൽ യോജിപ്പിച്ചു വിശദീകരിക്കുക</span>
+        </div>
+        <span class="section-marks-badge">2 X 5 = 10 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VIII. 1</span>
+          <div class="q-text-ar">«إِذَا جَلَسَ بَيْنَ شُعَبِهَا الْأَرْبَعِ ثُمَّ جَهَدَهَا فَقَدْ وَجَبَ الْغُسْلُ» مَعَ حَدِيثِ: «إِنَّمَا الْمَاءُ مِنَ الْمَاءِ / يَغْسِلُ مَا مَاسَّ الْمَرْأَةَ مِنْهُ إِذَا جَامَعَ فَلَمْ يُنْزِلْ»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരിയിലെ തൗഫീഖ്</span>
+            <div class="arabic-text">
+              وَجْهُ التَّوْفِيقِ وَالْجَمْعِ:
+              <br>أَنَّ حَدِيثَ «إِنَّمَا الْمَاءُ مِنَ الْمَاءِ» (أَيْ إيجَابُ مَاءِ الْغُسْلِ إِنَّمَا يَكُونُ بِخُرُوجِ مَاءِ الْمَنِيِّ دُونَ مُجَرَّدِ الْجِمَاعِ) كَانَ رُخْصَةً فِي بَدْءِ الْإِسْلَامِ لِلتَّيْسِيرِ، <strong>ثُمَّ نُسِخَ هَذَا الْحُكْمُ يَقِيناً</strong> بِحَدِيثِ: «إِذَا جَلَسَ بَيْنَ شُعَبِهَا الْأَرْبَعِ ثُمَّ جَهَدَهَا فَقَدْ وَجَبَ الْغُسْلُ، أَنْزَلَ أَوْ لَمْ يُنْزِلْ» (وَإِذَا مَسَّ الْخِتَانُ الْخِتَانَ).
+              <br>وَقَدْ أَجْمَعَ جَمَاهِيرُ الصَّحَابَةِ وَالْأَئِمَّةِ الْأَرْبَعَةِ عَلَى أَنَّ الْغُسْلَ يَجِبُ بِمُجَرَّدِ الْتِقَاءِ الْخِتَانَيْنِ وَتَغْيِيبِ الْحَشَفَةِ فِي الْفَرْجِ سَوَاءٌ أَنْزَلَ أَمْ لَمْ يُنْزِلْ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>യോജിപ്പിക്കുന്ന വിധം:</strong>
+              <br>"സ്ഖലനമുണ്ടായാൽ മാത്രമേ കുളി നിർബന്ധമാകൂ" എന്ന ഹദീഥ് ഇസ്‌ലാമിന്റെ ആദ്യകാലത്ത് ജനങ്ങൾക്ക് എളുപ്പത്തിനായി നൽകപ്പെട്ട ഒരു ഇളവായിരുന്നു. എന്നാൽ പിന്നീട് ആ വിധി നിരുപാധികം ദുർബലപ്പെടുത്തപ്പെടുകയും (മൻസൂഖ്), "ലൈംഗികാവയവങ്ങൾ പരസ്പരം സംഗമിച്ചാൽ സ്ഖലനം നടന്നാലും ഇല്ലെങ്കിലും കുളി നിർബന്ധമാണ്" എന്ന ഹദീഥ് സ്ഥിരപ്പെടുകയും ചെയ്തു. ഇതിൽ സ്വഹാബത്തും നാല് മദ്ഹബുകളിലെ ഇമാമുകളും ഏകോപിച്ചിരിക്കുന്നു.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഗുസ്ൽ (باب التقاء الختانين - حديث 291).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">VIII. 2</span>
+          <div class="q-text-ar">«الْفَخِذُ عَوْرَةٌ» مَعَ حَدِيثِ أَنَسٍ: «حَسَرَ النَّبِيُّ ﷺ عَنْ فَخِذِهِ يَوْمَ خَيْبَرَ»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരിയിലെ തൗഫീഖ്</span>
+            <div class="arabic-text">
+              وَجْهُ التَّوْفِيقِ:
+              <br>أَوَّلاً: حَدِيثُ «الْفَخِذُ عَوْرَةٌ» هُوَ الْأَصْلُ الْعَامُّ فِي التَّشْرِيعِ، وَهُوَ حُكْمٌ قَوْلِيٌّ يَقْتَضِي التَّحْرِيمَ، وَالْقَوْلُ يُقَدَّمُ عَلَى الْفِعْلِ لِاحْتِمَالِ الْخُصُوصِيَّةِ.
+              <br>ثَانِياً: أَنَّ حَسْرَ النَّبِيِّ ﷺ عَنْ فَخِذِهِ يَوْمَ خَيْبَرَ لَمْ يَكُنْ عَنْ قَصْدٍ وَتَعَمُّدٍ مِنْهُ، بَلْ انْحَسَرَ الْإِزَارُ لِشِدَّةِ حَرَكَةِ الْفَرَسِ وَازْدِحَامِ الْجَيْشِ دُونَ قَصْدٍ لِكَشْفِهَا.
+              <br>ثَالِثاً: الْأَحْوَطُ فِي حَقِّ الْمُكَلَّفِينَ سَتْرُ الْفَخِذِ خُرُوجاً مِنْ خِلَافِ الْعُلَمَاءِ وَعَمَلاً بِالْأَحَادِيثِ الْمُحْكَمَةِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>യോജിപ്പിക്കുന്ന വിധം:</strong>
+              <br>1. "തുട ഔറത്താണ്" എന്നത് നബി ﷺ യുടെ സ്പഷ്ടമായ വാചിക കൽപനയും പൊതു നിയമവുമാണ്.
+              <br>2. ഖൈബർ യുദ്ധവേളയിൽ നബി ﷺ യുടെ തുട വെളിവായത് അവിടുന്ന് സ്വമേധയാ തുറന്നുകാട്ടിയതല്ല; മറിച്ച് കുതിരയുടെ അതിവേഗ സഞ്ചാരത്തിനിടയിലും യുദ്ധത്തിന്റെ തിരക്കിനിടയിലും തനിയെ വസ്ത്രം തെല്ല് തെന്നിപ്പോയതായിരുന്നു (അനിഷ്ടകരമായ വെളിപ്പെടൽ). അതിനാൽ പുരുഷൻ തുട മറയ്ക്കൽ നിർബന്ധമാണെന്നതിൽ വൈരുദ്ധ്യമില്ല.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുസ്സ്വലാത് (باب ما يذكر في الفخذ - حديث 371).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION IX -->
+    <div class="section-group" id="sec_9">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">IX. استخرج المسألة من الحديث</h2>
+          <span class="section-group-title-ml">ഹദീഥുകളിൽ നിന്ന് കർമ്മശാസ്ത്ര മസ്അലകൾ വേർതിരിച്ചെഴുതുക</span>
+        </div>
+        <span class="section-marks-badge">2 X 5 = 10 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">IX. 1</span>
+          <div class="q-text-ar">حَدِيثُ اللُّقَطَةِ: «اعْرِفْ وِكَاءَهَا وَعِفَاصَهَا ثُمَّ عَرِّفْهَا سَنَةً، فَإِنْ جَاءَ صَاحِبُهَا فَأَدِّهَا إِلَيْهِ وَإِلَّا فَاسْتَمْتِعْ بِهَا»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥിലെ മസ്അലകൾ</span>
+            <div class="arabic-text">
+              الْمَسَائِلُ الْفِقْهِيَّةُ:
+              <br>١. <strong>وُجُوبُ حِفْظِ أَوْصَافِ اللُّقَطَةِ:</strong> بِمَعْرِفَةِ وِكَائِهَا (خَيْطِهَا) وَعِفَاصِهَا (وِعَائِهَا أَوْ صُرَّتِهَا) لِلتَّمْيِيزِ بَيْنَ صَادِقِ الدَّعْوَى وَكَاذِبِهَا.
+              <br>٢. <strong>وُجُوبُ التَّعْرِيفِ سَنَةً كَامِلَةً:</strong> فِي مَجَامِعِ النَّاسِ وَأَسْوَاقِهِمْ وَأَبْوَابِ الْمَسَاجِدِ.
+              <br>٣. <strong>جَوَازُ تَمَلُّكِ اللُّقَطَةِ بَعْدَ مُضِيِّ السَّنَةِ:</strong> وَالِانْتِفَاعِ بِهَا إِذَا لَمْ يَظْهَرْ صَاحِبُهَا.
+              <br>٤. <strong>بَقَاءُ الضَّمَانِ فِي ذِمَّةِ الْمُلْتَقِطِ:</strong> فَلَوْ جَاءَ مَالِكُهَا بَعْدَ تَمَلُّكِهَا لَزِمَهُ دَفْعُ مِثْلِهَا أَوْ قِيمَتِهَا إِلَيْهِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              1. <strong>വസ്തുവിന്റെ അടയാളങ്ങൾ കൃത്യമായി സൂക്ഷിക്കൽ:</strong> വഴിയിൽ കളഞ്ഞുകിട്ടിയ വസ്തുവിന്റെ സഞ്ചി, കെട്ട്, തുക എന്നിവ കൃത്യമായി ഓർത്തു വെക്കണം.
+              <br>2. <strong>ഒരു വർഷം പരസ്യം ചെയ്യൽ:</strong> ആളുകൾ കൂടുന്ന പൊതുസ്ഥലങ്ങളിൽ ഒരു വർഷം പരസ്യപ്പെടുത്തൽ നിർബന്ധമാണ്.
+              <br>3. <strong>ഉടമസ്ഥത സ്വീകരിക്കൽ:</strong> ഒരു വർഷം കഴിഞ്ഞിട്ടും ഉടമസ്ഥൻ വന്നില്ലെങ്കിൽ അത് സ്വന്തമാക്കാം.
+              <br>4. <strong>ബാധ്യത നിലനിൽക്കൽ:</strong> പിന്നീട് എപ്പോഴെങ്കിലും ഉടമസ്ഥൻ വന്ന് അടയാളങ്ങൾ പറഞ്ഞാൽ അതിന്റെ വിലയോ തത്തുല്യമായ വസ്തുവോ തിരികെ നൽകണം.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് & കിതാബുല്ലുഖത്വഃ (حديث 91).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">IX. 2</span>
+          <div class="q-text-ar">حَدِيثُ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا: «أُتِيَ رَسُولُ اللَّهِ ﷺ بِصَبِيٍّ فَبَالَ عَلَى ثَوْبِهِ فَدَعَا بِمَاءٍ فَأَتْبَعَهُ إِيَّاهُ»</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഹദീഥിലെ മസ്അലകൾ</span>
+            <div class="arabic-text">
+              الْمَسَائِلُ الْفِقْهِيَّةُ:
+              <br>١. <strong>تَخْفِيفُ طَهَارَةِ بَوْلِ الصَّبِيِّ الذَّكَرِ الرَّضِيعِ:</strong> الَّذِي لَمْ يَطْعَمْ غَيْرَ اللَّبَنِ؛ بِأَنَّهُ يُكْتَفَى فِيهِ بِنَضْحِ الْمَاءِ وَرَشِّهِ عَلَى مَوْضِعِ الْبَوْلِ دُونَ حَاجَةٍ إِلَى الْغَسْلِ وَالدَّلْكِ وَالْعَصْرِ.
+              <br>٢. <strong>الْفَرْقُ بَيْنَ الصَّبِيِّ وَالْجَارِيَةِ (الْأُنْثَى):</strong> أَنَّ بَوْلَ الْأُنْثَى يُغْسَلُ غَسْلاً لِتَغْلِيظِ نَجَاسَتِهِ.
+              <br>٣. <strong>طَهَارَةُ الثَّوْبِ بِمُجَرَّدِ النَّضْحِ.</strong>
+              <br>٤. <strong>تَوَاضُعُ النَّبِيِّ ﷺ وَرَأْفَتُهُ بِالْأَطْفَالِ الصِّغَارِ:</strong> وَعَدَمُ تَضَجُّرِهِ حِينَ بَالَ الصَّبِيُّ فِي حِجْرِهِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              1. <strong>പാൽ മാത്രം കുടിക്കുന്ന ആൺകുഞ്ഞിന്റെ മൂത്രം:</strong> കഴുകി ഉരച്ച് പിഴിയേണ്ടതില്ല; മൂത്രം വീണ ഭാഗത്ത് വെള്ളം കുടഞ്ഞ് തളിച്ചാൽ (നള്‌ഹ്) തന്നെ വസ്ത്രം ശുദ്ധിയാകും.
+              <br>2. <strong>പെൺകുഞ്ഞിന്റെ മൂത്രവുമായുള്ള വ്യത്യാസം:</strong> പെൺകുഞ്ഞിന്റെ മൂത്രമാണെങ്കിൽ വെള്ളമൊഴിച്ച് കഴുകിത്തന്നെ വൃത്തിയാക്കണം.
+              <br>3. <strong>നബി ﷺ യുടെ വിനയം:</strong> കുഞ്ഞ് മടിയിൽ മൂത്രമൊഴിച്ചിട്ടും കോപിക്കുകയോ അസ്വസ്ഥത പ്രകടിപ്പിക്കുകയോ ചെയ്യാതെ ശാന്തമായി വെള്ളം വാങ്ങി തളിച്ച തിരുനബിയുടെ ഉന്നത സ്വഭാവം.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ വുളൂഅ് (حديث 222, 223).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION X -->
+    <div class="section-group" id="sec_10">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">X. أجب مفصّلا</h2>
+          <span class="section-group-title-ml">വിശദമായി ഉത്തരം എഴുതുക</span>
+        </div>
+        <span class="section-marks-badge">2 X 5 = 10 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">X. 1</span>
+          <div class="q-text-ar">لِمَ بَدَأَ الْمُصَنِّفُ رَحِمَهُ اللَّهُ كِتَابَهُ بِبَابِ الْوَحْيِ وَحَدِيثِ «إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ»؟</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">ഫത്ഹുൽ ബാരിയിലെ വിവരണം</span>
+            <div class="arabic-text">
+              الْحِكْمَةُ مِنْ صَنِيعِ الإِمَامِ الْبُخَارِيِّ رَحِمَهُ اللَّهُ:
+              <br><strong>أَوَّلاً: الْبَدْءُ بِبَابِ الْوَحْيِ:</strong>
+              <br>١. اقْتِدَاءً بِالْقُرْآنِ الْكَرِيمِ الَّذِي بُدِئَ بِالْوَحْيِ {اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ}.
+              <br>٢. بَيَانُ أَنَّ مَصْدَرَ الشَّرِيعَةِ وَالسُّنَّةِ النَّبَوِيَّةِ وَكُلِّ هَذَا الْكِتَابِ هُوَ «الْوَحْيُ الإِلَهِيُّ الْمَعْصُومُ»، فَكَانَ حَقِيقاً أَنْ يُقَدَّمَ عَلَى كُلِّ بَابٍ.
+              <br><strong>ثَانِياً: تَصْدِيرُهُ بِحَدِيثِ «إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ»:</strong>
+              <br>١. إِشْعَارٌ بِإِخْلَاصِ النِّيَّةِ لِلَّهِ تَعَالَى فِي جَمْعِ هَذَا الْكِتَابِ الشَّرِيفِ، وَأَنَّهُ لَمْ يَبْتَغِ بِهِ سُمْعَةً وَلَا جَاهاً.
+              <br>٢. تَذْكِيرٌ لِطَالِبِ الْعِلْمِ وَالْقَارِئِ أَنْ يُصْلِحَ نِيَّتَهُ فِي طَلَبِ الْحَدِيثِ لِيَنَالَ الْأَجْرَ وَالْبَرَكَةَ؛ لِأَنَّ الْعَمَلَ بِلَا نِيَّةٍ خَالِصَةٍ بَاطِلٌ لَا ثَوَابَ فِيهِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              <strong>1. ബദ്ഉൽ വഹ്‍യ് കൊണ്ട് ആരംഭിച്ചതിന്റെ ലക്ഷ്യം:</strong>
+              <br>• വിശുദ്ധ ഖുർആൻ ആദ്യമായി അവതരിച്ചത് വഹ്‍യിനെക്കുറിച്ച് വ്യക്തമാക്കിക്കൊണ്ടാണ്.
+              <br>• ഹദീഥും കർമ്മശാസ്ത്ര വിധികളും മനുഷ്യ നിർമ്മിതമല്ല; മറിച്ച് അല്ലാഹുവിൽ നിന്നുള്ള ദിവ്യസന്ദേശമായ (വഹ്‍യ്) പ്രമാണമാണ് എന്ന് വ്യക്തമാക്കാനാണ് കിതാബു ബദ്ഇൽ വഹ്‍യ് ആദ്യം വെച്ചത്.
+              <br><strong>2. 'ഇന്നമൽ അഅ്മാലു ബിന്നിയ്യാത്ത്' കൊണ്ട് തുടങ്ങിയതിന്റെ ലക്ഷ്യം:</strong>
+              <br>• ഈ ഗ്രന്ഥം രചിച്ചതിൽ തനിക്ക് അല്ലാഹുവിന്റെ തൃപ്തിയല്ലാതെ ഭൗതിക ലക്ഷ്യങ്ങളൊന്നുമില്ലെന്ന ഇമാം ബുഖാരി(റ)യുടെ ആത്മാർത്ഥത (ഇഖ്‌ലാസ്).
+              <br>• ഇത് വായിച്ചു പഠിക്കുന്ന ഓരോ വിദ്യാർത്ഥിക്കും സ്വന്തം നിയ്യത്ത് ശുദ്ധീകരിക്കാനും ആത്മാർത്ഥത പാലിക്കാനുമുള്ള ഉദ്ബോധനം.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബു ബദ്ഇൽ വഹിയ് (حديث 1).</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q 2 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">X. 2</span>
+          <div class="q-text-ar">مَرَّ النَّبِيُّ ﷺ بِقَبْرَيْنِ فَقَالَ: «إِنَّهُمَا لَيُعَذَّبَانِ»، مَا ذَنْبُهُمَا؟ وَمَاذَا فَعَلَ النَّبِيُّ ﷺ بَعْدَ ذَلِكَ؟</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരി ഇബാറത്ത്</span>
+            <div class="arabic-text">
+              ١. <strong>ذَنْبُهُمَا الَّذِي كَانَا يُعَذَّبَانِ بِهِ:</strong>
+              <br>«أَمَّا أَحَدُهُمَا فَكَانَ لَا يَسْتَتِرُ مِنْ بَوْلِهِ (وَفِي رِوَايَةٍ: لَا يَسْتَنْزِهُ مِنْ بَوْلِهِ)» فَيُصِيبُ ثِيَابَهُ وَبَدَنَهُ فَلَا تَصِحُّ صَلَاتُهُ.
+              <br>«وَأَمَّا الْآخَرُ فَكَانَ يَمْشِي بِالنَّمِيمَةِ» لِيُوقِعَ الْعَدَاوَةَ وَالْفَسَادَ بَيْنَ النَّاسِ.
+              <br>٢. <strong>مَا فَعَلَهُ النَّبِيُّ ﷺ بَعْدَ ذَلِكَ:</strong>
+              <br>دَعَا بِجَرِيدَةِ رَطْبَةٍ (غُصْنِ نَخْلٍ رَطْبٍ)، فَكَسَرَهَا نِصْفَيْنِ (شِقَّيْنِ)، فَغَرَزَ فِي كُلِّ قَبْرٍ وَاحِدَةً، فَقَالُوا: يَا رَسُولَ اللَّهِ، لِمَ فَعَلْتَ هَذَا؟ قَالَ: «لَعَلَّهُ يُخَفَّفُ عَنْهُمَا مَا لَمْ يَيْبَسَا»؛ لِأَنَّ الشَّجَرَ الرَّطْبَ يُسَبِّحُ اللَّهَ تَعَالَى فَتَنْزِلُ الرَّحْمَةُ بِتَسْبِيحِهِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              1. <strong>അവർ ശിക്ഷിക്കപ്പെടാൻ കാരണം:</strong>
+              <br>• ഒരാൾ മൂത്രത്തിൽ നിന്ന് ശരീരവും വസ്ത്രവും സൂക്ഷിക്കാതിരിക്കുകയും മൂത്ര ശുദ്ധി വരുത്താതിരിക്കുകയും ചെയ്തിരുന്നു.
+              <br>• രണ്ടാമൻ ജനങ്ങൾക്കിടയിൽ കുശുമ്പും ഏഷണിയും (നമീമത്ത്) പറഞ്ഞുനടന്ന് പ്രശ്നങ്ങൾ ഉണ്ടാക്കിയിരുന്നു.
+              <br>2. <strong>നബി ﷺ ചെയ്തത്:</strong>
+              <br>പച്ചയായ ഒരു ഈത്തപ്പനക്കമ്പ് വരുത്തി അത് രണ്ടായി പിളർന്ന് രണ്ട് ഖബ്റുകളിലും ഓരോന്ന് വീതം നാട്ടിവെച്ചു. സ്വഹാബികൾ ചോദിച്ചപ്പോൾ നബി ﷺ അരുളി: "ആ പച്ചത്തണ്ടുകൾ ഉണങ്ങാത്ത കാലത്തോളം അവയുടെ തസ്ബീഹ് കാരണം അവർക്ക് ഖബ്റിലെ ശിക്ഷ ലഘൂകരിക്കപ്പെട്ടേക്കാം".
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ വുളൂഅ് (حديث 216, 218).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION XI -->
+    <div class="section-group" id="sec_11">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">XI. اكتب الواقعة</h2>
+          <span class="section-group-title-ml">ചരിത്ര സംഭവം വിശദീകരിക്കുക</span>
+        </div>
+        <span class="section-marks-badge">1 X 6 = 6 മാർക്ക്</span>
+      </div>
+
+      <!-- Q 1 -->
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">XI. 1</span>
+          <div class="q-text-ar">مُلَاقَاةُ مُوسَى عَلَيْهِ السَّلَامُ لِلْخَضِرِ عَلَيْهِ السَّلَامُ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">സ്വഹീഹുൽ ബുഖാരിയിലെ ചരിത്ര സംഭവം</span>
+            <div class="arabic-text">
+              سُئِلَ مُوسَى عَلَيْهِ السَّلَامُ: أَيُّ النَّاسِ أَعْلَمُ؟ فَقَالَ: «أَنَا»، فَعَتَبَ اللَّهُ عَلَيْهِ إِذْ لَمْ يَرُدَّ الْعِلْمَ إِلَيْهِ، فَأَوْحَى اللَّهُ إِلَيْهِ أَنَّ لِي عَبْداً بِمَجْمَعِ الْبَحْرَيْنِ هُوَ أَعْلَمُ مِنْكَ.
+              <br>فَرَحَلَ مُوسَى مَعَ فَتَاهُ يُوشَعَ بْنِ نُونٍ يَحْمِلَانِ حُوتاً مَمْلُوحاً فِي مِكْتَلٍ، وَجَعَلَ فَقْدَ الْحُوتِ أَمَارَةً لِلِّقَاءِ، فَلَمَّا انْتَهَيَا إِلَى الصَّخْرَةِ رَقَدَا، فَحَيِيَ الْحُوتُ وَاتَّخَذَ سَبِيلَهُ فِي الْبَحْرِ سَرَباً.
+              <br>ثُمَّ عَادَا فَوَجَدَا الْخَضِرَ عَلَيْهِ السَّلَامُ مُسَجًّى بِثَوْبٍ، فَسَلَّمَ عَلَيْهِ مُوسَى وَقَالَ: «جِئْتُكَ لِتُعَلِّمَنِي مِمَّا عُلِّمْتَ رُشْداً»، فَاشْتَرَطَ عَلَيْهِ الْخَضِرُ أَنْ لَا يَسْأَلَهُ عَنْ شَيْءٍ حَتَّى يُحْدِثَ لَهُ مِنْهُ ذِكْراً.
+              <br>فَرَكِبَا فِي السَّفِينَةِ فَخَرَقَهَا، ثُمَّ لَقِيَا غُلَاماً فَقَتَلَهُ، ثُمَّ أَتَيَا قَرْيَةً فَأَبَوْا أَنْ يُضَيِّفُوهُمَا فَأَقَامَ جِدَاراً يُرِيدُ أَنْ يَنْقَضَّ؛ فَأَنْكَرَ مُوسَى فِي الثَّلَاثِ، فَفَارَقَهُ الْخَضِرُ بَعْدَ أَنْ كَشَفَ لَهُ تَأْوِيلَ مَا لَمْ يَسْتَطِعْ عَلَيْهِ صَبْراً.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള വിശദീകരണം</span>
+            <div class="malayalam-text">
+              മനുഷ്യരിൽ ഏറ്റവും അറിവുള്ളവൻ ആരാണെന്ന് ചോദിക്കപ്പെട്ടപ്പോൾ "ഞാൻ" എന്ന് മൂസാ നബി(അ) പറഞ്ഞതിൽ അല്ലാഹു തിരുത്തൽ നൽകുകയും, രണ്ട് സമുദ്രങ്ങൾ സംഗമിക്കുന്നിടത്ത് ഖിള്ർ(അ) എന്ന ഒരു ദാസനുണ്ടെന്നും അദ്ദേഹം മൂസായേക്കാൾ ചില പ്രത്യേക കാര്യങ്ങളിൽ അറിവുള്ളവനാണെന്നും അറിയിച്ചു.
+              <br>മൂസാ നബി(അ) തന്റെ അനുചരനായ യൂശഅ് ബിൻ നൂനുമൊത്ത് ഉണക്കമത്സ്യത്തെ അടയാളമാക്കി യാത്ര തിരിച്ചു. പാറക്കല്ലിനടുത്ത് വെച്ച് മത്സ്യം അത്ഭുതകരമായി ജീവൻ വെച്ച് കടലിലേക്ക് പോയി. അവിടെ വെച്ച് ഖിള്ർ(അ)നെ കണ്ടുമുട്ടുകയും അറിവ് നേടാനായി കൂടെ കൂട്ടാൻ മൂസാ നബി അപേക്ഷിക്കുകയും ചെയ്തു.
+              <br>കാര്യങ്ങൾ താൻ വിശദീകരിക്കുന്നതുവരെ യാതൊന്നും ചോദിക്കരുതെന്ന നിബന്ധനയോടെ ഖിള്ർ മൂസായെ ഒപ്പം കൂട്ടി. തുടർന്ന് കപ്പൽ തുളയ്ക്കൽ, കുട്ടിയെ വധിക്കൽ, മതിൽ പുനർനിർമ്മിക്കൽ എന്നീ 3 സംഭവങ്ങളുണ്ടാവുകയും ഓരോ ഘട്ടത്തിലും ക്ഷമിക്കാനാവാതെ മൂസാ നബി ചോദ്യം ഉന്നയിക്കുകയും ചെയ്തതോടെ മൂസാ നബിയുമായി വേർപിരിയുന്നതിന് മുമ്പ് ആ സംഭവങ്ങളുടെ പൊരുളുകൾ ഖിള്ർ(അ) വിശദീകരിച്ചു നൽകി.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി - കിതാബുൽ ഇൽമ് (حديث 74, 122).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION XII -->
+    <div class="section-group" id="sec_12">
+      <div class="section-group-header">
+        <div>
+          <h2 class="section-group-title-ar">XII. أعدّ مذكرة</h2>
+          <span class="section-group-title-ml">ഇമാം ബുഖാരി(റ)യെയും ഹദീഥിലെ സംഭാവനകളെയും കുറിച്ച് കുറിപ്പ് (5 വരികളിൽ കുറയാതെ)</span>
+        </div>
+        <span class="section-marks-badge">1 X 6 = 6 മാർക്ക്</span>
+      </div>
+
+      <article class="qa-card">
+        <div class="qa-header">
+          <span class="q-number-pill">XII</span>
+          <div class="q-text-ar">الإِمَامُ الْبُخَارِيُّ رَحِمَهُ اللَّهُ وَمُسَاهَمَاتُهُ فِي الْحَدِيثِ</div>
+        </div>
+        <div class="qa-body">
+          <div class="qa-box-sharh">
+            <span class="box-label label-sharh">അറബിക് കുറിപ്പ് (المذكرة)</span>
+            <div class="arabic-text">
+              هُوَ أَمِيرُ الْمُؤْمِنِينَ فِي الْحَدِيثِ: أَبُو عَبْدِ اللَّهِ مُحَمَّدُ بْنُ إِسْمَاعِيلَ بْنِ إِبْرَاهِيمَ الْبُخَارِيُّ (١٩٤ - ٢٥٦ هـ)، إِمَامُ أَهْلِ الْحَدِيثِ وَعَلَمُ الْحُفَّاظِ.
+              <br>مُسَاهَمَاتُهُ الْجَلِيلَةُ:
+              <br>١. أَلَّفَ أَعْظَمَ كِتَابٍ بَعْدَ كِتَابِ اللَّهِ عَزَّ وَجَلَّ وَهُوَ «الْجَامِعُ الصَّحِيحُ الْمُسْنَدُ الْمُخْتَصَرُ مِنْ أُمُورِ رَسُولِ اللَّهِ ﷺ وَسُنَنِهِ وَأَيَّامِهِ»، انْتَقَاهُ مِنْ سِتِّمِائَةِ أَلْفِ حَدِيثٍ فِي سِتَّ عَشْرَةَ سَنَةً.
+              <br>٢. وَضَعَ أَدَقَّ شُرُوطِ الصِّحَّةِ بِاشْتِرَاطِ ثُبُوتِ «اللِّقَاءِ وَالسَّمَاعِ» بَيْنَ الرَّاوِي وَشَيْخِهِ مَعَ الْعَدَالَةِ وَالضَّبْطِ التَّامِّ وَعَدَمِ الشُّذُوذِ وَالْعِلَّةِ.
+              <br>٣. بَرَزَ فِقْهُهُ الْعَمِيقُ فِي تَرَاجِمِ أَبْوَابِهِ حَتَّى قِيلَ: «فِقْهُ الْبُخَارِيِّ فِي تَرَاجِمِهِ».
+              <br>٤. صَنَّفَ مُؤَلَّفَاتٍ عَظِيمَةً أُخْرَى كَـ «التَّارِيخِ الْكَبِيرِ»، وَ«الْأَدَبِ الْمُفْرَدِ»، وَ«خَلْقِ أَفْعَالِ الْعِبَادِ»، فَخَدَمَ السُّنَّةَ النَّبَوِيَّةَ خِدْمَةً خَالِدَةً إِلَى يَوْمِ الدِّينِ.
+            </div>
+          </div>
+          <div class="qa-box-malayalam">
+            <span class="box-label label-trans">മലയാള സംഗ്രഹം</span>
+            <div class="malayalam-text">
+              അമീറുൽ മുഅ്മിനീൻ ഫിൽ ഹദീഥ് എന്നറിയപ്പെടുന്ന ഇമാം അബൂ അബ്ദില്ലാഹ് മുഹമ്മദ് ബിൻ ഇസ്മാഈൽ അൽ ബുഖാരി (ഹിജ്റ 194 - 256) ഹദീഥ് ലോകത്തെ തുല്യതയില്ലാത്ത രാജാവാണ്.
+              <br>ഖുർആൻ കഴിഞ്ഞാൽ ഇസ്‌ലാമിലെ ഏറ്റവും ആധികാരിക ഗ്രന്ഥമായ **'സ്വഹീഹുൽ ബുഖാരി'** ക്രോഡീകരിച്ചതാണ് അദ്ദേഹത്തിന്റെ ഏറ്റവും വലിയ സംഭാവന. ആറു ലക്ഷത്തോളം ഹദീഥുകളിൽ നിന്ന് പതിനാറ് വർഷങ്ങൾ കൊണ്ട് തിരഞ്ഞെടുത്ത് തികഞ്ഞ ഭക്തിയോടെയാണ് ഈ ഗ്രന്ഥം രചിച്ചത്.
+              <br>നിവേദകർ തമ്മിൽ സമകാലികരാവുക മാത്രമല്ല, അവർ നേരിൽ കണ്ട് കേട്ടതായി തെളിയണമെന്ന ഏറ്റവും ഉയർന്ന നിബന്ധനയാണ് ഇമാം ബുഖാരി സ്വീകരിച്ചത്. ബാബുകളുടെ തലക്കെട്ടുകളിൽ കർമ്മശാസ്ത്ര വിധികൾ സംഗ്രഹിക്കുന്ന അത്യപൂർവ്വ ശൈലിയാണ് അവിടുത്തെ മറ്റൊരു പ്രത്യേകത. ചരിത്ര രംഗത്തും ഹദീഥ് നിവേദക നിരൂപണത്തിലും നിരവധി ഗ്രന്ഥങ്ങൾ രചിച്ച് ഹദീഥ് ശാഖയ്ക്ക് ശാശ്വതമായ സംഭാവനകൾ അദ്ദേഹം അർപ്പിച്ചു.
+            </div>
+          </div>
+          <div class="qa-box-ref">
+            <span>📌 റഫറൻസ്: സ്വഹീഹുൽ ബുഖാരി & ഫത്ഹുൽ ബാരി (മുഖദ്ദിമഃ).</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer style="background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); padding: 2rem 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.88rem;">
+    <p>جامعة النورية العربية - تنسيق الكليات التابعة | ഹദീഥ് പരീക്ഷാ സഹായി</p>
+    <p style="margin-top: 0.4rem;">സ്വഹീഹുൽ ബുഖാരി (കിതാബു ബദ്ഇൽ വഹിയ് മുതൽ കിതാബുൽ ജമാഅത് വരെ) ആധാരമാക്കി തയ്യാറാക്കിയത്.</p>
+  </footer>
+
+  <script>
+    document.getElementById("paperSearchInput").addEventListener("input", function(e) {
+      const q = e.target.value.toLowerCase().trim();
+      document.querySelectorAll(".qa-card").forEach(card => {
+        card.style.display = card.textContent.toLowerCase().includes(q) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>

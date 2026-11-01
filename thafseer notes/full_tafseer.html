@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفسير الجلالين كاملاً (مسترسل) | النص العربي الكامل في صفحة واحدة</title>
+  <meta name="description" content="تفسير الجلالين كاملاً للإمامين جلال الدين المحلي وجلال الدين السيوطي (من سورة النجم 53 إلى سورة الإنسان 76) بنص عربي متصل كالطبعة الورقية المفتوحة بدون أي تراجم.">
+
+  <!-- Google Fonts: Arabic (Amiri, Scheherazade New), UI (Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #06130d;
+      --bg-card: #0c1e15;
+      --bg-card-elevated: #122b1f;
+      --accent-gold: #f3c258;
+      --accent-gold-dark: #c69527;
+      --accent-gold-light: rgba(243, 194, 88, 0.15);
+      --accent-emerald: #10b981;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: rgba(243, 194, 88, 0.22);
+      --matn-color: #fbd36d;
+      --matn-bg: rgba(243, 194, 88, 0.15);
+      --quran-color: #34d399;
+      --font-arabic: 'Amiri', 'Scheherazade New', serif;
+      --font-ui: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --arabic-font-size: 1.65rem;
+      --line-height: 2.45;
+    }
+
+    [data-theme="sepia"] {
+      --bg-main: #f8f4ec;
+      --bg-card: #ffffff;
+      --bg-card-elevated: #eee5d3;
+      --accent-gold: #92640a;
+      --accent-gold-dark: #6e4a05;
+      --accent-gold-light: rgba(146, 100, 10, 0.12);
+      --accent-emerald: #0b6946;
+      --text-main: #2b2319;
+      --text-muted: #6e6252;
+      --border-color: #dfd4bf;
+      --matn-color: #8c2409;
+      --matn-bg: rgba(140, 36, 9, 0.08);
+      --quran-color: #0b6946;
+    }
+
+    [data-theme="light"] {
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-elevated: #f1f5f9;
+      --accent-gold: #0d5f43;
+      --accent-gold-dark: #083c2a;
+      --accent-gold-light: rgba(13, 95, 67, 0.1);
+      --accent-emerald: #059669;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --matn-color: #0369a1;
+      --matn-bg: rgba(3, 105, 161, 0.08);
+      --quran-color: #047857;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    /* Top Navigation Header */
+    .top-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.6rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-shrink: 0;
+      z-index: 30;
+    }
+
+    .header-info {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .back-btn {
+      background: var(--accent-gold-light);
+      border: 1px solid var(--border-color);
+      color: var(--accent-gold);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s;
+    }
+    .back-btn:hover {
+      background: var(--accent-gold);
+      color: #06130d;
+    }
+
+    .app-title {
+      font-family: var(--font-arabic);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      letter-spacing: 0.3px;
+    }
+
+    /* Page switch tabs */
+    .page-switch-tabs {
+      display: inline-flex;
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 3px;
+    }
+    .page-switch-tab {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      transition: all 0.15s ease;
+      font-family: var(--font-arabic);
+    }
+    .page-switch-tab:hover {
+      color: var(--text-main);
+    }
+    .page-switch-tab.active {
+      background: var(--accent-gold);
+      color: #06130d;
+      font-weight: 700;
+    }
+
+    /* Controls Bar */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: var(--bg-card-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: all 0.15s ease;
+      user-select: none;
+      font-family: var(--font-ui);
+    }
+    .btn:hover {
+      background: var(--accent-gold-light);
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+    .btn.active {
+      background: var(--accent-gold);
+      color: #06130d;
+      border-color: var(--accent-gold);
+      font-weight: 700;
+    }
+    .btn-icon {
+      padding: 0.35rem 0.55rem;
+      font-size: 0.95rem;
+    }
+
+    /* Search input */
+    .search-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-input {
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      width: 175px;
+      direction: rtl;
+      font-family: var(--font-arabic);
+      transition: width 0.2s;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+      width: 220px;
+      box-shadow: 0 0 0 2px var(--accent-gold-light);
+    }
+
+    /* Main Container */
+    .layout-container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 58px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Content Viewport */
+    .content-viewport {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.8rem 2.4rem 4rem;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--bg-main);
+    }
+
+    .tafseer-sheet {
+      width: 100%;
+      max-width: 940px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    /* Surah Heading Banner */
+    .surah-book-banner {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 1rem;
+      margin-bottom: 1.8rem;
+      text-align: center;
+      position: relative;
+    }
+    .surah-book-banner::after {
+      content: "۞ ۞ ۞";
+      display: block;
+      color: var(--accent-gold);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.4rem;
+      opacity: 0.85;
+    }
+    .banner-title {
+      font-family: var(--font-arabic);
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      line-height: 1.3;
+    }
+    .banner-meta {
+      font-family: var(--font-arabic);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    /* Continuous Flowing Manuscript */
+    .manuscript-flow {
+      font-family: var(--font-arabic);
+      font-size: var(--arabic-font-size);
+      line-height: var(--line-height);
+      color: var(--text-main);
+      text-align: justify;
+      text-justify: inter-word;
+      word-spacing: 0.08em;
+    }
+
+    .quran-ayah-part {
+      color: var(--quran-color);
+      font-weight: 700;
+      font-size: calc(var(--arabic-font-size) * 1.08);
+      background: rgba(16, 185, 129, 0.08);
+      padding: 0.08rem 0.4rem;
+      border-radius: 6px;
+      display: inline;
+    }
+
+    .ayah-num-indicator {
+      display: inline-block;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin: 0 0.35rem;
+      font-size: 0.9em;
+      user-select: none;
+    }
+
+    .jalalayn-text-part {
+      color: var(--text-main);
+      display: inline;
+    }
+
+    .matn-phrase {
+      color: var(--matn-color);
+      font-weight: 700;
+      background: var(--matn-bg);
+      padding: 0.05rem 0.25rem;
+      border-radius: 4px;
+    }
+
+    /* Sticky Jump Bar */
+    .surah-jump-bar {
+      position: sticky;
+      top: 0;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.55rem 0.9rem;
+      display: flex;
+      gap: 0.45rem;
+      overflow-x: auto;
+      z-index: 10;
+      margin: -2.5rem -3rem 2rem;
+      border-radius: 14px 14px 0 0;
+    }
+    .jump-pill {
+      background: var(--bg-card-elevated);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--font-arabic);
+      transition: all 0.15s;
+    }
+    .jump-pill:hover {
+      background: var(--accent-gold);
+      color: #06130d;
+      font-weight: 700;
+    }
+
+    /* Search Highlighting */
+    mark.search-highlight {
+      background: #eab308;
+      color: #000;
+      padding: 0.1rem 0.25rem;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 900px) {
+      .content-viewport {
+        padding: 1rem 0.8rem 3rem;
+      }
+      .tafseer-sheet {
+        padding: 1.6rem 1.4rem;
+      }
+      .surah-jump-bar {
+        margin: -1.6rem -1.4rem 1.5rem;
+      }
+      .app-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="top-header">
+    <div class="header-info">
+      <a href="../index.html" class="back-btn" title="الرجوع إلى الفهرس العام / Home">
+        ← الرئيسية
+      </a>
+      <div>
+        <h1 class="app-title">تفسير الجلالين المتصل</h1>
+        <div style="font-size: 0.74rem; color: var(--text-muted); font-family: var(--font-arabic);">
+          النص العربي الكامل المتصل (من سورة النجم إلى سورة الإنسان)
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="page-switch-tabs" aria-label="تنقل الصفحات">
+        <a href="index.html" class="page-switch-tab" title="الآيات مع تفسير الجلالين">
+          📖 التفسير
+        </a>
+        <a href="quran_only.html" class="page-switch-tab" title="المصحف الشريف - القرآن فقط">
+          🕌 القرآن فقط
+        </a>
+        <a href="full_tafseer.html" class="page-switch-tab active" title="تفسير الجلالين المتصل كاملاً">
+          📜 تفسير مسترسل
+        </a>
+        <a href="asbab_nuzul.html" class="page-switch-tab" title="أسباب النزول (نزلت / نزل / أنزل) مع الشرح بالمليبارية">
+          ✨ أسباب النزول
+        </a>
+      </nav>
+    </div>
+
+    <!-- Header Actions & Controls -->
+    <div class="header-actions">
+      <!-- Search Input -->
+      <div class="search-input-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="بحث في النص العربي..." aria-label="بحث في التفسير">
+      </div>
+
+      <!-- Font Resize -->
+      <button id="btnFontDec" class="btn btn-icon" title="تصغير حجم الخط">A-</button>
+      <button id="btnFontInc" class="btn btn-icon" title="تكبير حجم الخط">A+</button>
+
+      <!-- Theme Switcher -->
+      <button id="btnThemeToggle" class="btn btn-icon" title="تبديل المظهر (ليلي / ورقي / نهاري)">
+        🎨
+      </button>
+
+      <!-- Download Text Button -->
+      <a href="thafseer_text.txt" download class="btn" title="تحميل النص txt">
+        💾 txt
+      </a>
+    </div>
+  </header>
+
+  <!-- Layout Container -->
+  <div class="layout-container">
+    <main id="contentViewport" class="content-viewport">
+      <div id="readingContainer" class="tafseer-sheet">
+        <!-- Content will be rendered dynamically -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Load Data -->
+  <script src="thafseer_data.js"></script>
+
+  <script>
+    const SURAHS = window.TAFSEER_DATA;
+    let currentArabicFontSize = 1.65;
+    let themeIndex = 0;
+    const themes = ["dark", "sepia", "light"];
+
+    const readingContainer = document.getElementById("readingContainer");
+    const searchInput = document.getElementById("searchInput");
+
+    function toArabicNumeral(n) {
+      return String(n).replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+    }
+
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function highlightSearch(text, query) {
+      if (!text) return '';
+      if (!query || !query.trim()) return text;
+      const cleanQ = query.trim();
+      const re = new RegExp(`(${escapeRegExp(cleanQ)})`, 'gi');
+      return text.replace(re, '<mark class="search-highlight">$1</mark>');
+    }
+
+    function formatMatnPhrases(text) {
+      if (!text) return '';
+      return text.replace(/«(.*?)»/g, '<span class="matn-phrase">«$1»</span>');
+    }
+
+    function renderTafseer(query = "") {
+      let html = `
+        <div class="surah-jump-bar">
+          <span style="font-size:0.82rem; font-weight:700; color:var(--accent-gold); align-self:center; margin-left:0.5rem; white-space:nowrap;">انتقال سريع:</span>
+          ${SURAHS.map(s => `
+            <a href="#surah-flow-${s.surahNumber}" class="jump-pill" onclick="event.preventDefault(); document.getElementById('surah-flow-${s.surahNumber}').scrollIntoView({behavior:'smooth'});">${toArabicNumeral(s.surahNumber)}. ${s.surahNameArabic.replace('سُورَةُ ', '')}</a>
+          `).join('')}
+        </div>
+      `;
+
+      SURAHS.forEach((surah, idx) => {
+        const sNumAr = toArabicNumeral(surah.surahNumber);
+        const ayahsCountAr = toArabicNumeral(surah.ayahs.length);
+
+        html += `
+          <div id="surah-flow-${surah.surahNumber}" class="surah-book-banner" style="margin-top: ${idx > 0 ? '4.5rem' : '1.5rem'};">
+            <h2 class="banner-title">${surah.surahNameArabic}</h2>
+            <div class="banner-meta">سورة رقم (${sNumAr}) • آياتها (${ayahsCountAr}) • تفسير الجلالين</div>
+          </div>
+
+          <div class="manuscript-flow">
+        `;
+
+        surah.ayahs.forEach(a => {
+          const qText = highlightSearch(a.quranText.trim(), query);
+          const jText = highlightSearch(formatMatnPhrases(a.jalalayn.trim()), query);
+          const aNumAr = toArabicNumeral(a.ayahNumber);
+
+          html += `
+            <span class="quran-ayah-part">﴿ ${qText} ﴾</span>
+            <span class="ayah-num-indicator">[${aNumAr}]</span>
+            <span class="jalalayn-text-part">${jText}</span>
+            &nbsp;&nbsp;
+          `;
+        });
+
+        html += `</div>`;
+      });
+
+      readingContainer.innerHTML = html;
+    }
+
+    // Font resizing
+    document.getElementById("btnFontInc").addEventListener("click", () => {
+      if (currentArabicFontSize < 2.5) {
+        currentArabicFontSize += 0.12;
+        document.documentElement.style.setProperty('--arabic-font-size', `${currentArabicFontSize}rem`);
+      }
+    });
+
+    document.getElementById("btnFontDec").addEventListener("click", () => {
+      if (currentArabicFontSize > 1.2) {
+        currentArabicFontSize -= 0.12;
+        document.documentElement.style.setProperty('--arabic-font-size', `${currentArabicFontSize}rem`);
+      }
+    });
+
+    // Theme toggling
+    document.getElementById("btnThemeToggle").addEventListener("click", () => {
+      themeIndex = (themeIndex + 1) % themes.length;
+      document.documentElement.setAttribute('data-theme', themes[themeIndex]);
+    });
+
+    // Search input
+    let searchTimer = null;
+    searchInput.addEventListener("input", (e) => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        renderTafseer(e.target.value);
+      }, 300);
+    });
+
+    // Initial render
+    renderTafseer();
+  </script>
+</body>
+</html>

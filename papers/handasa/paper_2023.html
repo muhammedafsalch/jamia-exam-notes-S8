@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ml" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 ഹന്ദസ &amp; ഹിസാബ് ചോദ്യോത്തരങ്ങൾ (S8) - തഹ്‌രീറു ഉഖ്‌ലൈദിസ് &amp; ഖുലാസ്വതുൽ ഹിസാബ് | JJC Handasa</title>
+  <meta name="description" content="2023 ലെ ഹന്ദസ &amp; ഹിസാബ് പരീക്ഷാ ചോദ്യപേപ്പറും തഹ്‌രീറു ഉഖ്‌ലൈദിസ്, ഖുലാസ്വതുൽ ഹിസാബ് എന്നിവയിൽ നിന്നുള്ള ആധികാരിക ഉത്തരങ്ങളും ജ്യാമിതീയ ചിത്രങ്ങളും മലയാള വിശദീകരണവും.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .paper-banner {
+      background: linear-gradient(135deg, #0f2d33 0%, #18444d 50%, #205c68 100%);
+      color: #ffffff;
+      padding: 2.2rem 1.5rem 1.8rem;
+      border-bottom: 3px solid var(--accent-gold);
+    }
+    .paper-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .exam-meta-box {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(226, 186, 73, 0.35);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem;
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .exam-meta-item .label {
+      font-size: 0.75rem;
+      color: #e5ded0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .exam-meta-item .val {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-top: 0.2rem;
+    }
+    .paper-nav-tabs {
+      display: flex;
+      gap: 0.6rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.5rem;
+      overflow-x: auto;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: var(--shadow-sm);
+    }
+    .paper-nav-tab {
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .paper-nav-tab:hover {
+      background: #e9f5f7;
+      color: #0f2d33;
+      border-color: #205c68;
+    }
+    .paper-nav-tab.active {
+      background: #18444d;
+      color: #ffffff;
+      border-color: #18444d;
+      box-shadow: 0 2px 6px rgba(24, 68, 77, 0.25);
+    }
+    .paper-nav-tab.kitab-link {
+      margin-left: auto;
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      border-color: var(--accent-gold-border);
+    }
+    .part-banner {
+      background: linear-gradient(135deg, #18444d 0%, #205c68 100%);
+      color: #ffffff;
+      padding: 1.2rem 1.5rem;
+      border-radius: var(--radius-md);
+      margin: 2rem 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-left: 6px solid var(--accent-gold);
+    }
+    .part-banner-title {
+      font-family: var(--font-arabic);
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    .part-banner-sub {
+      font-size: 0.95rem;
+      color: #e5f6f8;
+      margin-top: 0.2rem;
+    }
+    .section-group {
+      margin-bottom: 2.5rem;
+    }
+    .section-group-header {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-left: 5px solid var(--accent-gold);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.5rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .section-group-title-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0f2d33;
+      direction: rtl;
+    }
+    .section-group-title-ml {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+    .section-group-badge {
+      background: #18444d;
+      color: #ffffff;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .question-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .question-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .question-card-header {
+      background: var(--bg-surface-elevated);
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .q-number {
+      background: #18444d;
+      color: #ffffff;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .q-text-wrap {
+      flex: 1;
+    }
+    .q-text-ar {
+      font-family: var(--font-arabic);
+      font-size: 1.35rem;
+      color: #0f2d33;
+      font-weight: 700;
+      line-height: 1.7;
+      direction: rtl;
+      text-align: right;
+    }
+    .q-text-ml {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      line-height: 1.5;
+    }
+    .question-card-body {
+      padding: 1.5rem;
+    }
+    .answer-box {
+      background: #f4fafb;
+      border: 1px solid #c9e6eb;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .answer-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0f2d33;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .arabic-ans-text {
+      font-family: var(--font-arabic);
+      font-size: 1.3rem;
+      line-height: 1.9;
+      color: #122a2e;
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+    .explanation-box {
+      background: #fdfbf7;
+      border: 1px solid #ebd9b6;
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .explanation-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent-gold-dark);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .explanation-text {
+      font-size: 0.96rem;
+      line-height: 1.7;
+      color: var(--text-main);
+    }
+    .geometry-diagram-card {
+      background: #ffffff;
+      border: 1px solid #d3e7ea;
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      margin: 1rem 0;
+      text-align: center;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.02);
+    }
+    .geometry-caption {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #18444d;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Global Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-brand">
+        <a href="../../index.html" class="logo-link">
+          <div class="logo-mark">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-title">JJC Islamic Studies</div>
+            <div class="logo-subtitle">ഹന്ദസ &amp; ഹിസാബ് പരീക്ഷാ സഹായി &amp; ചോദ്യോത്തരങ്ങൾ</div>
+          </div>
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <a href="../../index.html" class="nav-link">ഫിഖ്ഹ് 1</a>
+        <a href="../../fiqh2_index.html" class="nav-link">ഫിഖ്ഹ് 2</a>
+        <a href="../../hadees_index.html" class="nav-link">ഹദീഥ്</a>
+        <a href="../../thafseer_index.html" class="nav-link">തഫ്സീർ</a>
+        <a href="../../usool_index.html" class="nav-link">ഉസൂലുൽ ഫിഖ്ഹ്</a>
+        <a href="../../handasa_index.html" class="nav-link active">ഹന്ദസ &amp; ഹിസാബ്</a>
+        <a href="index.html" class="nav-link">ചോദ്യപേപ്പറുകൾ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-button" title="തീം മാറ്റുക">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="paper-banner">
+    <div class="paper-container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <span style="background:var(--accent-gold); color:#0f2d33; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:12px; text-transform:uppercase;">
+            Semester 7 Exam | الفصل الدراسي السابع
+          </span>
+          <h1 style="font-size:2rem; font-weight:800; margin-top:0.6rem; color:#ffffff;">
+            2023 ഹന്ദസ &amp; ഹിസാബ് ചോദ്യോത്തരങ്ങൾ (S8)
+          </h1>
+          <p style="color:#d5f0f3; font-size:1rem; margin-top:0.3rem;">
+            جامعة النورية العربية - تنسيق الكليات | أسئلة الهندسة والحساب (أصول إقليدس وخلاصة الحساب)
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <a href="../../handasa_index.html" style="background:#ffffff; color:#0f2d33; font-weight:700; padding:0.65rem 1.25rem; border-radius:var(--radius-sm); text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
+            📐 ഹന്ദസ &amp; ഹിസാബ് പോർട്ടൽ
+          </a>
+        </div>
+      </div>
+
+      <!-- Exam Metadata -->
+      <div class="exam-meta-box">
+        <div class="exam-meta-item">
+          <div class="label">വർഷം (السنة)</div>
+          <div class="val">2023 പരീക്ഷ</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">സമയം (الوقت)</div>
+          <div class="val">9.30 AM – 10.30 AM</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ആകെ മാർക്ക് (العلامة)</div>
+          <div class="val">50 മാർക്ക്</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="label">ക്ലാസ് / ബാച്ച്</div>
+          <div class="val">JCSB7 - S8 ബാച്ചിലർ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Exam Nav Tabs -->
+  <nav class="paper-nav-tabs">
+    <a href="paper_2025.html" class="paper-nav-tab">🎓 2025 പരീക്ഷ</a>
+    <a href="paper_2024.html" class="paper-nav-tab">🎓 2024 പരീക്ഷ</a>
+    <a href="paper_2023.html" class="paper-nav-tab active">🎓 2023 പരീക്ഷ</a>
+    <a href="index.html" class="paper-nav-tab">📁 ആർക്കൈവ് ഹബ്ബ്</a>
+    <a href="../../handasa_index.html" class="paper-nav-tab kitab-link">📐 പാഠപുസ്തക പഠനം →</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="paper-container" style="padding: 2.5rem 1.5rem;">
+
+    <!-- ================= PART 1: AL-HANDASA ================= -->
+    <div class="part-banner">
+      <div>
+        <h2 class="part-banner-title">الْقِسْمُ الْأَوَّلُ: الْهَنْدَسَةُ (تَحْرِيرُ أُصُولِ إِقْلِيدِسَ)</h2>
+        <div class="part-banner-sub">ഒന്നാം ഭാഗം: ഇൽമുൽ ഹന്ദസ (ജ്യാമിതി) • 25 മാർക്ക്</div>
+      </div>
+      <div class="section-group-badge">25 Marks</div>
+    </div>
+
+    <!-- Section I: Definitions (9 Marks) -->
+    <section class="section-group" id="sec-23-h1">
+      <div class="section-group-header">
+        <div>
+          <h3 class="section-group-title-ar">I. عَرِّفْ (3 × 3 = 9)</h3>
+          <div class="section-group-title-ml">വിഭാഗം 1: നിർവചിക്കുക (ഓരോന്നിനും 3 മാർക്ക് വീതം)</div>
+        </div>
+        <span class="section-group-badge">9 മാർക്ക്</span>
+      </div>
+
+      <!-- Q1 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">السَّطْحُ الْمُسْتَوِي..</div>
+            <div class="q-text-ml">സത്വ്‌ഹുൽ മുസ്തവീ (സമതല പ്രതലം / Plane Surface) നിർവചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">തഹ്‌രീറു ഉഖ്‌ലൈദിസിൽ നിന്നുള്ള നിർവചനം:</div>
+            <div class="arabic-ans-text">
+              السَّطْحُ الْمُسْتَوِي: هُوَ السَّطْحُ الَّذِي يَنْطَبِقُ عَلَيْهِ الْخَطُّ الْمُسْتَقِيمُ إِذَا وُضِعَ عَلَيْهِ كَيْفَمَا كَانَ، وَيَسْتَوِي وَضْعُهُ بِالنِّسْبَةِ إِلَى الْخُطُوطِ الَّتِي عَلَيْهِ.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ഏതൊരു നേർവര വെച്ചാലും പൂർണ്ണമായും ചേർന്നിരിക്കത്തക്കവണ്ണം പരന്ന പ്രതലത്തിനാണ് <strong>സമതല ഉപരിതലം (സത്വ്‌ഹുൽ മുസ്തവീ / Plane Surface)</strong> എന്ന് പറയുന്നത്.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q2 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الزَّاوِيَةُ الْقَائِمَةُ..</div>
+            <div class="q-text-ml">സാവിയത്തുൻ ഖാഇമഃ (മട്ടകോൺ / Right Angle) നിർവചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">തഹ്‌രീറു ഉഖ്‌ലൈദിസിൽ നിന്നുള്ള നിർവചനം:</div>
+            <div class="arabic-ans-text">
+              الزَّاوِيَةُ الْقَائِمَةُ: هِيَ الَّتِي تَحْدُثُ إِذَا قَامَ خَطٌّ مُسْتَقِيمٌ عَلَى خَطٍّ مُسْتَقِيمٍ آخَرَ فَحَدَثَتْ زَاوِيَتَانِ مُتَجَاوِرَتَانِ مُتَسَاوِيَتَانِ، فَكُلُّ وَاحِدَةٍ مِنْهُمَا زَاوِيَةٌ قَائِمَةٌ (وَقَدْرُهَا ٩٠ دَرَجَةً).
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ഒരു നേർവര മറ്റൊരു നേർവരക്ക് മുകളിൽ ലംബമായി നിൽക്കുകയും, അതിന്റെ ഇരുവശങ്ങളിലുമുണ്ടാകുന്ന അടുത്തടുത്ത രണ്ട് കോണുകൾ തുല്യമാവുകയും ചെയ്താൽ ആ ഓരോ കോണിനെയും <strong>മട്ടകോൺ (സാവിയത്തുൻ ഖാഇമഃ / 90°)</strong> എന്ന് വിളിക്കുന്നു.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q3 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الدَّائِرَةُ..</div>
+            <div class="q-text-ml">ദാഇറഃ (വൃത്തം / Circle) നിർവചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="answer-tag">തഹ്‌രീറു ഉഖ്‌ലൈദിസിൽ നിന്നുള്ള നിർവചനം:</div>
+            <div class="arabic-ans-text">
+              الدَّائِرَةُ: هِيَ شَكْلٌ بَسِيطٌ فِي سَطْحٍ مُسْتَوٍ يُحِيطُ بِهِ خَطٌّ وَاحِدٌ (يُسَمَّى الْمُحِيطَ)، فِي دَاخِلِهِ نُقْطَةٌ (تُسَمَّى الْمَرْكَزَ)، كُلُّ الْخُطُوطِ الْمُسْتَقِيمَةِ الْخَارِجَةِ مِنْهَا إِلَى الْمُحِيطِ مُتَسَاوِيَةٌ.
+            </div>
+          </div>
+          <div class="explanation-box">
+            <div class="explanation-title">മലയാള വിശദീകരണം:</div>
+            <div class="explanation-text">
+              ഒരു സമതലത്തിൽ ഒരൊറ്റ വരയാൽ (പരിധി) ചുറ്റപ്പെട്ട ലളിത രൂപമാണ് വൃത്തം. ഇതിന്റെ ഉള്ളിലുള്ള ഒരു കേന്ദ്ര ബിന്ദുവിൽ നിന്നും പരിധിയിലേക്കുള്ള എല്ലാ നേർവരകളും തുല്യനീളമുള്ളതായിരിക്കും.
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section II: Short Answers (8 Marks) -->
+    <section class="section-group" id="sec-23-h2">
+      <div class="section-group-header">
+        <div>
+          <h3 class="section-group-title-ar">II. أَجِبْ مُخْتَصَرًا (4 × 2 = 8)</h3>
+          <div class="section-group-title-ml">വിഭാഗം 2: ചുരുക്കി ഉത്തരം നൽകുക (ഓരോന്നിനും 2 മാർക്ക് വീതം)</div>
+        </div>
+        <span class="section-group-badge">8 മാർക്ക്</span>
+      </div>
+
+      <!-- Q1 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مَا هُوَ الْمَرْكَزُ وَالْمُحِيطُ فِي الدَّائِرَةِ؟</div>
+            <div class="q-text-ml">വൃത്തത്തിലെ കേന്ദ്രവും (മർകസ്) പരിധിയും (മുഹീത്വ്) എന്താണ്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              <strong>الْمَرْكَزُ:</strong> النُّقْطَةُ الَّتِي فِي دَاخِلِ الدَّائِرَةِ تَتَسَاوَى الْأَبْعَادُ مِنْهَا إِلَى الْمُحِيطِ.<br>
+              <strong>الْمُحِيطُ:</strong> هُوَ الْخَطُّ الْبَسِيطُ الْمُسْتَدِيرُ الْمُحِيطُ بِالدَّائِرَةِ.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q2 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مَنْ هُوَ وَاضِعُ عِلْمِ الْهَنْدَسَةِ النَّظَرِيِّ الْمَشْهُورُ؟</div>
+            <div class="q-text-ml">സൈദ്ധാന്തിക ജ്യാമിതിയുടെ സ്ഥാപകനായി അറിയപ്പെടുന്ന പ്രശസ്ത പണ്ഡിതൻ ആരാണ്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              هُوَ الْعَالِمُ الْيُونَانِيُّ: <strong>إِقْلِيدِسُ الْإِسْكَنْدَرِيُّ (EUCLID)</strong>، صَاحِبُ كِتَابِ "الْأُصُولِ".
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q3 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">اُذْكُرِ الْمُصَادَرَةَ الرَّابِعَةَ لِإِقْلِيدِسَ</div>
+            <div class="q-text-ml">ഉഖ്‌ലൈദിസിന്റെ നാലാം സ്വയംസിദ്ധ പ്രമാണം (Postulate 4) എഴുതുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              الْمُصَادَرَةُ الرَّابِعَةُ: <strong>"أَنَّ جَمِيعَ الزَّوَايَا الْقَوَائِمِ مُتَسَاوِيَةٌ"</strong> (All right angles are equal to one another).
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q4 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">4</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مَا هُوَ الْخَطُّ الْمُسْتَقِيمُ؟</div>
+            <div class="q-text-ml">നേർവര (Straight Line) എന്നാൽ എന്ത്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              الْخَطُّ الْمُسْتَقِيمُ: هُوَ الْخَطُّ الَّذِي يَسْتَوِي وَضْعُهُ بِالنِّسْبَةِ إِلَى جَمِيعِ النُّقَطِ الَّتِي عَلَيْهِ (أَقْصَرُ خَطٍّ بَيْنَ نُقْطَتَيْنِ).
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section III: Drawing 4 Figures (8 Marks) -->
+    <section class="section-group" id="sec-23-h3">
+      <div class="section-group-header">
+        <div>
+          <h3 class="section-group-title-ar">III. اِرْسَمِ الْمَطْلُوبَ (4 × 2 = 8)</h3>
+          <div class="section-group-title-ml">വിഭാഗം 3: ചോദിച്ച 4 ജ്യാമിതീയ രൂപങ്ങൾ വരക്കുക (ഓരോന്നിനും 2 മാർക്ക് വീതം)</div>
+        </div>
+        <span class="section-group-badge">8 മാർക്ക്</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+        
+        <!-- 1. زاويتان متجاورتان قائمتان -->
+        <div class="geometry-diagram-card">
+          <svg width="220" height="180" viewBox="0 0 220 180">
+            <line x1="20" y1="130" x2="200" y2="130" stroke="#18444d" stroke-width="3"/>
+            <line x1="110" y1="130" x2="110" y2="40" stroke="#18444d" stroke-width="3"/>
+            <rect x="85" y="105" width="25" height="25" fill="none" stroke="#e2ba49" stroke-width="2"/>
+            <rect x="110" y="105" width="25" height="25" fill="none" stroke="#e2ba49" stroke-width="2"/>
+            <text x="50" y="95" font-size="12" font-weight="bold" fill="#0f2d33">قائمة ٩٠°</text>
+            <text x="125" y="95" font-size="12" font-weight="bold" fill="#0f2d33">قائمة ٩٠°</text>
+          </svg>
+          <div class="geometry-caption">١) زَاوِيَتَانِ مُتَجَاوِرَتَانِ قَائِمَتَانِ</div>
+        </div>
+
+        <!-- 2. مثلث متساوي الساقين -->
+        <div class="geometry-diagram-card">
+          <svg width="220" height="180" viewBox="0 0 220 180">
+            <polygon points="110,35 50,145 170,145" fill="rgba(24, 68, 77, 0.08)" stroke="#18444d" stroke-width="3"/>
+            <!-- Tick marks on legs -->
+            <line x1="75" y1="85" x2="85" y2="95" stroke="#e2ba49" stroke-width="3"/>
+            <line x1="135" y1="95" x2="145" y2="85" stroke="#e2ba49" stroke-width="3"/>
+            <text x="90" y="165" font-size="12" font-weight="bold" fill="#0f2d33">الضلعان متساويان</text>
+          </svg>
+          <div class="geometry-caption">٢) مُثَلَّثٌ مُتَسَاوِي السَّاقَيْنِ (Isosceles)</div>
+        </div>
+
+        <!-- 3. دائرة مع المركز والقطر -->
+        <div class="geometry-diagram-card">
+          <svg width="220" height="180" viewBox="0 0 220 180">
+            <circle cx="110" cy="90" r="60" fill="#f4fafb" stroke="#18444d" stroke-width="2.5"/>
+            <line x1="50" y1="90" x2="170" y2="90" stroke="#e2ba49" stroke-width="3"/>
+            <circle cx="110" cy="90" r="4" fill="#0e7a68"/>
+            <text x="115" y="80" font-size="12" font-weight="bold" fill="#0e7a68">م</text>
+            <text x="85" y="110" font-size="12" font-weight="bold" fill="#b0881e">القطر</text>
+          </svg>
+          <div class="geometry-caption">٣) دَائِرَةٌ مَعَ الْمَرْكَزِ وَالْقُطْرِ</div>
+        </div>
+
+        <!-- 4. خطان متوازيان -->
+        <div class="geometry-diagram-card">
+          <svg width="220" height="180" viewBox="0 0 220 180">
+            <line x1="30" y1="70" x2="190" y2="70" stroke="#18444d" stroke-width="3"/>
+            <line x1="30" y1="115" x2="190" y2="115" stroke="#18444d" stroke-width="3"/>
+            <text x="70" y="98" font-size="12" font-weight="bold" fill="#e2ba49">← بُعْدٌ ثَابِتٌ دَائِمًا →</text>
+          </svg>
+          <div class="geometry-caption">٤) خَطَّانِ مُتَوَازِيَانِ (Parallel Lines)</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PART 2: KHULASAT AL-HISAB ================= -->
+    <div class="part-banner" style="background: linear-gradient(135deg, #123338 0%, #1f5059 100%);">
+      <div>
+        <h2 class="part-banner-title">الْقِسْمُ الثَّانِي: الْحِسَابُ (خُلَاصَةُ الْحِسَابِ)</h2>
+        <div class="part-banner-sub">രണ്ടാം ഭാഗം: ഇൽമുൽ ഹിസാബ് (ഗണിതം) • 25 മാർക്ക്</div>
+      </div>
+      <div class="section-group-badge">25 Marks</div>
+    </div>
+
+    <!-- Section IV: Definitions (9 Marks) -->
+    <section class="section-group" id="sec-23-k1">
+      <div class="section-group-header">
+        <div>
+          <h3 class="section-group-title-ar">IV. عَرِّفْ (3 × 3 = 9)</h3>
+          <div class="section-group-title-ml">വിഭാഗം 4: നിർവചിക്കുക (ഓരോന്നിനും 3 മാർക്ക് വീതം)</div>
+        </div>
+        <span class="section-group-badge">9 മാർക്ക്</span>
+      </div>
+
+      <!-- Q1 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">الْجَمْعُ..</div>
+            <div class="q-text-ml">അൽ-ജംഅ് (കൂട്ടൽ / Addition) നിർവചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              الْجَمْعُ: هُوَ ضَمُّ عَدَدٍ إِلَى آخَرَ لِيَجْتَمِعَا جُمْلَةً وَاحِدَةً، أَوْ تَحْصِيلُ جُمْلَةِ مَقَادِيرَ مُتَفَرِّقَةٍ.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q2 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">التَّفْرِيقُ (الطَّرْحُ)..</div>
+            <div class="q-text-ml">അത്തഫ്‌രീഖ് / അത്വറഹ് (കുറയ്ക്കൽ / Subtraction) നിർവചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              التَّفْرِيقُ: هُوَ إِسْقَاطُ الْعَدَدِ الْأَقَلِّ مِنَ الْعَدَدِ الْأَكْثَرِ لِيُعْلَمَ الْقَدْرُ الْبَاقِي بَيْنَهُمَا.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q3 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">التَّضْعِيفُ وَالتَّنْصِيفُ..</div>
+            <div class="q-text-ml">അത്തള്ഈഫും അത്തൻസ്വീഫും (ഇരട്ടിയാക്കലും പകുതിയാക്കലും) നിർവചിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              <strong>التَّضْعِيفُ:</strong> زِيَادَةُ مِثْلِ الْعَدَدِ عَلَيْهِ (أَيْ ضَرْبُهُ فِي ٢).<br>
+              <strong>التَّنْصِيفُ:</strong> تَقْسِيمُ الْعَدَدِ إِلَى جُزْءَيْنِ مُتَسَاوِيَيْنِ (أَيْ قِسْمَتُهُ عَلَى ٢).
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section V: Questions (8 Marks) -->
+    <section class="section-group" id="sec-23-k2">
+      <div class="section-group-header">
+        <div>
+          <h3 class="section-group-title-ar">V. أَجِبْ (4 × 2 = 8)</h3>
+          <div class="section-group-title-ml">വിഭാഗം 5: ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുക (ഓരോന്നിനും 2 മാർക്ക് വീതം)</div>
+        </div>
+        <span class="section-group-badge">8 മാർക്ക്</span>
+      </div>
+
+      <!-- Q1 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مَا هُوَ الْعَدَدُ التَّامُّ وَالزَّائِدُ وَالنَّاقِصُ؟</div>
+            <div class="q-text-ml">താം, സാഇദ്, നാഖിസ്വ് എന്നീ സംഖ്യകൾ ഏവ?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              <strong>التَّامُّ:</strong> مَا سَاوَى مَجْمُوعُ أَجْزَائِهِ نَفْسَ الْعَدَدِ (كَـ ٦: أَجْزَاؤُهَا ٣+٢+١=٦، وَكَـ ٢٨).<br>
+              <strong>الزَّائِدُ:</strong> مَا زَادَ مَجْمُوعُ أَجْزَائِهِ عَلَيْهِ (كَـ ١٢: أَجْزَاؤُهَا ٦+٤+٣+٢+١=١٦، وَهُوَ أَكْبَرُ مِنْ ١٢).<br>
+              <strong>النَّاقِصُ:</strong> مَا نَقَصَ مَجْمُوعُ أَجْزَائِهِ عَنْهُ (كَـ ٨: أَجْزَاؤُهَا ٤+٢+١=٧، وَهُوَ أَقَلُّ مِنْ ٨).
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q2 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مَا هُوَ مِيزَانُ الضَّرْبِ وَكَيْفَ نَمْتَحِنُ بِهِ؟</div>
+            <div class="q-text-ml">ഗുണനത്തിലെ മീസാൻ പരീക്ഷണം എങ്ങനെയാണ്?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              قَاعِدَةُ مِيزَانِ الضَّرْبِ: نَضْرِبُ مِيزَانَ الْمَضْرُوبِ فِي مِيزَانِ الْمَضْرُوبِ فِيهِ، ثُمَّ نَسْتَخْرِجُ مِيزَانَ الْحَاصِلِ. فَإِنْ سَاوَى مِيزَانَ جُمْلَةِ الضَّرْبِ فَالْعَمَلُ صَحِيحٌ.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q3 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">3</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">كَيْفَ نَسْتَخْرِجُ جَذْرَ ٦٤ وَ ١٤٤؟</div>
+            <div class="q-text-ml">64, 144 എന്നിവയുടെ വർഗ്ഗമൂലങ്ങൾ (ജദ്‌ർ) കണ്ടെത്തുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              • جَذْرُ ٦٤ هُوَ <strong>٨</strong> (لِأَنَّ ٨ × ٨ = ٦٤).<br>
+              • جَذْرُ ١٤٤ هُوَ <strong>١٢</strong> (لِأَنَّ ١٢ × ١٢ = ١٤٤).
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Q4 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">4</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">مَا هِيَ مَرَاتِبُ الْحِسَابِ الْأَسَاسِيَّةُ؟</div>
+            <div class="q-text-ml">അടിസ്ഥാന സംഖ്യാ സ്ഥാനങ്ങൾ ഏവ?</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              الْآحَادُ، وَالْعَشَرَاتُ، وَالْمِئَاتُ، وَالْأُلُوفُ.
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section VI: Calculations (8 Marks) -->
+    <section class="section-group" id="sec-23-k3">
+      <div class="section-group-header">
+        <div>
+          <h3 class="section-group-title-ar">VI. اِعْمَلِ الْعَمَلَ مَعَ بَيَانِ الطَّرِيقِ (2 × 4 = 8)</h3>
+          <div class="section-group-title-ml">വിഭാഗം 6: വഴി വ്യക്തമാക്കി ക്രിയകൾ ചെയ്യുക (ഓരോന്നിനും 4 മാർക്ക് വീതം)</div>
+        </div>
+        <span class="section-group-badge">8 മാർക്ക്</span>
+      </div>
+
+      <!-- Sum 1 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">1</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ضَرْبُ ٧٥ فِي ١٢ بِطَرِيقَةِ الْبَسْطِ</div>
+            <div class="q-text-ml">75 നെ 12 കൊണ്ട് ബസ്വ്ത് രീതിയിൽ ഗുണിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              <strong>الْمَطْلُوبُ: ٧٥ × ١٢</strong><br><br>
+              <strong>طَرِيقَةُ الْبَسْطِ:</strong><br>
+              ١٢ = ١٠ + ٢.<br>
+              ١) نَضْرِبُ ٧٥ فِي ١٠ = ٧٥٠.<br>
+              ٢) ثُمَّ نَضْرِبُ ٧٥ فِي ٢ = ١٥٠.<br>
+              ٣) نَجْمَعُ الْحَاصِلَيْنِ: ٧٥٠ + ١٥٠ = <strong>٩٠٠</strong>.<br><br>
+              <strong>الِامْتِحَانُ بِمِيزَانِ التِّسْعَةِ:</strong><br>
+              • مِيزَانُ ٧٥: ٥ + ٧ = ١٢ -> ٢ + ١ = ٣.<br>
+              • مِيزَانُ ١٢: ٢ + ١ = ٣.<br>
+              • حَاصِلُ ضَرْبِ الْمِيزَانَيْنِ: ٣ × ٣ = ٩ (أَوْ ٠).<br>
+              • مِيزَانُ حَاصِلِ الْعَمَلِ (٩٠٠): ٠ + ٠ + ٩ = ٩ (أَوْ ٠).<br>
+              فَتَسَاوَى الْمِيزَانَانِ وَصَحَّ الْعَمَلُ.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sum 2 -->
+      <article class="question-card">
+        <div class="question-card-header">
+          <div class="q-number">2</div>
+          <div class="q-text-wrap">
+            <div class="q-text-ar">ضَرْبُ ٩ فِي ٨ بِطَرِيقَةِ النَّقْصِ عَنِ الْعَشَرَةِ</div>
+            <div class="q-text-ml">9 നെ 8 കൊണ്ട് പത്തിൽ നിന്നുള്ള ന്യൂനത വെച്ച് ഗുണിക്കുക.</div>
+          </div>
+        </div>
+        <div class="question-card-body">
+          <div class="answer-box">
+            <div class="arabic-ans-text">
+              <strong>الْمَطْلُوبُ: ٩ × ٨</strong><br><br>
+              • نُقْصَانُ ٩ عَنِ ١٠ هُوَ: ١.<br>
+              • نُقْصَانُ ٨ عَنِ ١٠ هُوَ: ٢.<br>
+              ١) نَضْرِبُ النُّقْصَانَيْنِ: ١ × ٢ = ٢ (رَقْمُ الْآحَادِ).<br>
+              ٢) نَطْرَحُ أَحَدَ النُّقْصَانَيْنِ مِنَ الْآخَرِ: ٩ - ٢ = ٧ (رَقْمُ الْعَشَرَاتِ).<br>
+              • فَيَكُونُ الْحَاصِلُ التَّامُّ: <strong>٧٢</strong>.
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); padding: 2.5rem 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+    <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.6rem; font-family: var(--font-malayalam);">
+      <p style="font-weight: 700; color: #0f2d33;">
+        തൻസീഖുൽ കുല്ലിയ്യാത്ത് അത്തബഇയ്യ ലിൽ ജാമിഅത്തിന്നൂരിയ്യത്തിൽ അറബിയ്യ
+      </p>
+      <p style="font-size: 0.85rem;">
+        ഹന്ദസ &amp; ഹിസാബ് (2023 പരീക്ഷാ ചോദ്യോത്തരങ്ങൾ).
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const themeBtn = document.getElementById('themeToggle');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    }
+  </script>
+
+</body>
+</html>

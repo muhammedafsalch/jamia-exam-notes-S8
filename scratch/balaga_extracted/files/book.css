@@ -1,0 +1,276 @@
+/* Book Styles
+--------------------------------------------------------- */
+@media all {
+	.page-break {
+		display: none;
+	}
+}
+
+@media print {
+	.page-break {
+		display: block;
+		page-break-before: always;
+	}
+}
+
+@font-face {
+	font-family: "rafedAlaem";
+	/*font-variant: normal;*/
+	
+	src: url('rfdAlaem05.eot');
+	src:	local('rfdAlaem05.ttf'), url('rfdAlaem05.ttf') format('truetype'),url('rfdAlaem05.woff') format('woff'), url('rfdAlaem05.svg#webfontYBMgNOwD') format('svg');
+}
+@font-face {
+	font-family: "Uthmanic";
+	/*font-variant: normal;*/
+	
+	src: url('UthmanicHaf1Ver09.eot');
+	src: local('UthmanicHaf1Ver09.otf'), url('UthmanicHaf1Ver09.otf') format('truetype'),url('UthmanicHaf1Ver09.woff') format('woff'), url('UthmanicHaf1Ver09.svg#webfontYBMgNOwD') format('svg');
+}
+
+@font-face {
+	font-family: 'BLotus';
+	src: url('BLotus.eot');
+	src: local('BLotus.ttf'), url('BLotus.ttf') format('truetype'), url('BLotus.woff') format('woff'), url('BLotus.svg#webfontYBMgNOwD') format('svg');
+	
+	/*font-family: "BLotus";
+	src: local('BLotus.eot');
+	src: url('BLotus.ttf') format("truetype");*/
+	font-size: 130%;
+}
+
+#bookText-wrap,#rightwraper {
+	font-family: Traditional Arabic;
+	font-size: 20px;
+}
+#bookText,#rightwraper p {
+	
+}
+
+p {
+	margin:5px 0;
+	text-align:justify;
+	direction:rtl;
+	font-size:100%;
+}
+
+/* Indent */
+p, h1, h2, h3, h4, h5 {
+	text-indent:.7cm;
+}
+p.rfdNormal0, p.rfdFootnote0, p.rfdVar0, p.rfdLine, p.rfdCenter, p.rfdFootnoteCenterBold, p.rfdLeftBold, p.rfdCenterBold1, p.rfdCenterBold2, p.rfdEn {
+	text-indent:0 !important;
+}
+/* Bold Type */
+.Heading1Char {
+	font-weight:bold;
+}
+
+.Heading2Char {
+	font-weight:bold;
+}
+
+.rfdBold1, .rfdBold2, .rfdCenterBold1, .rfdCenterBold1Char, .rfdCenterBold2, .rfdLeftBold, .rfdFootnoteBold, .rfdFootnoteCenterBold {
+	font-weight:bold;
+}
+.rfdBold2, .rfdBold2Char, .rfdCenterBold2, .rfdLeftBold, .rfdFootnoteBold, .rfdFootnoteCenterBold {
+	font-size:95%;
+}
+/* Center Style */
+.rfdCenter, .rfdCenterBold1, .rfdCenterBold1Char, .rfdCenterBold2, .Heading1Center, .Heading2Center,
+.Heading3Center, .Heading4Center, .Heading5Center, .rfdFootnoteCenter, .rfdFootnoteCenterBold, .rfdVarCenter,
+.rfdPoemFootnoteCenter, .rfdPoemCenter ,.Heading1CenterChar{
+	text-align:center;
+	text-indent: 0px !important;
+}
+/* Left Style */
+.rfdLeft, .rfdLeftBold, .rfdFootnoteLeft, .rfdEn {
+	text-align:left;
+}
+/* Alaem Style */
+.rfdAlaem {
+	font-family: rafedAlaem;
+	font-size: 100%;
+	line-height: 1;
+}
+.treeview li .rfdAlaem {
+	font-family: rafedAlaem;
+	font-size: 130%;
+	line-height: 1
+}
+/* Poem Styles */
+.rfdPoem, .rfdPoemFootnote {
+	text-align: justify;
+	line-height: 1;
+}
+.rfdPoem:after, .rfdPoemFootnote:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+.rfdPoem > br , .rfdPoemFootnote > br {
+	display: none;
+}
+/* Number of Footnote Style */
+.rfdFootnotenum {
+	color: #CB6521;
+	font-size: 70%;
+	line-height: 50%;
+	vertical-align: super;
+	font-weight: normal;
+}
+.rfdBold2 .rfdFootnotenum, .rfdCenterBold2 .rfdFootnotenum, .rfdLeftBold .rfdFootnotenum {
+	font-size: 95%;
+}
+h1 .rfdFootnotenum, .Heading1 .rfdFootnotenum, .Heading1Center .rfdFootnotenum, 
+h2 .rfdFootnotenum, .Heading2 .rfdFootnotenum, .Heading2Center .rfdFootnotenum, 
+h3 .rfdFootnotenum, h4 .rfdFootnotenum, h5 .rfdFootnotenum, 
+.Heading3 .rfdFootnotenum, .Heading3Center .rfdFootnotenum, 
+.Heading4 .rfdFootnotenum, .Heading4Center .rfdFootnotenum, 
+.Heading5 .rfdFootnotenum, .Heading5Center .rfdFootnotenum, 
+.rfdBold1 .rfdFootnotenum, .rfdCenterBold1 .rfdFootnotenum {
+	font-size: 80%;
+}
+.rfdFootnote_num_par {
+	color: #336600;
+	font-size: 70%;
+	line-height: 50%;
+	vertical-align: super;
+}
+/*	*/
+.rfdVar, .rfdVar0, .rfdVarCenter {
+	font-size:90%;
+}
+.rfdMid{
+	font-size:85%;
+}
+/* Footnote Style */
+.rfdFootnote, .rfdFootnote0, .rfdFootnote0Char , .rfdPoemFootnote, .rfdPoemFootnoteCenter, .rfdFootnoteCenter, .rfdFootnoteCenterBold , .rfdFootnoteLeft, .rfdFootnoteBold {
+	font-size:78%;
+}
+.rfdFootnote .rfdFootnote0, .rfdFootnote0 .rfdFootnote, .rfdFootnote0 .rfdFootnote0, .rfdFootnote .rfdFootnote,
+.rfdFootnote0 .rfdFootnoteCenter, .rfdFootnote0 .rfdFootnoteCenterBold , .rfdFootnote0 .rfdFootnoteLeft, .rfdFootnote0 .rfdFootnoteBold {
+	font-size:95%;
+}
+.rfdFootnote, .rfdLine, .rfdFootnote0 {
+	color: #6B7E6D;
+}
+/* Quran Style */
+.rfdAie, .rfdFootnoteAie{
+	font-family: "Traditional Arabic";
+	color:green;
+	font-weight:bold;
+}
+.rfdAie {
+	font-size:95%;
+}
+p .rfdFootnoteAie {
+	font-size:75%;
+}
+p.rfdFootnote0 .rfdFootnoteAie, p.rfdFootnote .rfdFootnoteAie{
+	font-size:100%;
+}
+/* Heading Style */
+h1, .Heading1, .Heading1Center, .Heading1CenterChar{
+	margin-top:12.0pt;
+	margin-bottom:3.0pt;
+	padding:0;
+	font-size:110%;
+	font-weight:bold;
+	color:#4F3320;
+}
+h2, .Heading2, .Heading2Center {
+	margin-top:12.0pt;
+	margin-bottom:3.0pt;
+	padding:0;
+	font-size:110%;
+	font-weight:bold;
+	color:#369;
+}
+h3, h4, h5, .Heading3, .Heading3Center, .Heading4, .Heading4Center, .Heading5,	.Heading5Center {
+	margin-top:12.0pt;
+	margin-bottom:3.0pt;
+	padding:0;
+	font-size:110%;
+	font-weight:bold;
+	color:#369;
+}
+/* Bold Style */
+.rfdBold1, .rfdBold1Char, .rfdCenterBold1, .rfdCenterBold1Char{
+	margin-top:21.0pt;/*12pt*/
+	margin-bottom:9.0pt;/*3pt*/
+	padding:0;
+	font-size:110%;
+	font-weight:bold;
+	color:#369;
+}
+/* Poem Style */
+.rfdPoem, .rfdPoemFootnote, .rfdPoemFootnoteCenter, .rfdPoemCenter {
+	color: #493D2C;
+}
+.rfdPoemTini, .rfdPoemTiniChar{
+	display: none;
+}
+/* Number of Pages Style */
+.page_number {
+	margin-top: 15px;
+}
+/* Toc Style */
+.rfdToc1, .rfdToc2, .rfdToc3, .rfdToc4, .rfdToc5 {
+	font-size:90%;
+	text-indent: 0px;
+}
+/* English content */
+.rfdEn {
+	direction: ltr;
+}
+/* Colored Text */
+.rfdJamed {
+	font-weight: bold;
+	color: #C00000;
+}
+
+.rfdMoshtaq {
+	color: #C00000;
+}
+
+.rfdRevaya {
+	color: #17365D;
+}
+
+.rfdSanad{
+}
+.rfdQuran {
+	font-family:Uthmanic;
+	font-size: 120%;
+	text-indent: 0;
+}
+.rfdQuranCenterBold1 {
+	font:bold 140% Uthmanic;
+	text-indent: 0;
+	text-align: center;
+}
+.rfdQuranCenterBold2 {
+	font:bold 120% Uthmanic;
+	text-indent: 0;
+	text-align: center;
+	
+}
+
+/*
+Pages
+*/
+.a5 {
+	width: 400px;
+	min-height: 480px;
+	padding: 50px 30px 40px;
+}
+.a5 div.pgcontent {
+	min-height: 430px;
+}
+.a5 p {
+	margin: 0;
+}
+.a5 p, .a5 h1, .a5 h2, .a5 h3, .a5 h4, .a5 h5 {
+	text-indent:.3cm;
+}

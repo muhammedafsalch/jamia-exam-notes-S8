@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مختصر المعاني في علم البلاغة للتفتازاني | النص الكامل (الفصل والوصل إلى الحقيقة والمجاز)</title>
+  <meta name="description" content="النص العربي الكامل لكتاب مختصر المعاني للإمام سعد الدين التفتازاني شرح تلخيص المفتاح للقزويني (من باب الفصل والوصل إلى الحقيقة والمجاز ص 145 - ص 220) - عرض الباب كاملاً أو الكتاب كاملاً في صفحة واحدة.">
+
+  <!-- Google Fonts: Arabic (Amiri, Scheherazade New), Malayalam (Noto Sans Malayalam), UI (Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #0a0f1d;
+      --bg-card: #111a2e;
+      --bg-card-elevated: #18243f;
+      --accent-gold: #f3c258;
+      --accent-gold-dark: #c69527;
+      --accent-gold-light: rgba(243, 194, 88, 0.15);
+      --accent-emerald: #10b981;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: rgba(243, 194, 88, 0.22);
+      --matn-color: #fbd36d;
+      --matn-bg: rgba(243, 194, 88, 0.12);
+      --quran-color: #34d399;
+      --quran-border: rgba(52, 211, 153, 0.35);
+      --poem-bg: rgba(243, 194, 88, 0.06);
+      --highlight-bg: #eab308;
+      --highlight-text: #000;
+      --font-arabic: 'Amiri', 'Scheherazade New', serif;
+      --font-ui: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-ml: 'Noto Sans Malayalam', sans-serif;
+      --arabic-font-size: 1.55rem;
+      --line-height: 2.3;
+    }
+
+    [data-theme="sepia"] {
+      --bg-main: #f8f3e8;
+      --bg-card: #ffffff;
+      --bg-card-elevated: #ede3d1;
+      --accent-gold: #92640a;
+      --accent-gold-dark: #6e4a05;
+      --accent-gold-light: rgba(146, 100, 10, 0.12);
+      --accent-emerald: #0d825c;
+      --text-main: #2b2319;
+      --text-muted: #6e6252;
+      --border-color: #dfd4bf;
+      --matn-color: #8c2409;
+      --matn-bg: rgba(140, 36, 9, 0.08);
+      --quran-color: #0d6e49;
+      --quran-border: rgba(13, 110, 73, 0.3);
+      --poem-bg: rgba(146, 100, 10, 0.06);
+      --highlight-bg: #fde047;
+      --highlight-text: #1c1917;
+    }
+
+    [data-theme="light"] {
+      --bg-main: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-elevated: #f1f5f9;
+      --accent-gold: #1e3a8a;
+      --accent-gold-dark: #172554;
+      --accent-gold-light: rgba(30, 58, 138, 0.1);
+      --accent-emerald: #059669;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --matn-color: #0369a1;
+      --matn-bg: rgba(3, 105, 161, 0.08);
+      --quran-color: #047857;
+      --quran-border: rgba(4, 120, 87, 0.3);
+      --poem-bg: rgba(30, 58, 138, 0.04);
+      --highlight-bg: #fde047;
+      --highlight-text: #1c1917;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    /* Top Navigation Bar */
+    .top-header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.6rem 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-shrink: 0;
+      z-index: 30;
+    }
+
+    .header-info {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .back-btn {
+      background: var(--accent-gold-light);
+      border: 1px solid var(--border-color);
+      color: var(--accent-gold);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: all 0.2s;
+      font-family: var(--font-ml);
+    }
+    .back-btn:hover {
+      background: var(--accent-gold);
+      color: #0a0f1d;
+    }
+
+    .app-title {
+      font-family: var(--font-arabic);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      letter-spacing: 0.3px;
+    }
+
+    .badge-range {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.78rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      color: var(--text-muted);
+      direction: ltr;
+    }
+
+    /* Controls Bar */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: var(--bg-card-elevated);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: all 0.15s ease;
+      user-select: none;
+      font-family: var(--font-ui);
+    }
+    .btn:hover {
+      background: var(--accent-gold-light);
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+    .btn.active {
+      background: var(--accent-gold);
+      color: #0a0f1d;
+      border-color: var(--accent-gold);
+      font-weight: 700;
+    }
+    .btn-icon {
+      padding: 0.35rem 0.55rem;
+      font-size: 0.95rem;
+    }
+
+    /* Search input */
+    .search-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-input {
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      width: 175px;
+      direction: rtl;
+      font-family: var(--font-arabic);
+      transition: width 0.2s;
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--accent-gold);
+      width: 220px;
+      box-shadow: 0 0 0 2px var(--accent-gold-light);
+    }
+
+    /* Scope Selector Buttons Group */
+    .scope-selector {
+      display: inline-flex;
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+    .scope-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.3rem 0.65rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: var(--font-ui);
+    }
+    .scope-btn:hover {
+      color: var(--text-main);
+    }
+    .scope-btn.active {
+      background: var(--accent-gold);
+      color: #0a0f1d;
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+
+    /* Main Container */
+    .layout-container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 58px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Chapters Sidebar */
+    .chapters-aside {
+      width: 330px;
+      background: var(--bg-card);
+      border-left: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      transition: transform 0.25s ease, width 0.25s ease;
+      z-index: 20;
+    }
+    .chapters-aside.collapsed {
+      transform: translateX(100%);
+      width: 0;
+      overflow: hidden;
+      border-left: none;
+    }
+
+    .sidebar-header {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-card-elevated);
+    }
+    .sidebar-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-arabic);
+    }
+
+    .chapters-list {
+      list-style: none;
+      overflow-y: auto;
+      flex: 1;
+      padding: 0.5rem 0.4rem;
+    }
+
+    .chapter-card-item {
+      padding: 0.85rem 0.9rem;
+      border-radius: 8px;
+      margin-bottom: 0.45rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      background: transparent;
+      transition: all 0.15s ease;
+      position: relative;
+    }
+    .chapter-card-item:hover {
+      background: var(--bg-card-elevated);
+      border-color: rgba(243, 194, 88, 0.3);
+    }
+    .chapter-card-item.active {
+      background: var(--accent-gold-light);
+      border-color: var(--accent-gold);
+    }
+
+    .chap-meta-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.3rem;
+    }
+    .chap-id-pill {
+      font-size: 0.72rem;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      color: var(--accent-gold);
+      font-weight: 600;
+      direction: ltr;
+    }
+    .chap-pages-pill {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      direction: rtl;
+    }
+
+    .chap-ar-title {
+      font-family: var(--font-arabic);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.45;
+      margin-bottom: 0.3rem;
+    }
+    .chapter-card-item.active .chap-ar-title {
+      color: var(--accent-gold);
+    }
+
+    .chap-ml-title {
+      font-family: var(--font-ml);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Content Area */
+    .content-viewport {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2.2rem 4rem;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--bg-main);
+    }
+
+    .reading-sheet {
+      width: 100%;
+      max-width: 900px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.2rem 2.8rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+
+    /* Chapter Banner Inside Sheet */
+    .sheet-chapter-banner {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 1.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .sheet-chapter-banner::after {
+      content: "✦ ✦ ✦";
+      display: block;
+      color: var(--accent-gold);
+      font-size: 0.9rem;
+      margin-top: 0.6rem;
+      letter-spacing: 0.5rem;
+      opacity: 0.8;
+    }
+    .banner-title-ar {
+      font-family: var(--font-arabic);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+    .banner-title-ml {
+      font-family: var(--font-ml);
+      font-size: 0.98rem;
+      color: var(--text-muted);
+    }
+    .banner-meta {
+      display: inline-flex;
+      gap: 0.8rem;
+      margin-top: 0.6rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Flowing Arabic Text */
+    .arabic-text-flow {
+      font-family: var(--font-arabic);
+      font-size: var(--arabic-font-size);
+      line-height: var(--line-height);
+      color: var(--text-main);
+      text-align: justify;
+      text-justify: inter-word;
+      word-spacing: 0.08em;
+    }
+
+    .arabic-text-flow p {
+      margin-bottom: 1.4rem;
+      text-indent: 1.8rem;
+    }
+
+    /* Headings inside text */
+    .section-heading {
+      font-family: var(--font-arabic);
+      color: var(--accent-gold);
+      font-size: calc(var(--arabic-font-size) * 1.25);
+      font-weight: 700;
+      text-align: center;
+      margin: 2rem 0 1.2rem;
+      padding: 0.5rem 0;
+      border-top: 1px dashed var(--border-color);
+      border-bottom: 1px dashed var(--border-color);
+      line-height: 1.4;
+    }
+
+    .sub-heading {
+      font-family: var(--font-arabic);
+      color: var(--accent-gold-dark);
+      font-size: calc(var(--arabic-font-size) * 1.1);
+      font-weight: 700;
+      margin: 1.5rem 0 0.8rem;
+    }
+
+    /* Matn Styling (Core Text) */
+    .matn-phrase {
+      color: var(--matn-color);
+      font-weight: 700;
+      background: var(--matn-bg);
+      padding: 0.05rem 0.25rem;
+      border-radius: 4px;
+      transition: background 0.15s;
+    }
+    .matn-phrase:hover {
+      background: rgba(243, 194, 88, 0.25);
+    }
+
+    /* Quranic Ayahs */
+    .quran-ayah {
+      color: var(--quran-color);
+      font-weight: 700;
+      padding: 0.05rem 0.3rem;
+      background: rgba(16, 185, 129, 0.08);
+      border-radius: 4px;
+      display: inline-block;
+      direction: rtl;
+    }
+
+    /* Arabic Poetry */
+    .arabic-poem {
+      background: var(--poem-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.8rem 1.4rem;
+      margin: 1.4rem auto;
+      text-align: center;
+      max-width: 85%;
+      font-weight: 600;
+      color: var(--accent-gold);
+      box-shadow: inset 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    /* Punctuation and brackets */
+    .rfdAlaem {
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+
+    /* Page Break Markers */
+    .page-break-divider {
+      margin: 2.2rem 0 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-color);
+      padding-top: 0.8rem;
+      user-select: none;
+    }
+
+    .page-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent-gold-light);
+      border: 1px solid var(--border-color);
+      color: var(--accent-gold);
+      font-family: var(--font-arabic);
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 0.2rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    .page-source-link {
+      color: var(--text-muted);
+      font-size: 0.76rem;
+      text-decoration: none;
+      direction: ltr;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: color 0.15s;
+    }
+    .page-source-link:hover {
+      color: var(--accent-gold);
+      text-decoration: underline;
+    }
+
+    /* Matn Only Isolated View */
+    .matn-card-isolate {
+      background: var(--bg-card-elevated);
+      border: 1px solid var(--border-color);
+      border-right: 4px solid var(--accent-gold);
+      border-radius: 8px;
+      padding: 1.2rem 1.6rem;
+      margin-bottom: 1.2rem;
+      font-family: var(--font-arabic);
+      font-size: calc(var(--arabic-font-size) * 1.05);
+      line-height: var(--line-height);
+      color: var(--matn-color);
+      font-weight: 700;
+    }
+
+    /* Search Highlighting */
+    mark.search-highlight {
+      background: var(--highlight-bg);
+      color: var(--highlight-text);
+      padding: 0.1rem 0.2rem;
+      border-radius: 3px;
+    }
+
+    /* Quick Chapter Jump Bar in All Book View */
+    .book-jump-bar {
+      position: sticky;
+      top: 0;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.5rem 0.8rem;
+      display: flex;
+      gap: 0.4rem;
+      overflow-x: auto;
+      z-index: 10;
+      margin: -2.2rem -2.8rem 1.8rem;
+      border-radius: 12px 12px 0 0;
+    }
+    .jump-pill {
+      background: var(--bg-card-elevated);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      white-space: nowrap;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--font-arabic);
+      transition: all 0.15s;
+    }
+    .jump-pill:hover, .jump-pill.active {
+      background: var(--accent-gold);
+      color: #0a0f1d;
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--accent-gold);
+      color: #0a0f1d;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 99;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .chapters-aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.5);
+      }
+      .content-viewport {
+        padding: 1rem 0.8rem 3rem;
+      }
+      .reading-sheet {
+        padding: 1.4rem 1.2rem;
+      }
+      .book-jump-bar {
+        margin: -1.4rem -1.2rem 1.2rem;
+      }
+      .app-title {
+        font-size: 1.15rem;
+      }
+      .badge-range {
+        display: none;
+      }
+    }
+
+    @media print {
+      body {
+        height: auto;
+        overflow: visible;
+        background: #fff !important;
+        color: #000 !important;
+      }
+      .top-header, .chapters-aside, .book-jump-bar, .header-actions {
+        display: none !important;
+      }
+      .layout-container {
+        height: auto;
+      }
+      .content-viewport {
+        padding: 0;
+      }
+      .reading-sheet {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .matn-phrase {
+        background: none;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="top-header">
+    <div class="header-info">
+      <a href="../index.html" class="back-btn" title="الرجوع إلى الفهرس العام / Home">
+        ← പ്രധാന പേജ്
+      </a>
+      <button id="btnToggleChapters" class="btn btn-icon" title="قائمة الأبواب">
+        📑 الأبواب
+      </button>
+      <div>
+        <h1 class="app-title">مختصر المعاني في علم البلاغة</h1>
+        <div style="font-size: 0.74rem; color: var(--text-muted); font-family: var(--font-arabic);">
+          للتفتازاني شرح تلخيص المفتاح للقزويني
+        </div>
+      </div>
+      <span class="badge-range">ص 145 – 220 (76 صفحة)</span>
+    </div>
+
+    <!-- Header Actions & Controls -->
+    <div class="header-actions">
+      <!-- Search Input -->
+      <div class="search-input-wrap">
+        <input type="text" id="searchInput" class="search-input" placeholder="بحث في النص..." aria-label="بحث في النص">
+      </div>
+
+      <!-- Scope Selector -->
+      <div class="scope-selector" role="group" aria-label="نطاق العرض">
+        <button id="scopeBabBtn" class="scope-btn active" title="عرض صفحات الباب كاملاً متتابعة في صفحة واحدة">
+          📑 عرض بالباب
+        </button>
+        <button id="scopeAllBookBtn" class="scope-btn" title="عرض كامل الكتاب (جميع الأبواب) في صفحة واحدة ممتدة">
+          📖 الكتاب كاملاً
+        </button>
+        <button id="scopeSingleBtn" class="scope-btn" title="عرض صفحة واحدة منفصلة">
+          📄 صفحة مفردة
+        </button>
+      </div>
+
+      <!-- Text Content Mode Toggle -->
+      <button id="btnModeAll" class="btn active" title="عرض الشرح والمتن معاً">
+        الشرح والمتن
+      </button>
+      <button id="btnModeMatn" class="btn" title="عرض عبارات المتن فقط">
+        المتن فقط
+      </button>
+
+      <!-- Font Resize -->
+      <button id="btnFontDec" class="btn btn-icon" title="تصغير الخط">A-</button>
+      <button id="btnFontInc" class="btn btn-icon" title="تكبير الخط">A+</button>
+
+      <!-- Theme Switcher -->
+      <button id="btnThemeToggle" class="btn btn-icon" title="تبديل المظهر (ليلي / ورقي / نهاري)">
+        🎨
+      </button>
+
+      <!-- Download Text Button -->
+      <a href="balaga_text.txt" download class="btn" title="تحميل النص الكامل كملف نصي txt">
+        💾 تحميل النص
+      </a>
+    </div>
+  </header>
+
+  <!-- Layout Container -->
+  <div class="layout-container">
+    <!-- Sidebar: Chapters List -->
+    <aside id="chaptersSidebar" class="chapters-aside">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <span>📚 أبواب المقرر الدراسي</span>
+        </div>
+        <button id="btnCloseSidebar" class="btn btn-icon" style="border:none; background:transparent;" title="إغلاق القائمة">
+          ✕
+        </button>
+      </div>
+      <ul id="chaptersList" class="chapters-list">
+        <!-- Rendered dynamically via JavaScript -->
+      </ul>
+    </aside>
+
+    <!-- Content Viewport -->
+    <main id="contentViewport" class="content-viewport">
+      <div id="readingContainer" class="reading-sheet">
+        <!-- Content will be rendered dynamically -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Element -->
+  <div id="toast" class="toast">تم النسخ بنجاح!</div>
+
+  <!-- Load Data -->
+  <script src="balaga_data.js"></script>
+
+  <script>
+    // State management
+    const CHAPTERS = window.BALAGA_DATA.chapters;
+    const allPages = window.BALAGA_DATA.pages;
+
+    let currentChapterId = CHAPTERS[0].id;
+    let currentScope = "bab"; // "bab" | "all_book" | "single"
+    let currentMode = "all";  // "all" | "matn"
+    let singlePageIndex = 0;   // for single page view
+    let currentArabicFontSize = 1.55;
+    let themeIndex = 0;
+    const themes = ["dark", "sepia", "light"];
+
+    // DOM Elements
+    const chaptersSidebar = document.getElementById("chaptersSidebar");
+    const chaptersList = document.getElementById("chaptersList");
+    const readingContainer = document.getElementById("readingContainer");
+    const contentViewport = document.getElementById("contentViewport");
+    const searchInput = document.getElementById("searchInput");
+    const toast = document.getElementById("toast");
+
+    // Initialize
+    function init() {
+      renderChaptersSidebar();
+      handleUrlHash();
+      renderContent();
+    }
+
+    // Hash Routing Support
+    function handleUrlHash() {
+      const hash = window.location.hash.substring(1);
+      if (!hash) return;
+
+      if (hash === "all") {
+        currentScope = "all_book";
+      } else if (hash.startsWith("page=")) {
+        const pageNum = parseInt(hash.split("=")[1]);
+        const pIdx = allPages.findIndex(p => p.page === pageNum);
+        if (pIdx !== -1) {
+          singlePageIndex = pIdx;
+          currentScope = "single";
+          const chap = CHAPTERS.find(c => pageNum >= c.startPage && pageNum <= c.endPage);
+          if (chap) currentChapterId = chap.id;
+        }
+      } else if (hash.startsWith("chap=")) {
+        const chapId = hash.split("=")[1];
+        if (CHAPTERS.some(c => c.id === chapId)) {
+          currentChapterId = chapId;
+          currentScope = "bab";
+        }
+      }
+      updateScopeButtons();
+    }
+
+    // Render Chapters Sidebar List
+    function renderChaptersSidebar() {
+      chaptersList.innerHTML = CHAPTERS.map((chap, idx) => {
+        const isActive = chap.id === currentChapterId;
+        const pageCount = (chap.endPage - chap.startPage + 1);
+        return `
+          <li class="chapter-card-item ${isActive ? 'active' : ''}" data-chap-id="${chap.id}" onclick="selectChapter('${chap.id}')">
+            <div class="chap-meta-top">
+              <span class="chap-id-pill">باب ${idx + 1}</span>
+              <span class="chap-pages-pill">ص ${chap.startPage} – ${chap.endPage} (${pageCount} صفحة)</span>
+            </div>
+            <div class="chap-ar-title">${chap.titleAr}</div>
+            <div class="chap-ml-title">${chap.titleMl}</div>
+          </li>
+        `;
+      }).join("");
+    }
+
+    function selectChapter(chapId) {
+      currentChapterId = chapId;
+      updateSidebarActive();
+
+      if (currentScope === "all_book") {
+        const headingEl = document.getElementById(`chap-heading-${chapId}`);
+        if (headingEl) {
+          headingEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (currentScope === "single") {
+        const chap = CHAPTERS.find(c => c.id === chapId);
+        const pIdx = allPages.findIndex(p => p.page === chap.startPage);
+        if (pIdx !== -1) singlePageIndex = pIdx;
+        renderContent();
+        contentViewport.scrollTop = 0;
+      } else {
+        renderContent();
+        contentViewport.scrollTop = 0;
+      }
+
+      // Auto close sidebar on mobile
+      if (window.innerWidth <= 900) {
+        chaptersSidebar.classList.add("collapsed");
+      }
+    }
+
+    function updateSidebarActive() {
+      document.querySelectorAll(".chapter-card-item").forEach(el => {
+        const id = el.getAttribute("data-chap-id");
+        if (id === currentChapterId) {
+          el.classList.add("active");
+        } else {
+          el.classList.remove("active");
+        }
+      });
+    }
+
+    function updateScopeButtons() {
+      document.getElementById("scopeBabBtn").classList.toggle("active", currentScope === "bab");
+      document.getElementById("scopeAllBookBtn").classList.toggle("active", currentScope === "all_book");
+      document.getElementById("scopeSingleBtn").classList.toggle("active", currentScope === "single");
+    }
+
+    // Helper: Toast
+    function showToast(msg) {
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 2200);
+    }
+
+    // Helper: Escape Regex
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    // Helper: Highlight text
+    function highlightSearch(text, query) {
+      if (!query || !query.trim()) return text;
+      const cleanQ = query.trim();
+      const re = new RegExp(`(${escapeRegExp(cleanQ)})`, 'gi');
+      return text.replace(re, '<mark class="search-highlight">$1</mark>');
+    }
+
+    // Format HTML for reader
+    function formatSharhMatn(htmlContent, query) {
+      if (!htmlContent) return '';
+      let formatted = htmlContent;
+      if (query && query.trim()) {
+        formatted = highlightSearch(formatted, query);
+      }
+      return formatted;
+    }
+
+    // Master Content Renderer
+    function renderContent(query = "") {
+      if (currentScope === "bab") {
+        renderBabView(currentChapterId, query);
+      } else if (currentScope === "all_book") {
+        renderAllBookView(query);
+      } else {
+        renderSinglePageView(singlePageIndex, query);
+      }
+    }
+
+    // 1. Render Bab View: All pages of the chosen chapter on a continuous single scrollable sheet
+    function renderBabView(chapId, query) {
+      const chap = CHAPTERS.find(c => c.id === chapId) || CHAPTERS[0];
+      const chapPages = allPages.filter(p => p.page >= chap.startPage && p.page <= chap.endPage);
+
+      let html = `
+        <div class="sheet-chapter-banner">
+          <h2 class="banner-title-ar">${chap.titleAr}</h2>
+          <div class="banner-title-ml">${chap.titleMl}</div>
+          <div class="banner-meta">
+            <span>📄 ${chapPages.length} صفحة (من ص ${chap.startPage} إلى ص ${chap.endPage})</span>
+            <span>•</span>
+            <span>المصدر: lib.rafed.net</span>
+          </div>
+        </div>
+      `;
+
+      chapPages.forEach((p, idx) => {
+        const pageMarker = `
+          <div class="page-break-divider" id="page-${p.page}">
+            <div style="display:flex; align-items:center; gap:0.6rem;">
+              <span class="page-tag-badge">صفحة ${p.page}</span>
+              <button class="btn" style="padding:0.15rem 0.5rem; font-size:0.75rem;" onclick="copyPageText(${p.page})" title="نسخ نص الصفحة">📋 نسخ</button>
+            </div>
+            <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="page-source-link" title="فتح الصفحة الأصلية في lib.rafed.net">
+              lib.rafed.net ↗
+            </a>
+          </div>
+        `;
+
+        if (currentMode === "matn") {
+          const matnContent = p.matnList && p.matnList.length > 0
+            ? p.matnList.map(m => `<div>${highlightSearch(m, query)}</div>`).join('<hr style="border:0; border-top:1px dashed var(--border-color); margin:0.8rem 0;">')
+            : '<span style="color:var(--text-muted); font-size:0.95rem;">(تابع لشرح المتن السابق في الصفحة)</span>';
+          html += `${pageMarker}<div class="matn-card-isolate">${matnContent}</div>`;
+        } else {
+          html += `${pageMarker}<div class="arabic-text-flow">${formatSharhMatn(p.formattedHtml, query)}</div>`;
+        }
+      });
+
+      readingContainer.innerHTML = html;
+      window.location.hash = `#chap=${chap.id}`;
+    }
+
+    // 2. Render All Book View: All 5 chapters & 76 pages loaded continuously on a single scrollable sheet
+    function renderAllBookView(query) {
+      let html = `
+        <div class="book-jump-bar">
+          <span style="font-size:0.78rem; font-weight:700; color:var(--accent-gold); align-self:center; margin-left:0.4rem;">انتقال سريع:</span>
+          ${CHAPTERS.map(c => `
+            <a href="#chap-heading-${c.id}" class="jump-pill" onclick="event.preventDefault(); document.getElementById('chap-heading-${c.id}').scrollIntoView({behavior:'smooth'});">${c.titleAr.split(':')[0]}</a>
+          `).join('')}
+        </div>
+      `;
+
+      CHAPTERS.forEach((chap, cIdx) => {
+        const chapPages = allPages.filter(p => p.page >= chap.startPage && p.page <= chap.endPage);
+
+        html += `
+          <div id="chap-heading-${chap.id}" class="sheet-chapter-banner" style="margin-top: ${cIdx > 0 ? '4rem' : '1rem'};">
+            <h2 class="banner-title-ar">${chap.titleAr}</h2>
+            <div class="banner-title-ml">${chap.titleMl}</div>
+            <div class="banner-meta">
+              <span>ص ${chap.startPage} – ص ${chap.endPage} (${chapPages.length} صفحة)</span>
+            </div>
+          </div>
+        `;
+
+        chapPages.forEach(p => {
+          const pageMarker = `
+            <div class="page-break-divider" id="page-${p.page}">
+              <div style="display:flex; align-items:center; gap:0.6rem;">
+                <span class="page-tag-badge">صفحة ${p.page}</span>
+                <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-arabic);">${chap.titleAr.split(':')[0]}</span>
+              </div>
+              <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="page-source-link">
+                lib.rafed.net ↗
+              </a>
+            </div>
+          `;
+
+          if (currentMode === "matn") {
+            const matnContent = p.matnList && p.matnList.length > 0
+              ? p.matnList.map(m => `<div>${highlightSearch(m, query)}</div>`).join('<hr style="border:0; border-top:1px dashed var(--border-color); margin:0.8rem 0;">')
+              : '<span style="color:var(--text-muted); font-size:0.95rem;">(تابع لشرح المتن السابق في الصفحة)</span>';
+            html += `${pageMarker}<div class="matn-card-isolate">${matnContent}</div>`;
+          } else {
+            html += `${pageMarker}<div class="arabic-text-flow">${formatSharhMatn(p.formattedHtml, query)}</div>`;
+          }
+        });
+      });
+
+      readingContainer.innerHTML = html;
+      window.location.hash = `#all`;
+    }
+
+    // 3. Render Single Page View
+    function renderSinglePageView(idx, query) {
+      const p = allPages[idx];
+      const chap = CHAPTERS.find(c => p.page >= c.startPage && p.page <= c.endPage) || CHAPTERS[0];
+
+      let html = `
+        <div class="page-break-divider" style="margin-top:0; border-top:none;">
+          <div style="display:flex; align-items:center; gap:0.6rem;">
+            <span class="page-tag-badge">صفحة ${p.page}</span>
+            <span style="font-family:var(--font-arabic); font-weight:700; color:var(--accent-gold);">${chap.titleAr}</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.4rem;">
+            <button class="btn" style="padding:0.2rem 0.6rem;" onclick="goToPrevPage()">◀ السابق</button>
+            <span style="font-size:0.8rem; color:var(--text-muted); direction:ltr;">${idx + 1} / ${allPages.length}</span>
+            <button class="btn" style="padding:0.2rem 0.6rem;" onclick="goToNextPage()">التالي ▶</button>
+          </div>
+        </div>
+      `;
+
+      if (currentMode === "matn") {
+        const matnContent = p.matnList && p.matnList.length > 0
+          ? p.matnList.map(m => `<div>${highlightSearch(m, query)}</div>`).join('<hr style="border:0; border-top:1px dashed var(--border-color); margin:0.8rem 0;">')
+          : '<span style="color:var(--text-muted); font-size:0.95rem;">(تابع لشرح المتن السابق في الصفحة)</span>';
+        html += `<div class="matn-card-isolate">${matnContent}</div>`;
+      } else {
+        html += `<div class="arabic-text-flow">${formatSharhMatn(p.formattedHtml, query)}</div>`;
+      }
+
+      html += `
+        <div style="margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border-color); display:flex; justify-content:space-between; align-items:center;">
+          <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="page-source-link">رابط الصفحة في lib.rafed.net ↗</a>
+          <div style="display:flex; gap:0.4rem;">
+            <button class="btn" onclick="goToPrevPage()">◀ ص ${idx > 0 ? allPages[idx-1].page : '-'}</button>
+            <button class="btn" onclick="goToNextPage()">ص ${idx < allPages.length - 1 ? allPages[idx+1].page : '-'} ▶</button>
+          </div>
+        </div>
+      `;
+
+      readingContainer.innerHTML = html;
+      window.location.hash = `#page=${p.page}`;
+    }
+
+    // Page navigation functions
+    window.goToPrevPage = function() {
+      if (singlePageIndex > 0) {
+        singlePageIndex--;
+        renderContent();
+        contentViewport.scrollTop = 0;
+      }
+    };
+
+    window.goToNextPage = function() {
+      if (singlePageIndex < allPages.length - 1) {
+        singlePageIndex++;
+        renderContent();
+        contentViewport.scrollTop = 0;
+      }
+    };
+
+    // Copy text function
+    window.copyPageText = function(pageNum) {
+      const p = allPages.find(item => item.page === pageNum);
+      if (p) {
+        navigator.clipboard.writeText(p.cleanText).then(() => {
+          showToast(`تم نسخ نص صفحة ${pageNum}`);
+        });
+      }
+    };
+
+    // Event Listeners: Scope Switcher
+    document.getElementById("scopeBabBtn").addEventListener("click", () => {
+      currentScope = "bab";
+      updateScopeButtons();
+      renderContent();
+      contentViewport.scrollTop = 0;
+    });
+
+    document.getElementById("scopeAllBookBtn").addEventListener("click", () => {
+      currentScope = "all_book";
+      updateScopeButtons();
+      renderContent();
+      contentViewport.scrollTop = 0;
+    });
+
+    document.getElementById("scopeSingleBtn").addEventListener("click", () => {
+      currentScope = "single";
+      updateScopeButtons();
+      renderContent();
+      contentViewport.scrollTop = 0;
+    });
+
+    // Sharh vs Matn toggle
+    document.getElementById("btnModeAll").addEventListener("click", () => {
+      currentMode = "all";
+      document.getElementById("btnModeAll").classList.add("active");
+      document.getElementById("btnModeMatn").classList.remove("active");
+      renderContent();
+    });
+
+    document.getElementById("btnModeMatn").addEventListener("click", () => {
+      currentMode = "matn";
+      document.getElementById("btnModeMatn").classList.add("active");
+      document.getElementById("btnModeAll").classList.remove("active");
+      renderContent();
+    });
+
+    // Font resizing
+    document.getElementById("btnFontInc").addEventListener("click", () => {
+      if (currentArabicFontSize < 2.3) {
+        currentArabicFontSize += 0.12;
+        document.documentElement.style.setProperty('--arabic-font-size', `${currentArabicFontSize}rem`);
+      }
+    });
+
+    document.getElementById("btnFontDec").addEventListener("click", () => {
+      if (currentArabicFontSize > 1.1) {
+        currentArabicFontSize -= 0.12;
+        document.documentElement.style.setProperty('--arabic-font-size', `${currentArabicFontSize}rem`);
+      }
+    });
+
+    // Theme toggling
+    document.getElementById("btnThemeToggle").addEventListener("click", () => {
+      themeIndex = (themeIndex + 1) % themes.length;
+      document.documentElement.setAttribute('data-theme', themes[themeIndex]);
+    });
+
+    // Sidebar toggles
+    document.getElementById("btnToggleChapters").addEventListener("click", () => {
+      chaptersSidebar.classList.toggle("collapsed");
+    });
+    document.getElementById("btnCloseSidebar").addEventListener("click", () => {
+      chaptersSidebar.classList.add("collapsed");
+    });
+
+    // Search input
+    let searchTimer = null;
+    searchInput.addEventListener("input", (e) => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        renderContent(e.target.value);
+      }, 300);
+    });
+
+    // Keyboard Shortcuts
+    document.addEventListener("keydown", (e) => {
+      if (e.target.tagName === "INPUT") return;
+      if (e.key === "ArrowLeft") {
+        if (currentScope === "single") goToNextPage();
+      } else if (e.key === "ArrowRight") {
+        if (currentScope === "single") goToPrevPage();
+      }
+    });
+
+    // Run
+    init();
+  </script>
+</body>
+</html>
