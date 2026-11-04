@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Primary Meta Tags -->
+  <title id="site-title">AL AYIN – 4th Batch | The Final Countdown</title>
+  <meta name="title" content="AL AYIN – 4th Batch | The Final Countdown">
+  <meta name="description" id="meta-description" content="Live countdown until February 5 & the Holy Month of Ramadan. AL AYIN 4th Batch – Final Year Students of Al Ansar Arabic College. 9 Years of Brotherhood & Memories.">
+  <meta name="keywords" content="AL AYIN, 4th Batch, Al Ansar Arabic College, Final Year Countdown, February 5, Ramadan Countdown, Brotherhood">
+  <meta name="author" content="AL AYIN 4th Batch">
+  <meta name="theme-color" content="#090a0f">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Open Graph / WhatsApp / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AL AYIN 4TH BATCH">
+  <meta property="og:title" id="og-title" content="AL AYIN – 4th Batch | The Final Countdown">
+  <meta property="og:description" id="og-description" content="Live countdown until February 5 & Ramadan. 9 Years of Friendship, Brotherhood, and Memories — Al Ansar Arabic College.">
+  <meta property="og:image" id="og-image" content="logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="AL AYIN 4th Batch Official Emblem">
+
+  <!-- Twitter / X Card Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" id="twitter-title" content="AL AYIN – 4th Batch | The Final Countdown">
+  <meta name="twitter:description" id="twitter-description" content="Live countdown until February 5 & Ramadan. 9 Years of Brotherhood at Al Ansar Arabic College.">
+  <meta name="twitter:image" content="logo.png">
+  <meta name="twitter:image:alt" content="AL AYIN 4th Batch Official Emblem">
+
+  <!-- Google Fonts: Poppins & Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. LUXURY DARK THEME DESIGN TOKENS
+       ========================================================================== */
+    :root {
+      /* Dark Canvas */
+      --bg-body: #08090e;
+      --bg-capsule: #121318;
+      --bg-capsule-hover: #16171d;
+      --bg-capsule-subtle: #0e0f14;
+      --bg-pill: rgba(255, 255, 255, 0.05);
+
+      /* Typography Colors */
+      --text-white: #ffffff;
+      --text-silver: #e2e8f0;
+      --text-muted: #8e95a5;
+      --text-dim: #555b6a;
+      --text-colon: rgba(255, 255, 255, 0.28);
+
+      /* Accents */
+      --accent-cyan: #38bdf8;
+      --accent-blue: #3b82f6;
+
+      /* Borders & Shadows */
+      --border-capsule: 1px solid rgba(255, 255, 255, 0.08);
+      --border-capsule-highlight: 1px solid rgba(255, 255, 255, 0.16);
+      --shadow-capsule: 0 20px 50px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.09);
+      --shadow-capsule-hover: 0 26px 65px -10px rgba(0, 0, 0, 0.9), 0 0 26px rgba(56, 189, 248, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+
+      /* Fonts & Radii */
+      --font-main: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-arabic: 'Amiri', serif;
+      --radius-capsule: clamp(22px, 3.2vw, 32px);
+      --radius-pill: 9999px;
+    }
+
+    /* ==========================================================================
+       2. RESET & BASE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow-x: hidden;
+      background-color: var(--bg-body);
+      color: var(--text-white);
+      font-family: var(--font-main);
+      user-select: none;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background: radial-gradient(circle at 50% 12%, #131724 0%, #090a0f 55%, #050608 100%);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       3. PRELOADER INTRO ANIMATION
+       ========================================================================== */
+    .preloader-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #08090e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.65s;
+    }
+
+    .preloader-overlay.fade-out {
+      opacity: 0;
+      transform: scale(1.05);
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .preloader-logo-wrap {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .preloader-halo {
+      position: absolute;
+      inset: -12px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, transparent 75%);
+      filter: blur(12px);
+      animation: pulseHalo 2s ease-in-out infinite alternate;
+    }
+
+    .preloader-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      border-top-color: var(--accent-cyan);
+      border-bottom-color: rgba(56, 189, 248, 0.2);
+      animation: spinRing 2.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    }
+
+    .preloader-logo {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 14px rgba(56, 189, 248, 0.5));
+      animation: logoPulse 2s ease-in-out infinite alternate;
+      z-index: 2;
+    }
+
+    .preloader-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      margin-left: 0.22em;
+      color: var(--text-white);
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    }
+
+    .preloader-subtitle {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-top: 4px;
+      opacity: 0.85;
+    }
+
+    .preloader-bar-wrap {
+      width: 140px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-pill);
+      margin-top: 1.2rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .preloader-bar-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #38bdf8, #2563eb, #38bdf8);
+      border-radius: var(--radius-pill);
+      animation: loadBar 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+
+    /* ==========================================================================
+       4. AMBIENT BACKGROUND LIGHTING & PROPER PARTICLES
+       ========================================================================== */
+    .ambient-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .ambient-glow-top {
+      position: absolute;
+      top: -22%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 85vw;
+      max-width: 920px;
+      height: 480px;
+      background: radial-gradient(ellipse at center, rgba(30, 58, 95, 0.4) 0%, rgba(14, 165, 233, 0.08) 45%, transparent 70%);
+      filter: blur(80px);
+      animation: ambientDrift 16s ease-in-out infinite alternate;
+    }
+
+    .ambient-glow-bottom {
+      position: absolute;
+      bottom: -22%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75vw;
+      max-width: 800px;
+      height: 400px;
+      background: radial-gradient(ellipse at center, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.25) 50%, transparent 75%);
+      filter: blur(80px);
+    }
+
+    #particles-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    /* ==========================================================================
+       5. PERFECTLY BALANCED SINGLE-SCREEN VIEWPORT CONTAINER
+       ========================================================================== */
+    .site-viewport {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 760px;
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0 auto;
+      padding: clamp(1.4rem, 4.2vh, 2.8rem) clamp(1rem, 3.8vw, 2.2rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Elegantly balances top, middle and bottom across screen height */
+      align-items: center;
+      gap: clamp(1.2rem, 3vh, 2.2rem);
+      text-align: center;
+    }
+
+    /* Fallback only for short landscape screens */
+    @media (max-height: 640px) {
+      body {
+        overflow-y: auto;
+      }
+      .site-viewport {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        justify-content: flex-start;
+        gap: 1.1rem;
+      }
+    }
+
+    /* Staggered on-load entrance animations */
+    .anim-fade-up {
+      opacity: 0;
+      transform: translateY(16px);
+      animation: revealUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .anim-delay-1 { animation-delay: 0.1s; }
+    .anim-delay-2 { animation-delay: 0.25s; }
+    .anim-delay-3 { animation-delay: 0.45s; }
+
+    /* ==========================================================================
+       6. HEADER & EMBLEM (CLEAN, PROPORTIONATE HIERARCHY)
+       ========================================================================== */
+    .hero-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(0.35rem, 0.9vh, 0.65rem);
+      width: 100%;
+    }
+
+    .hero-logo-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: clamp(0.2rem, 0.6vh, 0.4rem);
+    }
+
+    .hero-logo-halo {
+      position: absolute;
+      width: clamp(40px, 5.8vh, 50px);
+      height: clamp(40px, 5.8vh, 50px);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, transparent 70%);
+      filter: blur(8px);
+      animation: pulseHalo 3s ease-in-out infinite alternate;
+    }
+
+    .hero-brand-logo {
+      width: clamp(34px, 4.8vh, 44px);
+      height: clamp(34px, 4.8vh, 44px);
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.45));
+      position: relative;
+      z-index: 2;
+      transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+    }
+
+    .hero-brand-logo:hover {
+      transform: scale(1.08) rotate(2deg);
+    }
+
+    .unified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 16px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(59, 130, 246, 0.14));
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #7dd3fc;
+      font-size: clamp(0.64rem, 1vw, 0.74rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.15);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.25s ease;
+    }
+
+    .unified-badge:hover {
+      transform: scale(1.03);
+      border-color: rgba(56, 189, 248, 0.6);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+    }
+
+    .brand-title {
+      font-family: var(--font-main);
+      font-size: clamp(2.2rem, 5vh, 3.4rem);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      margin-left: 0.16em;
+      line-height: 1.05;
+      color: var(--text-white);
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7), 0 0 30px rgba(56, 189, 248, 0.15);
+    }
+
+    .brand-subtitle {
+      font-size: clamp(0.66rem, 1.2vh, 0.76rem);
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 2px;
+    }
+
+    .brand-subtitle .sep {
+      display: inline-block;
+      width: 3.5px;
+      height: 3.5px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+    }
+
+    .main-headline {
+      font-family: var(--font-main);
+      font-size: clamp(1.05rem, 2.4vh, 1.45rem);
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      margin-top: 3px;
+    }
+
+    .main-headline .accent-text {
+      color: var(--accent-cyan);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       7. COUNTDOWNS CENTER GROUP (PRIMARY + RAMADAN UNIFIED)
+       ========================================================================== */
+    .countdowns-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(0.85rem, 2vh, 1.35rem);
+    }
+
+    .primary-countdown-section {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .target-pill-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: clamp(0.4rem, 1vh, 0.75rem);
+      font-size: clamp(0.64rem, 1vw, 0.72rem);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-silver);
+    }
+
+    .target-pill-header svg {
+      width: 11px;
+      height: 11px;
+      fill: var(--accent-cyan);
+    }
+
+    /* Unified Dark Capsule: Matches Exact Width Grid of the Card Below */
+    .unified-dark-capsule {
+      background: var(--bg-capsule);
+      border: var(--border-capsule);
+      border-radius: var(--radius-capsule);
+      box-shadow: var(--shadow-capsule);
+      padding: clamp(1.15rem, 2.6vh, 2rem) clamp(0.75rem, 2.8vw, 2rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.35s ease;
+    }
+
+    .unified-dark-capsule::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 12%;
+      right: 12%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    }
+
+    .unified-dark-capsule:hover {
+      border: var(--border-capsule-highlight);
+      box-shadow: var(--shadow-capsule-hover);
+      background: var(--bg-capsule-hover);
+      transform: translateY(-2px);
+    }
+
+    .capsule-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      min-width: 0;
+      padding: 0 1px;
+    }
+
+    /* Digit Roller Viewport: Scaled smoothly across screen sizes */
+    .roller-viewport {
+      position: relative;
+      height: clamp(2.5rem, 5.8vh, 4.2rem);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .roller-digit {
+      font-family: var(--font-main);
+      font-size: clamp(1.9rem, 7.5vw, 4rem);
+      font-weight: 700;
+      color: var(--text-white);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      inset: 0;
+      transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.15), opacity 0.32s ease;
+    }
+
+    .roller-digit.digit-exit {
+      transform: translateY(-115%);
+      opacity: 0;
+    }
+
+    .roller-digit.digit-enter {
+      transform: translateY(115%);
+      opacity: 0;
+    }
+
+    .roller-digit.digit-active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .capsule-label {
+      font-size: clamp(0.68rem, 1.3vh, 0.85rem);
+      font-weight: 500;
+      color: var(--text-muted);
+      text-transform: lowercase;
+      letter-spacing: 0.02em;
+      margin-top: clamp(0.18rem, 0.5vh, 0.4rem);
+    }
+
+    .capsule-colon {
+      font-family: var(--font-main);
+      font-size: clamp(1.6rem, 5.5vw, 2.8rem);
+      font-weight: 300;
+      color: var(--text-colon);
+      line-height: 1;
+      margin-bottom: clamp(0.75rem, 1.9vh, 1.35rem);
+      padding: 0 4px;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    .milestone-banner {
+      display: none;
+      background: var(--bg-capsule);
+      border: 1px solid var(--accent-cyan);
+      border-radius: var(--radius-capsule);
+      padding: 1.2rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-white);
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       8. RAMADAN COUNTDOWN (MONTHS : WEEKS : DAYS - MATCHES TOP CAPSULE WIDTH)
+       ========================================================================== */
+    .ramadan-section {
+      width: 100%;
+      position: relative;
+    }
+
+    .ramadan-dark-capsule {
+      background: var(--bg-capsule-subtle);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: clamp(18px, 2.8vw, 24px);
+      padding: clamp(0.85rem, 1.8vh, 1.2rem) clamp(1rem, 2.6vw, 1.6rem);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .ramadan-dark-capsule:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      background: var(--bg-capsule);
+      transform: translateY(-2px);
+    }
+
+    .ramadan-header-group {
+      text-align: left;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .ramadan-title-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .ramadan-crescent-icon {
+      width: 14px;
+      height: 14px;
+      fill: var(--accent-cyan);
+      flex-shrink: 0;
+    }
+
+    .ramadan-heading {
+      font-size: clamp(0.76rem, 1.4vh, 0.9rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-white);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .ramadan-subtitle {
+      font-size: clamp(0.66rem, 1.2vh, 0.78rem);
+      color: var(--text-muted);
+      margin-top: 2px;
+      line-height: 1.3;
+      white-space: normal; /* Never truncated with awkward ellipsis */
+    }
+
+    /* 3 Clean Compact Pills: Months : Weeks : Days */
+    .ramadan-mini-cluster {
+      display: flex;
+      align-items: center;
+      gap: clamp(0.3rem, 0.9vw, 0.6rem);
+      flex-shrink: 0;
+    }
+
+    .ramadan-mini-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: clamp(0.38rem, 0.9vh, 0.58rem) clamp(0.55rem, 1.4vw, 0.85rem);
+      min-width: clamp(52px, 6.5vw, 68px);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+
+    .ramadan-mini-pill:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .ramadan-val {
+      font-family: var(--font-main);
+      font-size: clamp(1.05rem, 2.3vh, 1.35rem);
+      font-weight: 700;
+      color: var(--text-white);
+      line-height: 1;
+    }
+
+    .ramadan-lbl {
+      font-size: clamp(0.54rem, 1vw, 0.64rem);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: lowercase;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .ramadan-sep {
+      color: var(--text-colon);
+      font-weight: 300;
+      font-size: 1.1rem;
+      margin: 0 -1px;
+    }
+
+    /* ==========================================================================
+       9. EMOTIONAL FOOTER & ACTIONS
+       ========================================================================== */
+    .emotional-footer-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(0.45rem, 1.1vh, 0.75rem);
+    }
+
+    .arabic-calligraphy {
+      font-family: var(--font-arabic);
+      font-size: clamp(1.35rem, 3vh, 1.95rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-silver);
+      text-shadow: 0 4px 18px rgba(56, 189, 248, 0.16);
+      direction: rtl;
+    }
+
+    .brotherhood-message {
+      font-size: clamp(0.72rem, 1.3vh, 0.84rem);
+      color: var(--text-muted);
+      line-height: 1.45;
+      font-weight: 400;
+      max-width: 520px;
+    }
+
+    .action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 3px;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: clamp(7px, 1.2vh, 9px) clamp(16px, 3.2vw, 22px);
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-silver);
+      font-family: var(--font-main);
+      font-size: clamp(0.66rem, 1.1vw, 0.74rem);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .share-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.25);
+      color: var(--text-white);
+      transform: translateY(-2px);
+    }
+
+    .share-btn svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+
+    /* Mobile specific adjustments to ensure pristine fit */
+    @media (max-width: 540px) {
+      .site-viewport {
+        padding: clamp(1.2rem, 3.5vh, 2rem) clamp(0.85rem, 3.2vw, 1.25rem);
+        gap: clamp(1rem, 2.2vh, 1.6rem);
+      }
+      .ramadan-dark-capsule {
+        padding: 0.75rem 0.95rem;
+        gap: 0.65rem;
+      }
+      .ramadan-heading {
+        font-size: 0.78rem;
+      }
+      .ramadan-subtitle {
+        font-size: 0.65rem;
+      }
+      .ramadan-mini-pill {
+        min-width: 46px;
+        padding: 0.32rem 0.42rem;
+      }
+      .ramadan-val {
+        font-size: 1.05rem;
+      }
+      .ramadan-lbl {
+        font-size: 0.52rem;
+      }
+    }
+
+    /* Toast Notification */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(70px);
+      background: #181920;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      padding: 8px 22px;
+      border-radius: var(--radius-pill);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+      z-index: 99;
+      pointer-events: none;
+      opacity: 0;
+      transition: transform 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity 0.3s ease;
+    }
+
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       10. KEYFRAME ANIMATIONS
+       ========================================================================== */
+    @keyframes revealUp {
+      0% {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes ambientDrift {
+      0% {
+        transform: translateX(-50%) scale(0.95);
+        opacity: 0.75;
+      }
+      100% {
+        transform: translateX(-50%) scale(1.08);
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulseHalo {
+      0% {
+        transform: scale(0.85);
+        opacity: 0.3;
+      }
+      100% {
+        transform: scale(1.15);
+        opacity: 0.7;
+      }
+    }
+
+    @keyframes spinRing {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes logoPulse {
+      0% {
+        transform: scale(0.96);
+      }
+      100% {
+        transform: scale(1.04);
+      }
+    }
+
+    @keyframes loadBar {
+      0% {
+        width: 0%;
+      }
+      50% {
+        width: 65%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. LUXURY INTRO PRELOADER WITH LOGO -->
+  <div id="preloader" class="preloader-overlay" aria-label="Loading Countdown">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <div class="preloader-halo"></div>
+        <div class="preloader-ring"></div>
+        <img src="logo.png" alt="AL AYIN Emblem" class="preloader-logo">
+      </div>
+      <div class="preloader-title">AL AYIN</div>
+      <div class="preloader-subtitle">4TH BATCH · AL ANSAR ARABIC COLLEGE</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. AMBIENT LIGHTING GLOWS & CANVASES -->
+  <div class="ambient-bg">
+    <div class="ambient-glow-top"></div>
+    <div class="ambient-glow-bottom"></div>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- 3. BALANCED SINGLE-SCREEN VIEWPORT CONTAINER -->
+  <main class="site-viewport">
+
+    <!-- HERO HEADER: PROPORTIONATE & CLEAN -->
+    <header class="hero-header anim-fade-up anim-delay-1">
+      <div class="hero-logo-badge" title="AL AYIN Emblem">
+        <div class="hero-logo-halo"></div>
+        <img src="logo.png" alt="AL AYIN Logo" class="hero-brand-logo">
+      </div>
+
+      <div class="unified-badge">
+        <span>✦ 9 YEARS OF BROTHERHOOD · AL ANSAR ✦</span>
+      </div>
+
+      <h1 class="brand-title">AL AYIN</h1>
+      <div class="brand-subtitle">
+        <span>4TH BATCH</span>
+        <span class="sep" aria-hidden="true"></span>
+        <span>FINAL YEAR STUDENTS</span>
+      </div>
+
+      <h2 class="main-headline">
+        The Last Days. <span class="accent-text">The Best Memories.</span>
+      </h2>
+    </header>
+
+    <!-- COUNTDOWNS GROUP (PERFECTLY BALANCED IN CENTER VIEWPORT) -->
+    <div class="countdowns-wrapper anim-fade-up anim-delay-2">
+
+      <!-- PRIMARY COUNTDOWN (UNIFIED 4-COLUMN DARK CAPSULE) -->
+      <section class="primary-countdown-section" aria-label="Main Countdown">
+        <div class="target-pill-header" id="primary-target-pill">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+          </svg>
+          <span>UNTIL FEBRUARY 5</span>
+        </div>
+
+        <!-- Unified Dark Capsule -->
+        <div class="unified-dark-capsule" id="main-countdown-capsule">
+          <!-- Days -->
+          <div class="capsule-col">
+            <div class="roller-viewport" id="viewport-days">
+              <span class="roller-digit digit-active">00</span>
+            </div>
+            <span class="capsule-label">days</span>
+          </div>
+
+          <span class="capsule-colon" aria-hidden="true">:</span>
+
+          <!-- Hours -->
+          <div class="capsule-col">
+            <div class="roller-viewport" id="viewport-hours">
+              <span class="roller-digit digit-active">00</span>
+            </div>
+            <span class="capsule-label">hours</span>
+          </div>
+
+          <span class="capsule-colon" aria-hidden="true">:</span>
+
+          <!-- Minutes -->
+          <div class="capsule-col">
+            <div class="roller-viewport" id="viewport-minutes">
+              <span class="roller-digit digit-active">00</span>
+            </div>
+            <span class="capsule-label">minutes</span>
+          </div>
+
+          <span class="capsule-colon" aria-hidden="true">:</span>
+
+          <!-- Seconds -->
+          <div class="capsule-col">
+            <div class="roller-viewport" id="viewport-seconds">
+              <span class="roller-digit digit-active">00</span>
+            </div>
+            <span class="capsule-label">seconds</span>
+          </div>
+        </div>
+
+        <!-- Milestone Reached Banner -->
+        <div class="milestone-banner" id="milestone-banner">
+          ✨ Mubarak AL AYIN 4th Batch! The Day Has Arrived ✨
+        </div>
+      </section>
+
+      <!-- RAMADAN COUNTDOWN (PERFECTLY ALIGNED TO TOP CAPSULE) -->
+      <section class="ramadan-section" aria-label="Ramadan Countdown">
+        <div class="ramadan-dark-capsule">
+          <div class="ramadan-header-group">
+            <div class="ramadan-title-row">
+              <svg class="ramadan-crescent-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.3 2a10 10 0 0 0-1.9 19.8 10 10 0 0 0 11.4-11.4A10 10 0 0 1 12.3 2z"/>
+              </svg>
+              <h3 class="ramadan-heading">THE HOLY MONTH</h3>
+            </div>
+            <p class="ramadan-subtitle">May Allah bless our journey to Ramadan</p>
+          </div>
+
+          <!-- 3 Pills: months : weeks : days -->
+          <div class="ramadan-mini-cluster">
+            <div class="ramadan-mini-pill" title="Months remaining">
+              <span class="ramadan-val" id="ram-months">00</span>
+              <span class="ramadan-lbl">months</span>
+            </div>
+            <span class="ramadan-sep" aria-hidden="true">:</span>
+            <div class="ramadan-mini-pill" title="Weeks remaining">
+              <span class="ramadan-val" id="ram-weeks">00</span>
+              <span class="ramadan-lbl">weeks</span>
+            </div>
+            <span class="ramadan-sep" aria-hidden="true">:</span>
+            <div class="ramadan-mini-pill" title="Days remaining">
+              <span class="ramadan-val" id="ram-days">00</span>
+              <span class="ramadan-lbl">days</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- EMOTIONAL FOOTER (BALANCED PROPORTIONS) -->
+    <footer class="emotional-footer-section anim-fade-up anim-delay-3">
+      <div class="arabic-calligraphy" lang="ar" dir="rtl" title="Surah Hud: 88">
+        وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ
+      </div>
+
+      <p class="brotherhood-message">
+        "Nine years of friendship, learning, and memories. Every ending is a new beginning."
+      </p>
+
+      <div class="action-bar">
+        <button type="button" class="share-btn" id="whatsapp-share-btn" title="Share with 4th Batch WhatsApp Groups">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          <span>Share</span>
+        </button>
+
+        <button type="button" class="share-btn" id="copy-link-btn" title="Copy Website Link">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+          </svg>
+          <span id="copy-btn-text">Copy Link</span>
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-msg" id="toast" role="alert" aria-live="polite">
+    Link copied to clipboard!
+  </div>
+
+  <!-- ==========================================================================
+       11. CLIENT SCRIPT (LIVE TITLE, PARTICLES & ANIMATIONS)
+       ========================================================================== */
+  -->
+  <script>
+    // Preloader smooth exit & launch celebratory congrats burst ONCE
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('fade-out');
+        }
+        // Launch celebratory festive confetti & starburst ONCE right as page reveals!
+        setTimeout(() => {
+          if (typeof playCongratsBurst === 'function') {
+            playCongratsBurst();
+          }
+        }, 520);
+      }, 950);
+    });
+
+    const CONFIG = {
+      primaryTarget: {
+        year: null,      // null for automatic next upcoming Feb 5
+        month: 1,        // 0 = Jan, 1 = Feb
+        day: 5,
+        hour: 0,
+        minute: 0,
+        second: 0
+      },
+
+      ramadanTarget: {
+        year: null,
+        month: 1,
+        day: 5,
+        hour: 0,
+        minute: 0,
+        second: 0
+      }
+    };
+
+    function resolveTargetDate(targetCfg) {
+      const now = new Date();
+      let targetYear = targetCfg.year;
+
+      if (!targetYear) {
+        const candidate = new Date(
+          now.getFullYear(),
+          targetCfg.month,
+          targetCfg.day,
+          targetCfg.hour,
+          targetCfg.minute,
+          targetCfg.second
+        );
+
+        if (now.getTime() >= candidate.getTime()) {
+          targetYear = now.getFullYear() + 1;
+        } else {
+          targetYear = now.getFullYear();
+        }
+      }
+
+      return new Date(
+        targetYear,
+        targetCfg.month,
+        targetCfg.day,
+        targetCfg.hour,
+        targetCfg.minute,
+        targetCfg.second
+      );
+    }
+
+    const primaryTargetDate = resolveTargetDate(CONFIG.primaryTarget);
+    const ramadanTargetDate = resolveTargetDate(CONFIG.ramadanTarget);
+
+    function calculateTotalDaysCountdown(fromDate, toDate) {
+      const diffMs = toDate.getTime() - fromDate.getTime();
+      if (diffMs <= 0) {
+        return { days: 0, hours: 0, minutes: 0, seconds: 0, isComplete: true };
+      }
+
+      const totalSeconds = Math.floor(diffMs / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      return { days, hours, minutes, seconds, isComplete: false };
+    }
+
+    function calculateCalendarDiff(fromDate, toDate) {
+      if (toDate.getTime() <= fromDate.getTime()) {
+        return { months: 0, weeks: 0, days: 0, isComplete: true };
+      }
+
+      let cursor = new Date(fromDate.getTime());
+      let months = 0;
+
+      while (true) {
+        let nextMonth = new Date(cursor.getTime());
+        nextMonth.setMonth(nextMonth.getMonth() + 1);
+
+        if (nextMonth.getTime() <= toDate.getTime()) {
+          const remDaysAfterNext = Math.floor((toDate.getTime() - nextMonth.getTime()) / (1000 * 60 * 60 * 24));
+          if (remDaysAfterNext === 0 && months >= 1) break;
+          cursor = nextMonth;
+          months++;
+        } else {
+          break;
+        }
+      }
+
+      let remainingMs = toDate.getTime() - cursor.getTime();
+      const MS_IN_DAY = 1000 * 60 * 60 * 24;
+      const MS_IN_WEEK = MS_IN_DAY * 7;
+
+      let weeks = Math.floor(remainingMs / MS_IN_WEEK);
+      remainingMs %= MS_IN_WEEK;
+      let days = Math.floor(remainingMs / MS_IN_DAY);
+
+      return { months, weeks, days, isComplete: false };
+    }
+
+    function padZero(num) {
+      return num < 10 ? '0' + num : String(num);
+    }
+
+    function rollNumber(viewportId, newValue) {
+      const viewport = document.getElementById(viewportId);
+      if (!viewport) return;
+
+      const formatted = padZero(newValue);
+      const currentSpan = viewport.querySelector('.digit-active');
+
+      if (!currentSpan) {
+        const span = document.createElement('span');
+        span.className = 'roller-digit digit-active';
+        span.textContent = formatted;
+        viewport.appendChild(span);
+        return;
+      }
+
+      if (currentSpan.textContent === formatted) return;
+
+      const incomingSpan = document.createElement('span');
+      incomingSpan.className = 'roller-digit digit-enter';
+      incomingSpan.textContent = formatted;
+      viewport.appendChild(incomingSpan);
+
+      requestAnimationFrame(() => {
+        currentSpan.className = 'roller-digit digit-exit';
+        incomingSpan.className = 'roller-digit digit-active';
+      });
+
+      setTimeout(() => {
+        if (currentSpan && currentSpan.parentNode === viewport) {
+          viewport.removeChild(currentSpan);
+        }
+      }, 420);
+    }
+
+    function updatePill(id, value) {
+      const elem = document.getElementById(id);
+      if (!elem) return;
+      const formatted = padZero(value);
+      if (elem.textContent !== formatted) {
+        elem.textContent = formatted;
+      }
+    }
+
+    let lastCalculatedDiff = null;
+
+    function updateLiveMetaAndTitle(diff) {
+      if (!diff) return;
+      const liveTitle = `⏳ ${diff.days}d ${padZero(diff.hours)}h ${padZero(diff.minutes)}m ${padZero(diff.seconds)}s | AL AYIN`;
+      if (document.title !== liveTitle) {
+        document.title = liveTitle;
+      }
+
+      const descContent = `Only ${diff.days} days, ${diff.hours} hours remaining until February 5 & Ramadan! AL AYIN 4th Batch · Al Ansar Arabic College.`;
+      const metaDesc = document.getElementById('meta-description');
+      const ogDesc = document.getElementById('og-description');
+      const twDesc = document.getElementById('twitter-description');
+      if (metaDesc) metaDesc.setAttribute('content', descContent);
+      if (ogDesc) ogDesc.setAttribute('content', descContent);
+      if (twDesc) twDesc.setAttribute('content', descContent);
+    }
+
+    function tick() {
+      const now = new Date();
+
+      // 1. Main Countdown: Days : Hours : Minutes : Seconds
+      const primaryDiff = calculateTotalDaysCountdown(now, primaryTargetDate);
+      lastCalculatedDiff = primaryDiff;
+
+      if (primaryDiff.isComplete) {
+        const capsule = document.getElementById('main-countdown-capsule');
+        const banner = document.getElementById('milestone-banner');
+        if (capsule && banner) {
+          capsule.style.display = 'none';
+          banner.style.display = 'block';
+        }
+        document.title = `✨ Mubarak AL AYIN 4th Batch! ✨`;
+      } else {
+        rollNumber('viewport-days', primaryDiff.days);
+        rollNumber('viewport-hours', primaryDiff.hours);
+        rollNumber('viewport-minutes', primaryDiff.minutes);
+        rollNumber('viewport-seconds', primaryDiff.seconds);
+
+        updateLiveMetaAndTitle(primaryDiff);
+      }
+
+      // 2. Ramadan Countdown: Months : Weeks : Days
+      const ramDiff = calculateCalendarDiff(now, ramadanTargetDate);
+      updatePill('ram-months', ramDiff.months);
+      updatePill('ram-weeks', ramDiff.weeks);
+      updatePill('ram-days', ramDiff.days);
+    }
+
+    tick();
+    setInterval(tick, 1000);
+
+    // Interactive Share
+    const whatsappBtn = document.getElementById('whatsapp-share-btn');
+    const copyLinkBtn = document.getElementById('copy-link-btn');
+    const toastElem = document.getElementById('toast');
+
+    function showToast(msg) {
+      if (!toastElem) return;
+      toastElem.textContent = msg;
+      toastElem.classList.add('show');
+      setTimeout(() => {
+        toastElem.classList.remove('show');
+      }, 2400);
+    }
+
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener('click', () => {
+        const url = window.location.href;
+        let diffText = "";
+        if (lastCalculatedDiff) {
+          diffText = `⏳ *${lastCalculatedDiff.days} Days, ${lastCalculatedDiff.hours} Hours, ${lastCalculatedDiff.minutes} Minutes* remaining until February 5!\n`;
+        }
+        const text = encodeURIComponent(
+          `✨ *AL AYIN 4TH BATCH | THE FINAL COUNTDOWN*\n` +
+          `Al Ansar Arabic College · 9 Years of Friendship\n\n` +
+          `"The Last Days. The Best Memories."\n` +
+          `وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ\n\n` +
+          diffText +
+          `Join the countdown:\n${url}`
+        );
+        window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+      });
+    }
+
+    if (copyLinkBtn) {
+      copyLinkBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          showToast("Link copied to clipboard!");
+        } catch (e) {
+          const temp = document.createElement('input');
+          temp.value = window.location.href;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand('copy');
+          document.body.removeChild(temp);
+          showToast("Link copied!");
+        }
+      });
+    }
+
+    /* ==========================================================================
+       PROPER CELEBRATORY CONFETTI & STARBURST SYSTEM
+       (PLUMES FROM CENTRAL & CANNONS ON LOAD, TUMBLING 3D CONFETTI, AUTO-CLEANUP)
+       ========================================================================== */
+    let playCongratsBurst = null;
+
+    (function initCelebrationBurstSystem() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const canvas = document.getElementById('particles-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      let animId = null;
+      let particles = [];
+
+      class ConfettiPiece {
+        constructor(x, y, angle, speed) {
+          this.x = x;
+          this.y = y;
+          this.vx = Math.cos(angle) * speed;
+          this.vy = Math.sin(angle) * speed;
+
+          // Realistic air physics
+          this.drag = 0.972;
+          this.gravity = 0.16;
+
+          // 3D tumbling flutter
+          this.wobble = Math.random() * Math.PI * 2;
+          this.wobbleSpeed = Math.random() * 0.12 + 0.06;
+          this.rotation = Math.random() * Math.PI * 2;
+          this.rotSpeed = (Math.random() - 0.5) * 0.14;
+
+          this.type = Math.random() < 0.55 ? 'ribbon' : (Math.random() < 0.8 ? 'star' : 'spark');
+          this.w = Math.random() * 4 + 3.5;
+          this.h = Math.random() * 8 + 6;
+
+          this.life = 1.0;
+          this.fade = Math.random() * 0.007 + 0.0055; // ~3.5 seconds
+
+          // Luxury festive palette: Royal Gold, Cyan, Azure, Bright White
+          const colors = [
+            '251, 191, 36',  // Amber Gold
+            '245, 158, 11',  // Deep Gold
+            '56, 189, 248',  // Cyan Accent
+            '14, 165, 233',  // Azure
+            '255, 255, 255', // Diamond White
+            '99, 102, 241'   // Violet Indigo
+          ];
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        update() {
+          this.x += this.vx + Math.sin(this.wobble) * 0.8;
+          this.y += this.vy;
+          this.vx *= this.drag;
+          this.vy = this.vy * this.drag + this.gravity;
+          this.wobble += this.wobbleSpeed;
+          this.rotation += this.rotSpeed;
+          this.life -= this.fade;
+        }
+
+        draw() {
+          if (this.life <= 0) return;
+          const alpha = Math.max(0, Math.min(1, Math.pow(this.life, 1.3)));
+
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate(this.rotation);
+          // 3D perspective flip effect
+          ctx.scale(Math.cos(this.wobble), 1);
+
+          if (this.type === 'ribbon') {
+            ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
+            ctx.shadowBlur = 6;
+            ctx.shadowColor = `rgba(${this.color}, ${alpha * 0.6})`;
+            ctx.fillRect(-this.w / 2, -this.h / 2, this.w, this.h);
+          } else if (this.type === 'star') {
+            // 4-pointed shimmering sparkle
+            ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = `rgba(${this.color}, ${alpha * 0.85})`;
+            ctx.beginPath();
+            const s = this.w * 1.8;
+            ctx.moveTo(0, -s);
+            ctx.lineTo(s * 0.22, -s * 0.22);
+            ctx.lineTo(s, 0);
+            ctx.lineTo(s * 0.22, s * 0.22);
+            ctx.lineTo(0, s);
+            ctx.lineTo(-s * 0.22, s * 0.22);
+            ctx.lineTo(-s, 0);
+            ctx.lineTo(-s * 0.22, -s * 0.22);
+            ctx.closePath();
+            ctx.fill();
+          } else {
+            // Radiant circular ember
+            ctx.beginPath();
+            ctx.arc(0, 0, this.w * 0.6, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${this.color}, ${alpha})`;
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = `rgba(${this.color}, ${alpha * 0.7})`;
+            ctx.fill();
+          }
+
+          ctx.restore();
+        }
+      }
+
+      function launchGrandCelebration() {
+        if (animId) {
+          cancelAnimationFrame(animId);
+          animId = null;
+        }
+        particles = [];
+
+        const totalPieces = Math.min(140, Math.max(80, Math.floor((width * height) / 7500)));
+
+        for (let i = 0; i < totalPieces; i++) {
+          let originX, originY, angle, speed;
+
+          if (i % 3 === 0) {
+            // Left Cannon: erupts upwards towards upper center
+            originX = width * 0.12;
+            originY = height * 0.82;
+            angle = -Math.PI / 3 + (Math.random() - 0.5) * 0.85;
+            speed = Math.random() * 13 + 7;
+          } else if (i % 3 === 1) {
+            // Right Cannon: erupts upwards towards upper center
+            originX = width * 0.88;
+            originY = height * 0.82;
+            angle = -2 * Math.PI / 3 + (Math.random() - 0.5) * 0.85;
+            speed = Math.random() * 13 + 7;
+          } else {
+            // Central Plume: erupts up and down across the middle
+            originX = width * 0.5;
+            originY = height * 0.48;
+            const isUp = (i % 2 === 0);
+            angle = (isUp ? -Math.PI / 2 : Math.PI / 2) + (Math.random() - 0.5) * 1.5;
+            speed = Math.random() * 11 + 5;
+          }
+
+          particles.push(new ConfettiPiece(originX, originY, angle, speed));
+        }
+
+        function frame() {
+          ctx.clearRect(0, 0, width, height);
+          let hasAlive = false;
+
+          for (let p of particles) {
+            p.update();
+            if (p.life > 0) {
+              hasAlive = true;
+              p.draw();
+            }
+          }
+
+          if (hasAlive) {
+            animId = requestAnimationFrame(frame);
+          } else {
+            // Complete stop: clean canvas, zero lingering dots, zero CPU usage
+            ctx.clearRect(0, 0, width, height);
+            animId = null;
+          }
+        }
+
+        animId = requestAnimationFrame(frame);
+      }
+
+      playCongratsBurst = launchGrandCelebration;
+
+      // Interactive: clicking the 9 Years badge or Share button replays celebration
+      const badge = document.querySelector('.unified-badge');
+      if (badge) {
+        badge.addEventListener('click', launchGrandCelebration);
+      }
+    })();
+  </script>
+</body>
+</html>
